@@ -14,39 +14,114 @@ import googleLogo from "@/assets/google-logo.png";
 const Reviews = () => {
   const reviews = [
     {
-      name: "Maria Silva",
-      date: "Há 2 semanas",
-      text: "Experiência incrível! A Praia dos Carneiros é maravilhosa e o atendimento da Uai Turismo foi excepcional. Fotos lindas de cortesia e guia muito atencioso!",
-      rating: 5,
-      avatar: "MS"
-    },
-    {
-      name: "João Santos",
+      name: "Lia Raquel Mascarenhas",
       date: "Há 1 mês",
-      text: "Passeio perfeito! Tudo muito organizado, desde a busca no hotel até o retorno. São Miguel dos Milagres é um paraíso e vale muito a pena conhecer.",
+      text: "Tivemos uma experiência incrível com a Uai Turismo, sob a direção do guia Marcos, que tornou nossos dias inesquecíveis. Eu e meu marido conhecemos a praia de Carneiros, fizemos o passeio por Recife e Olinda, exploramos as piscinas naturais...",
       rating: 5,
-      avatar: "JS"
+      avatar: "LR",
+      reviewCount: 9,
+      photoCount: 16
     },
     {
-      name: "Ana Paula",
-      date: "Há 3 semanas",
-      text: "Adorei o city tour em Recife e Olinda. O guia era muito conhecedor da história local e nos levou aos melhores lugares. Recomendo demais!",
+      name: "Janainni",
+      date: "Há 1 mês",
+      text: "Fomos para Porto de Galinhas e contratamos a Uai Turismo para todos os nossos passeios. Foi simplesmente incrível! Os guias foram super divertidos, nos fizeram rir o tempo todo e ainda compartilharam várias histórias sobre cada lugar...",
       rating: 5,
-      avatar: "AP"
+      avatar: "JA",
+      reviewCount: 1,
+      photoCount: 11
     },
     {
-      name: "Carlos Mendes",
-      date: "Há 1 semana",
-      text: "Melhor agência de turismo! Fizemos o passeio de Maragogi e ficamos impressionados com a organização e qualidade. Super recomendo!",
+      name: "Taiara Ferreira",
+      date: "Há 1 mês",
+      text: "Foi uma das minhas melhores viagens e experiência sem dúvidas. A UAI turismo é extremamente atenciosa com o cliente e o Marcos é um dos guias excepcional que faz parte dessa empresa, ele pensa em cada detalhe do passeio sem contar nas fotos...",
       rating: 5,
-      avatar: "CM"
+      avatar: "TF",
+      reviewCount: 1,
+      photoCount: 11
     },
     {
-      name: "Juliana Costa",
+      name: "Rafaela Susan",
       date: "Há 2 meses",
-      text: "Equipe super atenciosa e profissional. O passeio de buggy foi emocionante e as fotos ficaram incríveis. Voltaremos com certeza!",
+      text: "Simplesmente maravilhoso! O Marcos é um excelente Guia Turístico, muito simpático, tem o maior carinho e paciência com os turistas, além de tirar fotos IMPECÁVEIS!! Os passeios valem cada centavo, experiências únicas como mergulho nas...",
       rating: 5,
-      avatar: "JC"
+      avatar: "RS",
+      reviewCount: 9,
+      photoCount: 20,
+      localGuide: true
+    },
+    {
+      name: "Crissia Batista",
+      date: "Há 1 mês",
+      text: "Nas minhas férias de Julho/25 viajei para Porto de Galinhas e fechei passeio com a Uai Turismo para todos os dias… Foi simplesmente incrível ter um guia exclusivamente para minha família, além de nos levar nos melhores receptivos e ainda...",
+      rating: 5,
+      avatar: "CB",
+      reviewCount: 3,
+      photoCount: 6
+    },
+    {
+      name: "Camilla Cristina",
+      date: "Há 2 meses",
+      text: "Chegamos até a Uai turismo através do Instagram. Marcos é excelente guia, entende e sabe o que faz! tirou todas nossas dúvidas, ajudou a definir os passeios. Fizemos passeio para Maragogi e Carneiros. Pontual...",
+      rating: 5,
+      avatar: "CC",
+      reviewCount: 8,
+      photoCount: 21
+    },
+    {
+      name: "Arlene Rodrigues",
+      date: "Há 2 meses",
+      text: "Eu gostei de todos os passeios: ilha de santo aleixo (a paisagem é lindíssima); praia de carneiros foi ótimo (a igrejinha é linda); maragogi é incrível, vale muito a pena e a comida foi sensacional; rota dos milagres foi incrível, o melhor...",
+      rating: 5,
+      avatar: "AR",
+      reviewCount: 3,
+      photoCount: 6
+    },
+    {
+      name: "Daniley Victor",
+      date: "Há 2 meses",
+      text: "Fiz um passeio incrível com a Uai Turismo para a Praia dos Carneiros e Ilha de Santo Aleixo. Tudo muito bem organizado, seguro e pontual. Nosso guia, Marcos, foi super atencioso e ainda registrou o passeio com fotos maravilhosas, qualidade...",
+      rating: 5,
+      avatar: "DV",
+      reviewCount: 2,
+      photoCount: 4
+    },
+    {
+      name: "Marília Ribeiro",
+      date: "Há 2 meses",
+      text: "Nossas férias em Porto de Galinhas foram simplesmente inesquecíveis, e grande parte disso devemos à UAI Turismo e ao nosso guia Marcos, que foi excepcional do início ao fim.",
+      rating: 5,
+      avatar: "MR",
+      reviewCount: 4,
+      photoCount: 5
+    },
+    {
+      name: "Debora Rodrigues",
+      date: "Há 2 meses",
+      text: "A Uai Turismo foi a indicação de uma amiga. Fui super, hiper, bem atendida pelo Marcos, com sua simpatia e amizade, fora o profissionalismo. Nossos passeios foram de uma beleza e leveza excepecional. Marcos ficou com a gente o tempo todo.",
+      rating: 5,
+      avatar: "DR",
+      reviewCount: 92,
+      photoCount: 22,
+      localGuide: true
+    },
+    {
+      name: "Amanda Karina",
+      date: "Há 1 mês",
+      text: "Melhor empresa de turismo de porto de galinhas!!! Pessoal super atenciosos e prestativos, sabem tudo sobre a história das cidades, nos explicam tudo direitinho, ficam do nosso lado o tempo todo, acredito q esse carinho é o q diferencia essa equipe das demais ❤️",
+      rating: 5,
+      avatar: "AK",
+      reviewCount: 6,
+      photoCount: 10
+    },
+    {
+      name: "Mariana Cintra Sampaio",
+      date: "Há 2 meses",
+      text: "Eu e meu grupo com 7 amigos contratamos a Uai Turismo e só temos elogios! O roteiro foi IMPECÁVEL, cheio de lugares paradisíacos: passeio de bug pra conhecer as praias de Porto, Ilha de Santo Aleixo, Maragogi e Praia de Carneiros. O Marcos...",
+      rating: 5,
+      avatar: "MC",
+      reviewCount: 2,
+      photoCount: 6
     }
   ];
 
@@ -108,7 +183,15 @@ const Reviews = () => {
                         {review.avatar}
                       </div>
                       <div className="flex-1">
-                        <p className="font-semibold">{review.name}</p>
+                        <div className="flex items-center gap-2">
+                          <p className="font-semibold">{review.name}</p>
+                          {review.localGuide && (
+                            <span className="text-xs bg-muted px-2 py-0.5 rounded">Local Guide</span>
+                          )}
+                        </div>
+                        <p className="text-xs text-muted-foreground">
+                          {review.reviewCount} avaliações · {review.photoCount} fotos
+                        </p>
                         <p className="text-sm text-muted-foreground">{review.date}</p>
                       </div>
                     </div>

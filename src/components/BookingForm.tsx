@@ -9,19 +9,45 @@ const BookingForm = () => {
   const [formData, setFormData] = useState({
     checkIn: "",
     checkOut: "",
-    guests: "",
+    adults: "",
+    hasChildren: false,
+    childrenAges: "",
+    arrivalTime: "",
+    departureTime: "",
+    needsTransfer: false,
+    transferPeople: "",
     accommodation: "",
     tours: [] as string[],
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Olá! Gostaria de solicitar um orçamento:\n
-Data Check-in: ${formData.checkIn}\n
-Data Check-out: ${formData.checkOut}\n
-Número de pessoas: ${formData.guests}\n
-Local de hospedagem: ${formData.accommodation}\n
-Passeios selecionados: ${formData.tours.join(", ")}`;
+    
+    let message = `Olá! Gostaria de solicitar um orçamento:\n
+📅 Check-in: ${formData.checkIn}
+📅 Check-out: ${formData.checkOut}
+
+👥 Número de adultos: ${formData.adults}`;
+
+    if (formData.hasChildren) {
+      message += `
+👶 Crianças: Sim (Idades: ${formData.childrenAges})`;
+    }
+
+    message += `
+
+🏨 Hospedagem: ${formData.accommodation}
+🕐 Horário de chegada: ${formData.arrivalTime}
+🕐 Horário de saída: ${formData.departureTime}`;
+
+    if (formData.needsTransfer) {
+      message += `
+🚗 Precisa de translado: Sim (${formData.transferPeople} pessoas)`;
+    }
+
+    if (formData.tours.length > 0) {
+      message += `\n\nPasseios selecionados:\n${formData.tours.join(", ")}`;
+    }
     
     const whatsappUrl = `https://wa.me/5581999999999?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
@@ -88,16 +114,16 @@ Passeios selecionados: ${formData.tours.join(", ")}`;
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="guests" className="flex items-center gap-2">
+                <Label htmlFor="adults" className="flex items-center gap-2">
                   <Users className="w-4 h-4 text-primary" />
-                  Número de Pessoas
+                  Número de Adultos
                 </Label>
                 <Input
-                  id="guests"
+                  id="adults"
                   type="number"
                   min="1"
-                  value={formData.guests}
-                  onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
+                  value={formData.adults}
+                  onChange={(e) => setFormData({ ...formData, adults: e.target.value })}
                   required
                   className="bg-background"
                 />
@@ -115,8 +141,86 @@ Passeios selecionados: ${formData.tours.join(", ")}`;
                   onChange={(e) => setFormData({ ...formData, accommodation: e.target.value })}
                   required
                   className="bg-background"
+                  placeholder="Nome do hotel ou pousada"
                 />
               </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  id="hasChildren"
+                  checked={formData.hasChildren}
+                  onChange={(e) => setFormData({ ...formData, hasChildren: e.target.checked })}
+                  className="w-4 h-4 rounded border-input"
+                />
+                <Label htmlFor="hasChildren" className="cursor-pointer">
+                  Vai com crianças?
+                </Label>
+              </div>
+              {formData.hasChildren && (
+                <Input
+                  id="childrenAges"
+                  type="text"
+                  value={formData.childrenAges}
+                  onChange={(e) => setFormData({ ...formData, childrenAges: e.target.value })}
+                  placeholder="Digite as idades (ex: 5, 8, 12)"
+                  className="bg-background"
+                />
+              )}
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="arrivalTime">Horário de Chegada</Label>
+                <Input
+                  id="arrivalTime"
+                  type="time"
+                  value={formData.arrivalTime}
+                  onChange={(e) => setFormData({ ...formData, arrivalTime: e.target.value })}
+                  required
+                  className="bg-background"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="departureTime">Horário de Saída</Label>
+                <Input
+                  id="departureTime"
+                  type="time"
+                  value={formData.departureTime}
+                  onChange={(e) => setFormData({ ...formData, departureTime: e.target.value })}
+                  required
+                  className="bg-background"
+                />
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  id="needsTransfer"
+                  checked={formData.needsTransfer}
+                  onChange={(e) => setFormData({ ...formData, needsTransfer: e.target.checked })}
+                  className="w-4 h-4 rounded border-input"
+                />
+                <Label htmlFor="needsTransfer" className="cursor-pointer">
+                  Precisa de translado?
+                </Label>
+              </div>
+              {formData.needsTransfer && (
+                <Input
+                  id="transferPeople"
+                  type="number"
+                  min="1"
+                  value={formData.transferPeople}
+                  onChange={(e) => setFormData({ ...formData, transferPeople: e.target.value })}
+                  placeholder="Quantas pessoas para o translado?"
+                  className="bg-background"
+                />
+              )}
             </div>
 
             <Button type="submit" size="lg" className="w-full text-lg py-6">

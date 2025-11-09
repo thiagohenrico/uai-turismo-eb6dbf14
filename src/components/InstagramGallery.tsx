@@ -36,13 +36,21 @@ const InstagramGallery = () => {
               Confira as fotos reais dos nossos passeios, depoimentos em vídeo e muito mais!
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-              {[1, 2, 3, 4].map((item) => (
+              {[
+                { src: "/api/placeholder/400/400", alt: "Passeio 1" },
+                { src: "/api/placeholder/400/400", alt: "Passeio 2" },
+                { src: "/api/placeholder/400/400", alt: "Passeio 3" },
+                { src: "/api/placeholder/400/400", alt: "Passeio 4" },
+              ].map((image, index) => (
                 <div 
-                  key={item} 
-                  className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center hover:scale-105 transition-transform cursor-pointer"
+                  key={index} 
+                  className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer relative group"
                   onClick={() => window.open("https://www.instagram.com/uai_turismo/", "_blank")}
                 >
-                  <Instagram className="w-12 h-12 text-primary/40" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <Instagram className="w-12 h-12 text-white" />
+                  </div>
+                  <Instagram className="w-12 h-12 text-primary/40 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                 </div>
               ))}
             </div>
