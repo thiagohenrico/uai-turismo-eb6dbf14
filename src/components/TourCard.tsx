@@ -7,10 +7,13 @@ interface TourCardProps {
   image: string;
   description: string;
   duration: string;
+  itinerary?: string;
+  itineraryItems?: string[];
   includes: string[];
+  note?: string;
 }
 
-const TourCard = ({ title, image, description, duration, includes }: TourCardProps) => {
+const TourCard = ({ title, image, description, duration, itinerary, itineraryItems, includes, note }: TourCardProps) => {
   const handleBooking = () => {
     const message = `Olá! Tenho interesse no passeio: ${title}`;
     const whatsappUrl = `https://wa.me/5581999999999?text=${encodeURIComponent(message)}`;
@@ -32,17 +35,34 @@ const TourCard = ({ title, image, description, duration, includes }: TourCardPro
           <span>{duration}</span>
         </div>
 
+        {itinerary && itineraryItems && (
+          <div className="space-y-2">
+            <h4 className="font-semibold text-primary">{itinerary}</h4>
+            <ul className="space-y-1 text-sm">
+              {itineraryItems.map((item, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <span className="text-primary">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <div className="space-y-2">
           <h4 className="font-semibold text-primary">INCLUSO:</h4>
           <ul className="space-y-2">
             {includes.map((item, index) => (
               <li key={index} className="flex items-start gap-2 text-sm">
-                <Check className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                 <span>{item}</span>
               </li>
             ))}
           </ul>
         </div>
+
+        {note && (
+          <p className="text-xs text-muted-foreground italic">{note}</p>
+        )}
 
         <Button onClick={handleBooking} className="w-full" size="lg">
           Reservar Este Passeio
