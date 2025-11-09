@@ -6,7 +6,7 @@ import Tours from "@/components/Tours";
 import ImportantInfo from "@/components/ImportantInfo";
 import FAQ from "@/components/FAQ";
 import Reviews from "@/components/Reviews";
-import InstagramGallery from "@/components/InstagramGallery";
+import ClientGallery from "@/components/ClientGallery";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -19,7 +19,7 @@ const Index = () => {
         <BookingForm />
         <Tours />
         <ImportantInfo />
-        <InstagramGallery />
+        <ClientGallery />
         <FAQ />
         <Reviews />
       </main>
