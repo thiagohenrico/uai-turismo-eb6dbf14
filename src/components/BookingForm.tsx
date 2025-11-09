@@ -24,8 +24,8 @@ const BookingForm = () => {
     e.preventDefault();
     
     let message = `Olá! Gostaria de solicitar um orçamento:\n
-📅 Check-in: ${formData.checkIn}
-📅 Check-out: ${formData.checkOut}
+📅 Data disponível: ${formData.checkIn}
+📅 Data final disponível: ${formData.checkOut}
 
 👥 Número de adultos: ${formData.adults}`;
 
@@ -49,7 +49,7 @@ const BookingForm = () => {
       message += `\n\nPasseios selecionados:\n${formData.tours.join(", ")}`;
     }
     
-    const whatsappUrl = `https://wa.me/5581999999999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5581997484915?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 

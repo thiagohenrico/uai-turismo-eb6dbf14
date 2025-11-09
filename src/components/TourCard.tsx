@@ -15,9 +15,8 @@ interface TourCardProps {
 
 const TourCard = ({ title, image, description, duration, itinerary, itineraryItems, includes, note }: TourCardProps) => {
   const handleBooking = () => {
-    const message = `Olá! Tenho interesse no passeio: ${title}`;
-    const whatsappUrl = `https://wa.me/5581999999999?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank");
+    const element = document.getElementById("orcamento");
+    element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (

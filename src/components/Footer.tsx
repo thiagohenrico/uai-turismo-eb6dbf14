@@ -48,6 +48,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-primary">Contato</h4>
             <div className="space-y-3">
+              <p className="text-sm text-muted-foreground font-semibold">Marcos Vinicius Silva Souza</p>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm text-muted-foreground">Porto de Galinhas - PE</span>
@@ -85,13 +86,22 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8">
-          <div className="text-center space-y-2">
+          <div className="text-center space-y-3">
             <p className="text-sm text-muted-foreground">
               Certificação Cadastur - Cadastro de Prestadores de Serviços Turísticos
             </p>
             <p className="text-sm text-muted-foreground">
               Empresa cadastrada no Ministério do Turismo
             </p>
+            <div className="flex items-center justify-center gap-4 text-sm">
+              <a href="/politica-privacidade" className="text-muted-foreground hover:text-primary transition-colors underline">
+                Política de Privacidade
+              </a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/politica-publicidade" className="text-muted-foreground hover:text-primary transition-colors underline">
+                Política de Publicidade
+              </a>
+            </div>
             <p className="text-sm text-muted-foreground">
               © {currentYear} Uai Turismo. Todos os direitos reservados.
             </p>
