@@ -12,46 +12,68 @@ const MobilePhotoGallery = () => {
   ];
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-[#4A9FD8] to-[#67B8E3] overflow-hidden py-20 px-4">
-      <div className="container mx-auto">
-        <div className="text-center mb-8 pt-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
-            SEU TURISMO NO LUGAR CERTO
-          </h2>
+    <section id="inicio" className="relative min-h-screen bg-midnight overflow-hidden pt-24 pb-12 px-4">
+      {/* Wavy background */}
+      <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-b from-ocean-blue/20 to-ocean-blue/40">
+        <svg className="absolute bottom-0 w-full" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="currentColor" className="text-ocean-blue/30"/>
+        </svg>
+      </div>
+
+      <div className="container mx-auto relative z-10">
+        <div className="text-center mb-12">
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+            Experiências inesquecíveis no litoral Sul de <span className="text-primary">Pernambuco</span> e Norte de <span className="text-secondary">Alagoas!</span>
+          </h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {/* Photo gallery grid with tilted polaroid effect */}
+        <div className="grid grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
           {photos.map((photo, index) => (
             <div
               key={index}
-              className={`relative bg-white p-3 shadow-2xl transform transition-transform hover:scale-105 ${
-                index === 0 ? "rotate-[-4deg]" : 
-                index === 1 ? "rotate-[3deg]" : 
-                index === 2 ? "rotate-[-2deg]" : 
-                "rotate-[4deg]"
+              className={`relative group cursor-pointer ${
+                index === 0 ? "col-span-1 row-span-1" : 
+                index === 1 ? "col-span-1 row-span-1 mt-8" : 
+                index === 2 ? "col-span-1 row-span-1" : 
+                "col-span-1 row-span-1 mt-8"
               }`}
               style={{
-                animation: `float ${3 + index * 0.5}s ease-in-out infinite`
+                animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
+                animationDelay: `${index * 0.2}s`
               }}
             >
-              <div className="aspect-[4/5] overflow-hidden">
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  className="w-full h-full object-cover"
-                />
+              <div 
+                className={`relative bg-white p-3 shadow-2xl transform transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-10 ${
+                  index === 0 ? "rotate-[-5deg]" : 
+                  index === 1 ? "rotate-[4deg]" : 
+                  index === 2 ? "rotate-[-3deg]" : 
+                  "rotate-[5deg]"
+                }`}
+              >
+                <div className="aspect-[3/4] overflow-hidden rounded-sm">
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                {/* Polaroid label */}
+                <div className="text-center mt-2 font-script text-gray-700 text-sm">
+                  {photo.alt}
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center">
           <button
             onClick={() => {
-              const element = document.getElementById("passeios");
+              const element = document.getElementById("orcamento");
               element?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-primary hover:text-white transition-all"
+            className="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-full font-bold text-lg shadow-2xl hover:shadow-primary/50 transition-all transform hover:scale-105"
           >
             RESERVE JÁ
           </button>
@@ -64,7 +86,7 @@ const MobilePhotoGallery = () => {
             transform: translateY(0px);
           }
           50% {
-            transform: translateY(-10px);
+            transform: translateY(-15px);
           }
         }
       `}</style>
