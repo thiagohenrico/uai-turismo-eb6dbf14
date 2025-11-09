@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import MobilePhotoGallery from "@/components/MobilePhotoGallery";
 import BookingForm from "@/components/BookingForm";
 import Tours from "@/components/Tours";
 import ImportantInfo from "@/components/ImportantInfo";
@@ -14,7 +15,12 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <main>
-        <Hero />
+        <div className="md:hidden">
+          <MobilePhotoGallery />
+        </div>
+        <div className="hidden md:block">
+          <Hero />
+        </div>
         <BookingForm />
         <Tours />
         <ImportantInfo />
