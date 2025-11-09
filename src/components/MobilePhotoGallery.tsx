@@ -2,6 +2,14 @@ import buggyTour from "@/assets/buggy-tour.jpg";
 import maragogi from "@/assets/maragogi.jpg";
 import praiaCarneiros from "@/assets/praia-carneiros.jpg";
 import saoMiguel from "@/assets/sao-miguel.jpg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const MobilePhotoGallery = () => {
   const photos = [
@@ -22,29 +30,70 @@ const MobilePhotoGallery = () => {
 
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
             Experiências inesquecíveis no litoral Sul de <span className="text-primary">Pernambuco</span> e Norte de <span className="text-secondary">Alagoas!</span>
           </h1>
         </div>
 
-        {/* Photo gallery grid with tilted polaroid effect */}
-        <div className="grid grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
+        {/* Mobile Carousel */}
+        <div className="md:hidden mb-12">
+          <Carousel
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+              }),
+            ]}
+            className="w-full max-w-sm mx-auto"
+          >
+            <CarouselContent>
+              {photos.map((photo, index) => (
+                <CarouselItem key={index}>
+                  <div
+                    className="relative group cursor-pointer"
+                    style={{
+                      animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
+                    }}
+                  >
+                    <div 
+                      className="relative bg-white p-4 shadow-2xl transform transition-all duration-500 hover:scale-105 rotate-[-2deg] hover:rotate-0"
+                    >
+                      <div className="aspect-[3/4] overflow-hidden rounded-sm">
+                        <img
+                          src={photo.src}
+                          alt={photo.alt}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                      </div>
+                      <div className="text-center mt-3 font-script text-gray-700 text-base">
+                        {photo.alt}
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
+        </div>
+
+        {/* Desktop Grid */}
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-12">
           {photos.map((photo, index) => (
             <div
               key={index}
-              className={`relative group cursor-pointer ${
-                index === 0 ? "col-span-1 row-span-1" : 
-                index === 1 ? "col-span-1 row-span-1 mt-8" : 
-                index === 2 ? "col-span-1 row-span-1" : 
-                "col-span-1 row-span-1 mt-8"
-              }`}
+              className="relative group cursor-pointer"
               style={{
                 animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
                 animationDelay: `${index * 0.2}s`
               }}
             >
               <div 
-                className={`relative bg-white p-3 shadow-2xl transform transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-10 ${
+                className={`relative bg-white p-4 shadow-2xl transform transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-10 ${
                   index === 0 ? "rotate-[-5deg]" : 
                   index === 1 ? "rotate-[4deg]" : 
                   index === 2 ? "rotate-[-3deg]" : 
@@ -58,8 +107,7 @@ const MobilePhotoGallery = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                {/* Polaroid label */}
-                <div className="text-center mt-2 font-script text-gray-700 text-sm">
+                <div className="text-center mt-3 font-script text-gray-700 text-base">
                   {photo.alt}
                 </div>
               </div>
