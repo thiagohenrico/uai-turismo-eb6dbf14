@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import googleLogo from "@/assets/google-logo.png";
 
 const Reviews = () => {
   const reviews = [
@@ -53,29 +54,33 @@ const Reviews = () => {
     <section id="avaliacoes" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="text-5xl md:text-6xl font-bold">5.0</span>
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <img src={googleLogo} alt="Google" className="h-8" />
             <div className="flex flex-col items-start">
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
-                ))}
+              <div className="flex items-center gap-2">
+                <span className="text-4xl md:text-5xl font-bold">5.0</span>
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
+                  ))}
+                </div>
               </div>
-              <span className="text-sm text-muted-foreground">Baseado em 200+ avaliações</span>
+              <span className="text-sm text-muted-foreground mt-1">Baseado em 200+ avaliações</span>
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             O Que Dizem Nossos <span className="text-primary">Clientes</span>
           </h2>
           <p className="text-muted-foreground mb-6">
-            Avaliações reais de clientes do Google
+            Avaliações reais de clientes verificadas pelo Google
           </p>
           <Button 
             variant="outline" 
             size="lg"
             className="gap-2"
-            onClick={() => window.open("https://share.google/PKrKycon1iSH3dd1S", "_blank")}
+            onClick={() => window.open("https://www.google.com/search?q=Uai+Turismo+-+Porto+de+Galinhas", "_blank")}
           >
+            <img src={googleLogo} alt="Google" className="h-4" />
             <ExternalLink className="w-4 h-4" />
             Ver todas as avaliações no Google
           </Button>

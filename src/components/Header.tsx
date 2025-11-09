@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import uaiLogo from "@/assets/uai-logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,10 +16,14 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-midnight/95 backdrop-blur-sm border-b border-border">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="text-2xl font-bold">
-              <span className="text-sunset-yellow">Uai</span>
-              <span className="text-tropical-green"> Turismo</span>
+          <div className="flex items-center gap-3">
+            <img src={uaiLogo} alt="Uai Turismo" className="h-12 w-12 md:h-14 md:w-14" />
+            <div className="flex flex-col">
+              <div className="text-xl md:text-2xl font-bold leading-tight">
+                <span className="text-sunset-yellow">Uai</span>
+                <span className="text-tropical-green"> Turismo</span>
+              </div>
+              <span className="text-xs text-muted-foreground">Porto de Galinhas</span>
             </div>
           </div>
 
