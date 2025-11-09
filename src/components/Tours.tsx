@@ -4,6 +4,14 @@ import saoMiguel from "@/assets/sao-miguel.jpg";
 import maragogi from "@/assets/maragogi.jpg";
 import buggyTour from "@/assets/buggy-tour.jpg";
 import recifeOlinda from "@/assets/recife-olinda.jpg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Tours = () => {
   const tours = [
@@ -172,11 +180,28 @@ const Tours = () => {
           Explore os lugares mais incríveis do litoral nordestino com conforto e segurança
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {tours.map((tour, index) => (
-            <TourCard key={index} {...tour} />
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 5000,
+            }),
+          ]}
+          className="w-full max-w-7xl mx-auto"
+        >
+          <CarouselContent>
+            {tours.map((tour, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <TourCard {...tour} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
       </div>
     </section>
   );

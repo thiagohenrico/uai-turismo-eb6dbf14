@@ -4,6 +4,7 @@ import BookingForm from "@/components/BookingForm";
 import Tours from "@/components/Tours";
 import FAQ from "@/components/FAQ";
 import Reviews from "@/components/Reviews";
+import InstagramGallery from "@/components/InstagramGallery";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -15,6 +16,7 @@ const Index = () => {
         <Hero />
         <BookingForm />
         <Tours />
+        <InstagramGallery />
         <FAQ />
         <Reviews />
       </main>
