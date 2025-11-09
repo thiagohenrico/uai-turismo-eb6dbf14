@@ -86,7 +86,7 @@ const BookingForm = () => {
               <div className="space-y-2">
                 <Label htmlFor="checkIn" className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-primary" />
-                  Data Check-in
+                  Data disponível para passeios
                 </Label>
                 <Input
                   id="checkIn"
@@ -101,7 +101,7 @@ const BookingForm = () => {
               <div className="space-y-2">
                 <Label htmlFor="checkOut" className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-primary" />
-                  Data Check-out
+                  Data final disponível para passeios
                 </Label>
                 <Input
                   id="checkOut"
@@ -221,6 +221,17 @@ const BookingForm = () => {
                   className="bg-background"
                 />
               )}
+            </div>
+
+            <div className="space-y-3 text-sm text-muted-foreground bg-muted/50 p-4 rounded-lg border border-border">
+              <p className="flex items-start gap-2">
+                <span className="font-semibold text-foreground">OBS:</span>
+                Com exceção do Passeio de buggy em Porto de Galinhas, os demais passeios são bate e volta que duram o dia inteiro.
+              </p>
+              <p className="flex items-start gap-2">
+                <span className="font-semibold text-foreground">Translados:</span>
+                Aeroporto de Recife - Porto de Galinhas (50KM)
+              </p>
             </div>
 
             <Button type="submit" size="lg" className="w-full text-lg py-6">
