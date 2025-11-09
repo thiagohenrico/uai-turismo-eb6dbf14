@@ -140,7 +140,7 @@ const Reviews = () => {
                   ))}
                 </div>
               </div>
-              <span className="text-sm text-muted-foreground mt-1">Baseado em 200+ avaliações</span>
+              
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
