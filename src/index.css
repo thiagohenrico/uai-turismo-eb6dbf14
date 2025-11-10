@@ -8,14 +8,14 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Vibrant blue theme like original */
-    --background: 210 100% 50%;
+    /* Dark theme with warm tones */
+    --background: 220 26% 14%;
     --foreground: 0 0% 100%;
 
-    --card: 210 90% 45%;
+    --card: 220 20% 18%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 210 90% 45%;
+    --popover: 220 20% 18%;
     --popover-foreground: 0 0% 100%;
 
     /* Orange/Yellow from logo - primary CTA */
@@ -26,8 +26,8 @@ All colors MUST be HSL.
     --secondary: 35 91% 55%;
     --secondary-foreground: 0 0% 0%;
 
-    --muted: 210 80% 55%;
-    --muted-foreground: 210 30% 95%;
+    --muted: 220 17% 25%;
+    --muted-foreground: 220 9% 65%;
 
     --accent: 45 93% 58%;
     --accent-foreground: 0 0% 0%;
@@ -35,8 +35,8 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 70% 60%;
-    --input: 210 70% 60%;
+    --border: 220 17% 25%;
+    --input: 220 17% 25%;
     --ring: 45 93% 58%;
 
     --radius: 0.75rem;
