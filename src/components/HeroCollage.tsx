@@ -23,7 +23,7 @@ const HeroCollage = () => {
         {/* Title */}
         <div className="relative z-10 pb-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white tracking-wider px-4">
-            SEU TURISMO NO LUGAR CERTO
+            Uai Turismo - O Ponto de partida para momentos Inesquecíveis
           </h1>
         </div>
 
