@@ -12,17 +12,8 @@ const Header = ({ onReserveClick }: HeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
-  const scrollToSection = (id: string) => {
-    if (window.location.pathname !== '/') {
-      navigate('/');
-      setTimeout(() => {
-        const element = document.getElementById(id);
-        element?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
-    } else {
-      const element = document.getElementById(id);
-      element?.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleHomeClick = () => {
+    navigate('/');
     setIsOpen(false);
   };
 
@@ -39,15 +30,15 @@ const Header = ({ onReserveClick }: HeaderProps) => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
-            <button onClick={() => scrollToSection("inicio")} className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/" className="text-lg text-foreground hover:text-primary transition-colors">
               Início
-            </button>
-            <button onClick={() => scrollToSection("passeios")} className="text-lg text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/passeios" className="text-lg text-foreground hover:text-primary transition-colors">
               Passeios
-            </button>
-            <button onClick={() => scrollToSection("galeria")} className="text-lg text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/galeria" className="text-lg text-foreground hover:text-primary transition-colors">
               Galeria
-            </button>
+            </Link>
             <Link to="/perguntas-frequentes" className="text-lg text-foreground hover:text-primary transition-colors">
               Perguntas Frequentes
             </Link>
@@ -68,15 +59,15 @@ const Header = ({ onReserveClick }: HeaderProps) => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="lg:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-primary/20 pt-4">
-            <button onClick={() => scrollToSection("inicio")} className="text-lg text-foreground hover:text-primary transition-colors text-left">
+            <Link to="/" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={handleHomeClick}>
               Início
-            </button>
-            <button onClick={() => scrollToSection("passeios")} className="text-lg text-foreground hover:text-primary transition-colors text-left">
+            </Link>
+            <Link to="/passeios" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
               Passeios
-            </button>
-            <button onClick={() => scrollToSection("galeria")} className="text-lg text-foreground hover:text-primary transition-colors text-left">
+            </Link>
+            <Link to="/galeria" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
               Galeria
-            </button>
+            </Link>
             <Link to="/perguntas-frequentes" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
               Perguntas Frequentes
             </Link>
