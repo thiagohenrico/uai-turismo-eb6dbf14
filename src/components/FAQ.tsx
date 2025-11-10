@@ -1,4 +1,4 @@
-import { Baby, Bus, Camera, Calendar, CreditCard } from "lucide-react";
+import { Baby, Bus, Camera, Calendar, CreditCard, UtensilsCrossed } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const FAQ = () => {
@@ -32,6 +32,12 @@ const FAQ = () => {
       title: "Formas de Pagamento",
       description: "PIX, Cartão ou Dinheiro",
       detail: "Aceitamos diversas formas de pagamento para sua comodidade"
+    },
+    {
+      icon: UtensilsCrossed,
+      title: "Day-use e Alimentação",
+      description: "Não incluso",
+      detail: "Day-use e alimentação não estão inclusos no valor do passeio"
     }
   ];
 
