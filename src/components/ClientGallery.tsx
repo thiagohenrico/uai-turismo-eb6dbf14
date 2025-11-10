@@ -37,6 +37,10 @@ import client27 from "@/assets/client-27.jpg";
 import client28 from "@/assets/client-28.jpg";
 import client29 from "@/assets/client-29.jpg";
 import client30 from "@/assets/client-30.jpg";
+import client31 from "@/assets/client-31.jpg";
+import client32 from "@/assets/client-32.jpg";
+import client33 from "@/assets/client-33.jpg";
+import client34 from "@/assets/client-34.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -70,6 +74,10 @@ const ClientGallery = () => {
     { src: client28, alt: "Cliente com chapéu em Maragogi" },
     { src: client29, alt: "Grupo com peixes nas águas cristalinas" },
     { src: client30, alt: "Grupo feliz em Maragogi" },
+    { src: client31, alt: "Grupo de amigas em Recife" },
+    { src: client32, alt: "Cliente no barco em Maragogi" },
+    { src: client33, alt: "Família nas piscinas naturais" },
+    { src: client34, alt: "Criança com letreiro de Maragogi" },
   ];
 
   return (
