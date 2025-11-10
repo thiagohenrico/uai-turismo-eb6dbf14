@@ -6,8 +6,8 @@ const FAQ = () => {
     {
       icon: Baby,
       title: "Crianças até 5 anos",
-      description: "Gratuito",
-      detail: "Não cobramos valor adicional para crianças até 5 anos de idade"
+      description: "Cortesia",
+      detail: "Crianças até 5 anos têm cortesia em todos os nossos passeios"
     },
     {
       icon: Bus,

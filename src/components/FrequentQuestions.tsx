@@ -17,7 +17,7 @@ const FrequentQuestions = () => {
     },
     {
       question: "Crianças pagam?",
-      answer: "Crianças até 5 anos não pagam! Para crianças acima dessa idade, consulte valores específicos através do nosso WhatsApp (81) 99748-4915."
+      answer: "Crianças até 5 anos têm cortesia! Para crianças acima dessa idade, consulte valores específicos através do nosso WhatsApp (81) 99748-4915."
     },
     {
       question: "As fotos estão incluídas?",
