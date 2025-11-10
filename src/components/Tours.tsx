@@ -203,7 +203,7 @@ const Tours = () => {
         {/* Mobile: Vertical scroll */}
         <div className="md:hidden flex flex-col gap-6">
           {tours.map((tour, index) => (
-            <TourCard key={index} {...tour} onReserveClick={() => handleReserve(tour.title)} />
+            <TourCard key={index} {...tour} onReserveClick={() => handleReserve(tour.title)} simplified />
           ))}
         </div>
 
@@ -224,7 +224,7 @@ const Tours = () => {
             <CarouselContent>
               {tours.map((tour, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <TourCard {...tour} onReserveClick={() => handleReserve(tour.title)} />
+                  <TourCard {...tour} onReserveClick={() => handleReserve(tour.title)} simplified />
                 </CarouselItem>
               ))}
             </CarouselContent>

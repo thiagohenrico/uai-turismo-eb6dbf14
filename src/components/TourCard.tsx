@@ -14,9 +14,10 @@ interface TourCardProps {
   note?: string;
   onReserveClick?: () => void;
   detailsLink?: string;
+  simplified?: boolean;
 }
 
-const TourCard = ({ title, image, description, duration, itinerary, itineraryItems, includes, note, onReserveClick, detailsLink }: TourCardProps) => {
+const TourCard = ({ title, image, description, duration, itinerary, itineraryItems, includes, note, onReserveClick, detailsLink, simplified = false }: TourCardProps) => {
   return (
     <Card className="overflow-hidden bg-card border-border hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-64 overflow-hidden">
@@ -32,7 +33,7 @@ const TourCard = ({ title, image, description, duration, itinerary, itineraryIte
           <span>{duration}</span>
         </div>
 
-        {itinerary && itineraryItems && (
+        {!simplified && itinerary && itineraryItems && (
           <div className="space-y-2">
             <h4 className="font-semibold text-primary">{itinerary}</h4>
             <ul className="space-y-1 text-sm">
@@ -46,18 +47,20 @@ const TourCard = ({ title, image, description, duration, itinerary, itineraryIte
           </div>
         )}
 
-        <div className="space-y-2">
-          <h4 className="font-semibold text-primary">INCLUSO:</h4>
-          <ul className="space-y-2">
-            {includes.map((item, index) => (
-              <li key={index} className="flex items-start gap-2 text-sm">
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {!simplified && (
+          <div className="space-y-2">
+            <h4 className="font-semibold text-primary">INCLUSO:</h4>
+            <ul className="space-y-2">
+              {includes.map((item, index) => (
+                <li key={index} className="flex items-start gap-2 text-sm">
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
-        {note && (
+        {!simplified && note && (
           <p className="text-xs text-muted-foreground italic">{note}</p>
         )}
 
