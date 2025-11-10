@@ -134,8 +134,9 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               playsInline
               preload="metadata"
               poster=""
+              key={Date.now()}
             >
-              <source src={`${heroVideo}#t=5`} type="video/mp4" />
+              <source src={`${heroVideo}?v=${Date.now()}`} type="video/mp4" />
               Seu navegador não suporta a reprodução de vídeos.
             </video>
           </div>
