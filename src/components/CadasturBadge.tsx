@@ -1,6 +1,7 @@
 import { Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import cadasturCertificate from "@/assets/cadastur-certificate.jpg";
 
 const CadasturBadge = () => {
   return (
@@ -27,6 +28,13 @@ const CadasturBadge = () => {
               Conheça Nossa Empresa
             </Button>
           </Link>
+          <div className="mt-8 max-w-2xl mx-auto">
+            <img 
+              src={cadasturCertificate} 
+              alt="Certificado CADASTUR - Uai Turismo" 
+              className="w-full h-auto rounded-lg shadow-lg border border-border"
+            />
+          </div>
         </div>
       </div>
     </section>
