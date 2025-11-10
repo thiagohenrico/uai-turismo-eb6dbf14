@@ -23,7 +23,7 @@ const HeroCollage = () => {
         {/* Title */}
         <div className="relative z-10 pb-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white tracking-wider px-4">
-            Momentos que ficam para sempre
+            Uai Turismo - O Ponto de partida para momentos Inesquecíveis
           </h1>
         </div>
 
@@ -103,7 +103,7 @@ const HeroCollage = () => {
         </div>
 
         {/* CTA Buttons */}
-        <div className="relative z-10 text-center pb-8">
+        <div className="relative z-10 text-center pb-12">
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
             <Button 
               onClick={() => setIsBookingOpen(true)}
@@ -118,20 +118,6 @@ const HeroCollage = () => {
             >
               VER PASSEIOS
             </Button>
-          </div>
-        </div>
-
-        {/* Instagram Video */}
-        <div className="relative z-10 flex justify-center pb-12 px-4">
-          <div className="w-full max-w-md">
-            <iframe
-              src="https://www.instagram.com/reel/DOn2efpkZ6V/embed"
-              className="w-full h-[600px] rounded-lg shadow-2xl"
-              frameBorder="0"
-              scrolling="no"
-              allowTransparency={true}
-              allow="encrypted-media"
-            />
           </div>
         </div>
 
