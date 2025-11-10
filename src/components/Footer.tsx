@@ -84,12 +84,6 @@ const Footer = () => {
 
         <div className="border-t border-border pt-8">
           <div className="text-center space-y-3">
-            <p className="text-sm text-muted-foreground">
-              Certificação Cadastur - Cadastro de Prestadores de Serviços Turísticos
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Empresa cadastrada no Ministério do Turismo
-            </p>
             <div className="flex items-center justify-center gap-4 text-sm">
               <a href="/politica-privacidade" className="text-muted-foreground hover:text-primary transition-colors underline">
                 Política de Privacidade
