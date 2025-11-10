@@ -27,6 +27,16 @@ import client17 from "@/assets/client-17.jpg";
 import client18 from "@/assets/client-18.jpg";
 import client19 from "@/assets/client-19.jpg";
 import client20 from "@/assets/client-20.jpg";
+import client21 from "@/assets/client-21.jpg";
+import client22 from "@/assets/client-22.jpg";
+import client23 from "@/assets/client-23.jpg";
+import client24 from "@/assets/client-24.jpg";
+import client25 from "@/assets/client-25.jpg";
+import client26 from "@/assets/client-26.jpg";
+import client27 from "@/assets/client-27.jpg";
+import client28 from "@/assets/client-28.jpg";
+import client29 from "@/assets/client-29.jpg";
+import client30 from "@/assets/client-30.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -50,6 +60,16 @@ const ClientGallery = () => {
     { src: client18, alt: "Cliente relaxando na boia de melancia" },
     { src: client19, alt: "Família com criança em Carneiros" },
     { src: client20, alt: "Grupo no buggy amarelo" },
+    { src: client21, alt: "Família com criança na praia" },
+    { src: client22, alt: "Cliente no letreiro de Olinda" },
+    { src: client23, alt: "Casal sob os guarda-sóis coloridos" },
+    { src: client24, alt: "Cliente nas ruas coloridas de Olinda" },
+    { src: client25, alt: "Amigas na piscina" },
+    { src: client26, alt: "Grupo de amigos em Recife" },
+    { src: client27, alt: "Grupo de amigas no buggy" },
+    { src: client28, alt: "Cliente com chapéu em Maragogi" },
+    { src: client29, alt: "Grupo com peixes nas águas cristalinas" },
+    { src: client30, alt: "Grupo feliz em Maragogi" },
   ];
 
   return (
