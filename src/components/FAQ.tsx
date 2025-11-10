@@ -4,18 +4,6 @@ import { Card } from "@/components/ui/card";
 const FAQ = () => {
   const faqs = [
     {
-      icon: Baby,
-      title: "Crianças até 5 anos",
-      description: "Cortesia",
-      detail: "Crianças até 5 anos têm cortesia em todos os nossos passeios"
-    },
-    {
-      icon: Bus,
-      title: "Transporte Incluso",
-      description: "Já incluso no pacote",
-      detail: "Buscamos e deixamos você no local de hospedagem em veículo confortável"
-    },
-    {
       icon: Camera,
       title: "Fotos de Cortesia",
       description: "Cortesia",
@@ -26,6 +14,18 @@ const FAQ = () => {
       title: "Reserva Antecipada",
       description: "30% do valor total",
       detail: "Garanta sua vaga com apenas 30% de entrada, o restante paga no dia"
+    },
+    {
+      icon: Bus,
+      title: "Transporte Incluso",
+      description: "Já incluso no pacote",
+      detail: "Buscamos e deixamos você no local de hospedagem em veículo confortável"
+    },
+    {
+      icon: Baby,
+      title: "Crianças até 5 anos",
+      description: "Cortesia",
+      detail: "Crianças até 5 anos têm cortesia em todos os nossos passeios"
     },
     {
       icon: CreditCard,
