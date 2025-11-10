@@ -7,16 +7,29 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import client1 from "@/assets/client-1.jpg";
+import client2 from "@/assets/client-2.jpg";
+import client3 from "@/assets/client-3.jpg";
+import client4 from "@/assets/client-4.jpg";
+import client5 from "@/assets/client-5.jpg";
+import client6 from "@/assets/client-6.jpg";
+import client7 from "@/assets/client-7.jpg";
+import client8 from "@/assets/client-8.jpg";
+import client9 from "@/assets/client-9.jpg";
+import client10 from "@/assets/client-10.jpg";
 
 const ClientGallery = () => {
-  // Placeholder images - replace with actual client photos
   const clientPhotos = [
-    { src: "/api/placeholder/800/600", alt: "Cliente feliz na praia" },
-    { src: "/api/placeholder/800/600", alt: "Família aproveitando o passeio" },
-    { src: "/api/placeholder/800/600", alt: "Grupo em Maragogi" },
-    { src: "/api/placeholder/800/600", alt: "Casal na Praia dos Carneiros" },
-    { src: "/api/placeholder/800/600", alt: "Aventura de buggy" },
-    { src: "/api/placeholder/800/600", alt: "Piscinas naturais" },
+    { src: client1, alt: "Cliente feliz em passeio com cobra" },
+    { src: client2, alt: "Cliente curtindo nas piscinas naturais" },
+    { src: client3, alt: "Casal apaixonado em Porto de Galinhas" },
+    { src: client4, alt: "Amigos nas águas cristalinas de Maragogi" },
+    { src: client5, alt: "Casal com arara em passeio" },
+    { src: client6, alt: "Cliente relaxando no barco" },
+    { src: client7, alt: "Cliente feliz na praia" },
+    { src: client8, alt: "Grupo comemorando em Maragogi" },
+    { src: client9, alt: "Família curtindo o dia de praia" },
+    { src: client10, alt: "Casal em aventura radical" },
   ];
 
   return (
