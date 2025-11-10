@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import PoliticaPublicidade from "./pages/PoliticaPublicidade";
 import SobreNos from "./pages/SobreNos";
+import PerguntasFrequentes from "./pages/PerguntasFrequentes";
 import PraiaCarneiros from "./pages/passeios/PraiaCarneiros";
 import SaoMiguel from "./pages/passeios/SaoMiguel";
 import MaragogiBarraGrande from "./pages/passeios/MaragogiBarraGrande";
@@ -30,6 +31,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sobre-nos" element={<SobreNos />} />
+          <Route path="/perguntas-frequentes" element={<PerguntasFrequentes />} />
           <Route path="/passeios/praia-carneiros" element={<PraiaCarneiros />} />
           <Route path="/passeios/sao-miguel" element={<SaoMiguel />} />
           <Route path="/passeios/maragogi-barra-grande" element={<MaragogiBarraGrande />} />

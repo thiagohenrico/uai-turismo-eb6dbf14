@@ -48,6 +48,9 @@ const Header = ({ onReserveClick }: HeaderProps) => {
             <button onClick={() => scrollToSection("galeria")} className="text-lg text-foreground hover:text-primary transition-colors">
               Galeria
             </button>
+            <Link to="/perguntas-frequentes" className="text-lg text-foreground hover:text-primary transition-colors">
+              Perguntas Frequentes
+            </Link>
             <Link to="/sobre-nos" className="text-lg text-foreground hover:text-primary transition-colors">
               Sobre nós
             </Link>
@@ -74,6 +77,9 @@ const Header = ({ onReserveClick }: HeaderProps) => {
             <button onClick={() => scrollToSection("galeria")} className="text-lg text-foreground hover:text-primary transition-colors text-left">
               Galeria
             </button>
+            <Link to="/perguntas-frequentes" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
+              Perguntas Frequentes
+            </Link>
             <Link to="/sobre-nos" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
               Sobre nós
             </Link>
