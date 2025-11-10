@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import BookingDialog from "./BookingDialog";
 
 // Import client gallery images
 import client2 from "@/assets/client-2.jpg";
@@ -10,8 +8,11 @@ import client15 from "@/assets/client-15.jpg";
 import client30 from "@/assets/client-30.jpg";
 import heroVideo from "@/assets/hero-video.mp4";
 
-const HeroCollage = () => {
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
+interface HeroCollageProps {
+  onReserveClick?: () => void;
+}
+
+const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
 
   const scrollToTours = () => {
     const element = document.getElementById("passeios");
@@ -109,15 +110,15 @@ const HeroCollage = () => {
         <div className="relative z-10 text-center pb-12">
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
             <Button 
-              onClick={() => setIsBookingOpen(true)}
-              className="bg-gradient-to-r from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white text-lg px-10 py-6 rounded-full shadow-2xl hover:shadow-green-500/50 transition-all transform hover:scale-105 font-bold"
+              onClick={onReserveClick}
+              className="bg-gradient-to-r from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white text-base md:text-lg px-8 md:px-10 py-5 md:py-6 rounded-full shadow-2xl hover:shadow-green-500/50 transition-all transform hover:scale-105 font-bold w-[90%] sm:w-auto"
             >
               RESERVE JÁ
             </Button>
             <Button 
               onClick={scrollToTours}
               variant="outline"
-              className="bg-white/10 border-2 border-white text-white text-lg px-10 py-6 rounded-full hover:bg-white hover:text-deep-navy transition-all transform hover:scale-105 font-bold backdrop-blur-sm"
+              className="bg-white/10 border-2 border-white text-white text-base md:text-lg px-8 md:px-10 py-5 md:py-6 rounded-full hover:bg-white hover:text-deep-navy transition-all transform hover:scale-105 font-bold backdrop-blur-sm w-[90%] sm:w-auto"
             >
               VER PASSEIOS
             </Button>
@@ -147,8 +148,6 @@ const HeroCollage = () => {
           </svg>
         </div>
       </section>
-
-      <BookingDialog isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
     </>
   );
 };

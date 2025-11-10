@@ -4,7 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import uaiLogo from "@/assets/uai-logo.png";
 
-const Header = () => {
+interface HeaderProps {
+  onReserveClick?: () => void;
+}
+
+const Header = ({ onReserveClick }: HeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -47,7 +51,7 @@ const Header = () => {
             <Link to="/sobre-nos" className="font-elegant text-2xl text-foreground hover:text-primary transition-colors">
               Sobre nós
             </Link>
-            <Button onClick={() => scrollToSection("orcamento")} size="lg" className="bg-primary hover:bg-primary/90">
+            <Button onClick={onReserveClick} size="lg" className="bg-primary hover:bg-primary/90">
               RESERVE JÁ
             </Button>
           </div>
@@ -73,7 +77,7 @@ const Header = () => {
             <Link to="/sobre-nos" className="font-elegant text-xl text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
               Sobre nós
             </Link>
-            <Button onClick={() => scrollToSection("orcamento")} size="lg" className="w-full bg-primary hover:bg-primary/90">
+            <Button onClick={() => { onReserveClick?.(); setIsOpen(false); }} size="lg" className="w-full bg-primary hover:bg-primary/90">
               RESERVE JÁ
             </Button>
           </div>

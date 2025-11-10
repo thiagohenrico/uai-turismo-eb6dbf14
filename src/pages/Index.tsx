@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import HeroCollage from "@/components/HeroCollage";
 import CadasturBadge from "@/components/CadasturBadge";
@@ -8,13 +9,16 @@ import Reviews from "@/components/Reviews";
 import ClientGallery from "@/components/ClientGallery";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import BookingDialog from "@/components/BookingDialog";
 
 const Index = () => {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+
   return (
     <div className="min-h-screen">
-      <Header />
+      <Header onReserveClick={() => setIsBookingOpen(true)} />
       <main>
-        <HeroCollage />
+        <HeroCollage onReserveClick={() => setIsBookingOpen(true)} />
         <Tours />
         <CadasturBadge />
         <ClientGallery />
@@ -23,7 +27,8 @@ const Index = () => {
         <FrequentQuestions />
       </main>
       <Footer />
-      <WhatsAppButton />
+      <WhatsAppButton onClick={() => setIsBookingOpen(true)} />
+      <BookingDialog isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
     </div>
   );
 };
