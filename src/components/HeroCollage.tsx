@@ -1,18 +1,73 @@
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
-// Import client gallery images
+// Import all client gallery images
+import client1 from "@/assets/client-1.jpg";
 import client2 from "@/assets/client-2.jpg";
+import client3 from "@/assets/client-3.jpg";
 import client4 from "@/assets/client-4.jpg";
+import client5 from "@/assets/client-5.jpg";
+import client6 from "@/assets/client-6.jpg";
+import client7 from "@/assets/client-7.jpg";
 import client8 from "@/assets/client-8.jpg";
+import client9 from "@/assets/client-9.jpg";
+import client10 from "@/assets/client-10.jpg";
+import client11 from "@/assets/client-11.jpg";
+import client12 from "@/assets/client-12.jpg";
+import client13 from "@/assets/client-13.jpg";
+import client14 from "@/assets/client-14.jpg";
 import client15 from "@/assets/client-15.jpg";
+import client16 from "@/assets/client-16.jpg";
+import client17 from "@/assets/client-17.jpg";
+import client18 from "@/assets/client-18.jpg";
+import client19 from "@/assets/client-19.jpg";
+import client20 from "@/assets/client-20.jpg";
+import client21 from "@/assets/client-21.jpg";
+import client22 from "@/assets/client-22.jpg";
+import client23 from "@/assets/client-23.jpg";
+import client24 from "@/assets/client-24.jpg";
+import client25 from "@/assets/client-25.jpg";
+import client26 from "@/assets/client-26.jpg";
+import client27 from "@/assets/client-27.jpg";
+import client28 from "@/assets/client-28.jpg";
+import client29 from "@/assets/client-29.jpg";
 import client30 from "@/assets/client-30.jpg";
+import client31 from "@/assets/client-31.jpg";
+import client32 from "@/assets/client-32.jpg";
+import client33 from "@/assets/client-33.jpg";
+import client34 from "@/assets/client-34.jpg";
 import heroVideo from "@/assets/hero-video.mp4";
+
+const allClientPhotos = [
+  client1, client2, client3, client4, client5, client6, client7, client8, client9, client10,
+  client11, client12, client13, client14, client15, client16, client17, client18, client19, client20,
+  client21, client22, client23, client24, client25, client26, client27, client28, client29, client30,
+  client31, client32, client33, client34
+];
 
 interface HeroCollageProps {
   onReserveClick?: () => void;
 }
 
 const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
+  const [currentPhotos, setCurrentPhotos] = useState<string[]>([]);
+
+  useEffect(() => {
+    // Initialize with random photos
+    const getRandomPhotos = () => {
+      const shuffled = [...allClientPhotos].sort(() => Math.random() - 0.5);
+      return shuffled.slice(0, 6);
+    };
+    
+    setCurrentPhotos(getRandomPhotos());
+
+    // Change photos every 5 seconds
+    const interval = setInterval(() => {
+      setCurrentPhotos(getRandomPhotos());
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const scrollToTours = () => {
     const element = document.getElementById("passeios");
@@ -33,73 +88,87 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
 
         {/* Photo collage - Polaroid style */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 pb-20">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6">
-            {/* Photo 1 - Top Left */}
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-6">
+            {/* Photo 1 */}
             <div 
-              className="relative transform -rotate-[18deg] hover:rotate-0 transition-all duration-300 hover:scale-105 hover:z-20"
+              className="relative transform -rotate-[18deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
               style={{ marginTop: '60px' }}
             >
               <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
                 <img 
-                  src={client2} 
+                  src={currentPhotos[0] || client2} 
                   alt="Cliente curtindo nas piscinas naturais" 
-                  className="w-full aspect-[3/4] object-cover"
+                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
                 />
               </div>
             </div>
 
-            {/* Photo 2 - Center Left */}
+            {/* Photo 2 */}
             <div 
-              className="relative transform rotate-[15deg] hover:rotate-0 transition-all duration-300 hover:scale-105 hover:z-20"
+              className="relative transform rotate-[15deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
               style={{ marginTop: '-30px' }}
             >
               <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
                 <img 
-                  src={client4} 
+                  src={currentPhotos[1] || client4} 
                   alt="Amigos nas águas cristalinas de Maragogi" 
-                  className="w-full aspect-[3/4] object-cover"
+                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
                 />
               </div>
             </div>
 
-            {/* Photo 3 - Center */}
+            {/* Photo 3 */}
             <div 
-              className="relative transform -rotate-[12deg] hover:rotate-0 transition-all duration-300 hover:scale-105 hover:z-20"
+              className="relative transform -rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
               style={{ marginTop: '80px' }}
             >
               <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
                 <img 
-                  src={client8} 
+                  src={currentPhotos[2] || client8} 
                   alt="Grupo comemorando em Maragogi" 
-                  className="w-full aspect-[3/4] object-cover"
+                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
                 />
               </div>
             </div>
 
-            {/* Photo 4 - Center Right */}
+            {/* Photo 4 */}
             <div 
-              className="relative transform rotate-[20deg] hover:rotate-0 transition-all duration-300 hover:scale-105 hover:z-20"
+              className="relative transform rotate-[20deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
               style={{ marginTop: '20px' }}
             >
               <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
                 <img 
-                  src={client15} 
+                  src={currentPhotos[3] || client15} 
                   alt="Grande grupo em Maragogi" 
-                  className="w-full aspect-[3/4] object-cover"
+                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
                 />
               </div>
             </div>
 
-            {/* Photo 5 - Top Right */}
+            {/* Photo 5 */}
             <div 
-              className="relative transform -rotate-[16deg] hover:rotate-0 transition-all duration-300 hover:scale-105 hover:z-20"
+              className="relative transform -rotate-[16deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
               style={{ marginTop: '-15px' }}
             >
               <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
                 <img 
-                  src={client30} 
+                  src={currentPhotos[4] || client30} 
                   alt="Grupo feliz em Maragogi" 
-                  className="w-full aspect-[3/4] object-cover"
+                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+                />
+              </div>
+            </div>
+
+            {/* Photo 6 - New */}
+            <div 
+              className="relative transform rotate-[10deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
+              style={{ marginTop: '50px' }}
+            >
+              <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
+                <img 
+                  src={currentPhotos[5] || client1} 
+                  alt="Clientes aproveitando o passeio" 
+                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
                 />
               </div>
             </div>
