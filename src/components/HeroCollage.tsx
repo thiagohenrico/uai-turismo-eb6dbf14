@@ -121,6 +121,20 @@ const HeroCollage = () => {
           </div>
         </div>
 
+        {/* Instagram Video */}
+        <div className="relative z-10 max-w-md mx-auto px-4 pb-12">
+          <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
+            <iframe
+              src="https://www.instagram.com/reel/DOn2efpkZ6V/embed"
+              className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-2xl"
+              frameBorder="0"
+              scrolling="no"
+              allowTransparency
+              allow="encrypted-media"
+            />
+          </div>
+        </div>
+
         {/* Decorative wave at bottom */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
