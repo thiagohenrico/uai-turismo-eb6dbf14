@@ -28,10 +28,12 @@ const TourCard = ({ title, image, description, duration, itinerary, itineraryIte
         <h3 className="text-2xl font-bold">{title}</h3>
         <p className="text-muted-foreground">{description}</p>
         
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-          <Clock className="w-4 h-4 text-primary" />
-          <span>{duration}</span>
-        </div>
+        {!simplified && (
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <Clock className="w-4 h-4 text-primary" />
+            <span>{duration}</span>
+          </div>
+        )}
 
         {!simplified && itinerary && itineraryItems && (
           <div className="space-y-2">
