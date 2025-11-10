@@ -130,8 +130,9 @@ const HeroCollage = () => {
               controls
               playsInline
               preload="metadata"
+              poster=""
             >
-              <source src={`${heroVideo}#t=1`} type="video/mp4" />
+              <source src={`${heroVideo}#t=5`} type="video/mp4" />
               Seu navegador não suporta a reprodução de vídeos.
             </video>
           </div>

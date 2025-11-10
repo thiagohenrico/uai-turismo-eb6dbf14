@@ -19,25 +19,25 @@ All colors MUST be HSL.
     --popover-foreground: 0 0% 100%;
 
     /* Orange/Yellow from logo - primary CTA */
-    --primary: 38 92% 50%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 45 93% 58%;
+    --primary-foreground: 0 0% 0%;
 
     /* Vibrant orange for accents */
-    --secondary: 25 95% 53%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 35 91% 55%;
+    --secondary-foreground: 0 0% 0%;
 
     --muted: 220 17% 25%;
     --muted-foreground: 220 9% 65%;
 
-    --accent: 38 92% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 45 93% 58%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 17% 25%;
     --input: 220 17% 25%;
-    --ring: 38 92% 50%;
+    --ring: 45 93% 58%;
 
     --radius: 0.75rem;
 
