@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Dark theme with warm tones */
+    /* Gradient background with vibrant blue */
     --background: 220 26% 14%;
     --foreground: 0 0% 100%;
 
@@ -43,6 +43,7 @@ All colors MUST be HSL.
 
     /* Custom tourism colors - warm palette */
     --ocean-blue: 199 89% 48%;
+    --vibrant-blue: 210 100% 50%;
     --warm-orange: 25 95% 53%;
     --golden-yellow: 38 92% 50%;
     --sand-beige: 43 51% 80%;
@@ -57,6 +58,8 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: linear-gradient(180deg, hsl(var(--vibrant-blue)) 0%, hsl(var(--deep-navy)) 100%);
+    background-attachment: fixed;
   }
 }
