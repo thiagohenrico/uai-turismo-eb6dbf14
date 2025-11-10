@@ -18,28 +18,12 @@ const InstagramFeed = () => {
           className="max-w-7xl mx-auto p-5 bg-card rounded-3xl"
         >
           <iframe 
-            src="https://cdn.commoninja.com/widgets/instagram-feed/iframe/XXXXXXXX"
+            src="https://cdn.commoninja.com/widgets/instagram-feed/iframe/ed5f6c60-6e99-4f31-88e7-898bf92f717f"
             className="w-full h-[700px] md:h-[700px] sm:h-[550px] border-none overflow-hidden rounded-2xl shadow-lg" 
             scrolling="no" 
             allowFullScreen
             title="UAI Turismo Instagram Feed"
           />
-          
-          {/* Placeholder para quando o feed não estiver configurado */}
-          <div className="text-center py-12">
-            <p className="text-muted-foreground mb-4">
-              📸 Configure seu feed do Instagram seguindo os passos:
-            </p>
-            <ol className="text-left max-w-2xl mx-auto space-y-2 text-muted-foreground">
-              <li>1️⃣ Acesse: <a href="https://www.commoninja.com/widgets/instagram-feed" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">CommonNinja Instagram Feed</a></li>
-              <li>2️⃣ Clique em "Create a Widget"</li>
-              <li>3️⃣ Conecte sua conta @uai_turismo</li>
-              <li>4️⃣ Escolha o layout (Grid, Masonry ou Carousel)</li>
-              <li>5️⃣ Ative "Include videos and Reels"</li>
-              <li>6️⃣ Copie o código iframe gerado</li>
-              <li>7️⃣ Substitua "XXXXXXXX" no código com seu ID do widget</li>
-            </ol>
-          </div>
         </div>
 
         {/* CTA para seguir no Instagram */}
