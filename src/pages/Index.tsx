@@ -20,7 +20,7 @@ const Index = () => {
       <Header onReserveClick={() => setIsBookingOpen(true)} />
       <main>
         <HeroCollage onReserveClick={() => setIsBookingOpen(true)} />
-        <div className="bg-[hsl(210,60%,12%)]">
+        <div className="bg-[hsl(210,40%,8%)]">
           <Tours />
           <CadasturBadge />
           <ClientGallery />
