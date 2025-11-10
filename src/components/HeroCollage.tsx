@@ -20,7 +20,7 @@ const HeroCollage = () => {
 
   return (
     <>
-      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-24">
+      <section className="relative min-h-screen bg-gradient-to-b from-[#2a1810] via-[#3d2416] to-background overflow-hidden pt-24">
         {/* Title */}
         <div className="relative z-10 pb-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wider px-4">
