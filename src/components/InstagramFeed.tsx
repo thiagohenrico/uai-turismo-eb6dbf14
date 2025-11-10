@@ -18,7 +18,7 @@ const InstagramFeed = () => {
           className="max-w-7xl mx-auto p-5 bg-card rounded-3xl"
         >
           <iframe 
-            src="https://cdn.commoninja.com/widgets/instagram-feed/iframe/ed5f6c60-6e99-4f31-88e7-898bf92f717f"
+            src="https://widgets.commoninja.com/iframe/ed5f6c60-6e99-4f31-88e7-898bf92f717f"
             className="w-full h-[700px] md:h-[700px] sm:h-[550px] border-none overflow-hidden rounded-2xl shadow-lg" 
             scrolling="no" 
             allowFullScreen
