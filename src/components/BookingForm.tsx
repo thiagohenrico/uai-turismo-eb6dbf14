@@ -6,6 +6,17 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 const BookingForm = () => {
+  const availableTours = [
+    "Praia dos Carneiros",
+    "São Miguel dos Milagres",
+    "Maragogi - Barra Grande",
+    "Maragogi - Ponta de Mangue",
+    "Cabo de Santo Agostinho (Buggy)",
+    "Ilha de Santo Aleixo",
+    "City Tour Recife e Olinda",
+    "Porto de Galinhas (Buggy)"
+  ];
+
   const [formData, setFormData] = useState({
     checkIn: "",
     checkOut: "",
@@ -19,6 +30,15 @@ const BookingForm = () => {
     accommodation: "",
     tours: [] as string[],
   });
+
+  const handleTourToggle = (tour: string) => {
+    setFormData(prev => ({
+      ...prev,
+      tours: prev.tours.includes(tour)
+        ? prev.tours.filter(t => t !== tour)
+        : [...prev.tours, tour]
+    }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -184,6 +204,28 @@ const BookingForm = () => {
                   required
                   className="bg-background"
                 />
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <Label className="text-base font-semibold">
+                Selecione os passeios desejados:
+              </Label>
+              <div className="grid md:grid-cols-2 gap-3">
+                {availableTours.map((tour) => (
+                  <div key={tour} className="flex items-start gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                    <input
+                      type="checkbox"
+                      id={tour}
+                      checked={formData.tours.includes(tour)}
+                      onChange={() => handleTourToggle(tour)}
+                      className="w-4 h-4 rounded border-input mt-0.5"
+                    />
+                    <Label htmlFor={tour} className="cursor-pointer text-sm leading-tight">
+                      {tour}
+                    </Label>
+                  </div>
+                ))}
               </div>
             </div>
 
