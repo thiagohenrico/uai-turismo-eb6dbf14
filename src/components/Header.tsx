@@ -32,7 +32,7 @@ const Header = () => {
               Passeios
             </button>
             <button onClick={() => scrollToSection("galeria")} className="font-elegant text-2xl text-foreground hover:text-primary transition-colors">
-              Milagres
+              Galeria
             </button>
             <button onClick={() => scrollToSection("avaliacoes")} className="font-elegant text-2xl text-foreground hover:text-primary transition-colors">
               Sobre nós
@@ -58,7 +58,7 @@ const Header = () => {
               Passeios
             </button>
             <button onClick={() => scrollToSection("galeria")} className="font-elegant text-xl text-foreground hover:text-primary transition-colors text-left">
-              Milagres
+              Galeria
             </button>
             <button onClick={() => scrollToSection("avaliacoes")} className="font-elegant text-xl text-foreground hover:text-primary transition-colors text-left">
               Sobre nós
