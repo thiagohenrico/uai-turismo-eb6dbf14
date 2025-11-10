@@ -132,7 +132,6 @@ const HeroCollage = () => {
               VER PASSEIOS
             </Button>
           </div>
-          <p className="text-white mt-6 text-sm">milagrestransparente.com</p>
         </div>
 
         {/* Decorative wave at bottom */}
