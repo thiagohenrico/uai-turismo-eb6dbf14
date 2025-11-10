@@ -192,31 +192,38 @@ const Tours = () => {
           Explore os lugares mais incríveis do litoral nordestino com conforto e segurança
         </p>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 5000,
-            }),
-          ]}
-          className="w-full max-w-7xl mx-auto"
-        >
-          <CarouselContent>
-            {tours.map((tour, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <TourCard {...tour} onReserveClick={() => handleReserve(tour.title)} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
-          {/* Mobile navigation arrows */}
-          <CarouselPrevious className="md:hidden left-2" />
-          <CarouselNext className="md:hidden right-2" />
-        </Carousel>
+        {/* Mobile: Vertical scroll */}
+        <div className="md:hidden flex flex-col gap-6">
+          {tours.map((tour, index) => (
+            <TourCard key={index} {...tour} onReserveClick={() => handleReserve(tour.title)} />
+          ))}
+        </div>
+
+        {/* Desktop: Carousel */}
+        <div className="hidden md:block">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
+            className="w-full max-w-7xl mx-auto"
+          >
+            <CarouselContent>
+              {tours.map((tour, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <TourCard {...tour} onReserveClick={() => handleReserve(tour.title)} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="flex" />
+            <CarouselNext className="flex" />
+          </Carousel>
+        </div>
       </div>
       
       <BookingDialog 
