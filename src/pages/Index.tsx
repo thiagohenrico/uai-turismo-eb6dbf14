@@ -27,7 +27,7 @@ const Index = () => {
           <FAQ />
           <Reviews />
           <InstagramFeed />
-          <FrequentQuestions />
+          <FrequentQuestions onReserveClick={() => setIsBookingOpen(true)} />
         </div>
       </main>
       <Footer />
