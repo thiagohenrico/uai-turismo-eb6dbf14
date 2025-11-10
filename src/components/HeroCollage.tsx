@@ -2,15 +2,12 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import BookingDialog from "./BookingDialog";
 
-// Import tour images
-import buggyTour from "@/assets/buggy-tour.jpg";
-import praiaCarneiros from "@/assets/praia-carneiros.jpg";
-import maragogiBarraGrande from "@/assets/maragogi-barra-grande.jpg";
-import maragogiPontaMangue from "@/assets/maragogi-ponta-mangue.jpg";
-import saoMiguel from "@/assets/sao-miguel.jpg";
-import recifeOlinda from "@/assets/recife-olinda.jpg";
-import ilhaSantoAleixo from "@/assets/ilha-santo-aleixo.jpg";
-import caboSantoAgostinho from "@/assets/cabo-santo-agostinho.jpg";
+// Import client gallery images
+import client2 from "@/assets/client-2.jpg";
+import client4 from "@/assets/client-4.jpg";
+import client8 from "@/assets/client-8.jpg";
+import client15 from "@/assets/client-15.jpg";
+import client30 from "@/assets/client-30.jpg";
 
 const HeroCollage = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -32,7 +29,7 @@ const HeroCollage = () => {
 
         {/* Photo collage */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 pb-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4 items-center justify-center">
             {/* Photo 1 */}
             <div 
               className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-300 hover:scale-110 hover:z-20"
@@ -40,8 +37,8 @@ const HeroCollage = () => {
             >
               <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
                 <img 
-                  src={buggyTour} 
-                  alt="Buggy Tour" 
+                  src={client2} 
+                  alt="Cliente curtindo nas piscinas naturais" 
                   className="w-full h-40 md:h-56 object-cover rounded"
                 />
               </div>
@@ -54,8 +51,8 @@ const HeroCollage = () => {
             >
               <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
                 <img 
-                  src={praiaCarneiros} 
-                  alt="Praia dos Carneiros" 
+                  src={client4} 
+                  alt="Amigos nas águas cristalinas de Maragogi" 
                   className="w-full h-44 md:h-64 object-cover rounded"
                 />
               </div>
@@ -68,8 +65,8 @@ const HeroCollage = () => {
             >
               <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
                 <img 
-                  src={maragogiBarraGrande} 
-                  alt="Maragogi Barra Grande" 
+                  src={client8} 
+                  alt="Grupo comemorando em Maragogi" 
                   className="w-full h-40 md:h-60 object-cover rounded"
                 />
               </div>
@@ -82,8 +79,8 @@ const HeroCollage = () => {
             >
               <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
                 <img 
-                  src={saoMiguel} 
-                  alt="São Miguel dos Milagres" 
+                  src={client15} 
+                  alt="Grande grupo em Maragogi" 
                   className="w-full h-42 md:h-58 object-cover rounded"
                 />
               </div>
@@ -96,51 +93,9 @@ const HeroCollage = () => {
             >
               <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
                 <img 
-                  src={maragogiPontaMangue} 
-                  alt="Maragogi Ponta Mangue" 
+                  src={client30} 
+                  alt="Grupo feliz em Maragogi" 
                   className="w-full h-40 md:h-56 object-cover rounded"
-                />
-              </div>
-            </div>
-
-            {/* Photo 6 */}
-            <div 
-              className="relative transform -rotate-4 hover:rotate-0 transition-transform duration-300 hover:scale-110 hover:z-20"
-              style={{ marginTop: '15px' }}
-            >
-              <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
-                <img 
-                  src={recifeOlinda} 
-                  alt="Recife e Olinda" 
-                  className="w-full h-44 md:h-62 object-cover rounded"
-                />
-              </div>
-            </div>
-
-            {/* Photo 7 */}
-            <div 
-              className="relative transform rotate-6 hover:rotate-0 transition-transform duration-300 hover:scale-110 hover:z-20"
-              style={{ marginTop: '-15px' }}
-            >
-              <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
-                <img 
-                  src={ilhaSantoAleixo} 
-                  alt="Ilha de Santo Aleixo" 
-                  className="w-full h-40 md:h-58 object-cover rounded"
-                />
-              </div>
-            </div>
-
-            {/* Photo 8 */}
-            <div 
-              className="relative transform -rotate-5 hover:rotate-0 transition-transform duration-300 hover:scale-110 hover:z-20"
-              style={{ marginTop: '25px' }}
-            >
-              <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
-                <img 
-                  src={caboSantoAgostinho} 
-                  alt="Cabo de Santo Agostinho" 
-                  className="w-full h-42 md:h-60 object-cover rounded"
                 />
               </div>
             </div>
