@@ -17,6 +17,16 @@ import client7 from "@/assets/client-7.jpg";
 import client8 from "@/assets/client-8.jpg";
 import client9 from "@/assets/client-9.jpg";
 import client10 from "@/assets/client-10.jpg";
+import client11 from "@/assets/client-11.jpg";
+import client12 from "@/assets/client-12.jpg";
+import client13 from "@/assets/client-13.jpg";
+import client14 from "@/assets/client-14.jpg";
+import client15 from "@/assets/client-15.jpg";
+import client16 from "@/assets/client-16.jpg";
+import client17 from "@/assets/client-17.jpg";
+import client18 from "@/assets/client-18.jpg";
+import client19 from "@/assets/client-19.jpg";
+import client20 from "@/assets/client-20.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -30,6 +40,16 @@ const ClientGallery = () => {
     { src: client8, alt: "Grupo comemorando em Maragogi" },
     { src: client9, alt: "Família curtindo o dia de praia" },
     { src: client10, alt: "Casal em aventura radical" },
+    { src: client11, alt: "Cliente com cachorrinho na praia" },
+    { src: client12, alt: "Grupo animado no passeio de buggy" },
+    { src: client13, alt: "Família com bebê nas piscinas naturais" },
+    { src: client14, alt: "Cliente aproveitando as águas cristalinas" },
+    { src: client15, alt: "Grande grupo em Maragogi" },
+    { src: client16, alt: "Grupo em frente à Capela de São Benedito" },
+    { src: client17, alt: "Casal no passeio de barco" },
+    { src: client18, alt: "Cliente relaxando na boia de melancia" },
+    { src: client19, alt: "Família com criança em Carneiros" },
+    { src: client20, alt: "Grupo no buggy amarelo" },
   ];
 
   return (
