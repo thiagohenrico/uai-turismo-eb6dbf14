@@ -1,7 +1,8 @@
 import buggyTour from "@/assets/buggy-tour.jpg";
-import maragogi from "@/assets/maragogi.jpg";
 import praiaCarneiros from "@/assets/praia-carneiros.jpg";
 import saoMiguel from "@/assets/sao-miguel.jpg";
+import maragogiBarraGrande from "@/assets/maragogi-barra-grande.jpg";
+import maragogiPontaMangue from "@/assets/maragogi-ponta-mangue.jpg";
 import recifeOlinda from "@/assets/recife-olinda.jpg";
 import ilhaSantoAleixo from "@/assets/ilha-santo-aleixo.jpg";
 import caboSantoAgostinho from "@/assets/cabo-santo-agostinho.jpg";
@@ -17,13 +18,14 @@ import Autoplay from "embla-carousel-autoplay";
 
 const MobilePhotoGallery = () => {
   const photos = [
-    { src: buggyTour, alt: "Passeio de Buggy" },
     { src: praiaCarneiros, alt: "Praia dos Carneiros" },
-    { src: maragogi, alt: "Maragogi" },
     { src: saoMiguel, alt: "São Miguel dos Milagres" },
-    { src: recifeOlinda, alt: "Recife e Olinda" },
-    { src: ilhaSantoAleixo, alt: "Ilha de Santo Aleixo" },
+    { src: maragogiBarraGrande, alt: "Maragogi - Barra Grande" },
+    { src: maragogiPontaMangue, alt: "Maragogi - Ponta de Mangue" },
     { src: caboSantoAgostinho, alt: "Cabo de Santo Agostinho" },
+    { src: ilhaSantoAleixo, alt: "Ilha de Santo Aleixo" },
+    { src: recifeOlinda, alt: "City Tour Recife e Olinda" },
+    { src: buggyTour, alt: "Porto de Galinhas - Buggy" },
   ];
 
   return (
@@ -42,8 +44,8 @@ const MobilePhotoGallery = () => {
           </h1>
         </div>
 
-        {/* Mobile Carousel */}
-        <div className="md:hidden mb-12">
+        {/* Carousel único para todas as resoluções */}
+        <div className="mb-12">
           <Carousel
             opts={{
               align: "center",
@@ -54,19 +56,29 @@ const MobilePhotoGallery = () => {
                 delay: 3000,
               }),
             ]}
-            className="w-full max-w-sm mx-auto"
+            className="w-full max-w-6xl mx-auto"
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-2 md:-ml-4">
               {photos.map((photo, index) => (
-                <CarouselItem key={index}>
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/4">
                   <div
-                    className="relative group cursor-pointer"
+                    className="relative group cursor-pointer h-full"
                     style={{
                       animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
+                      animationDelay: `${index * 0.2}s`
                     }}
                   >
                     <div 
-                      className="relative bg-white p-4 shadow-2xl transform transition-all duration-500 hover:scale-105 rotate-[-2deg] hover:rotate-0"
+                      className={`relative bg-white p-4 shadow-2xl transform transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-10 ${
+                        index === 0 ? "rotate-[-5deg]" : 
+                        index === 1 ? "rotate-[4deg]" : 
+                        index === 2 ? "rotate-[-3deg]" : 
+                        index === 3 ? "rotate-[5deg]" :
+                        index === 4 ? "rotate-[-4deg]" :
+                        index === 5 ? "rotate-[3deg]" :
+                        index === 6 ? "rotate-[-2deg]" :
+                        "rotate-[2deg]"
+                      }`}
                     >
                       <div className="aspect-[3/4] overflow-hidden rounded-sm">
                         <img
@@ -75,7 +87,7 @@ const MobilePhotoGallery = () => {
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
                       </div>
-                      <div className="text-center mt-3 font-script text-gray-700 text-base">
+                      <div className="text-center mt-3 font-script text-gray-700 text-sm md:text-base">
                         {photo.alt}
                       </div>
                     </div>
@@ -83,43 +95,9 @@ const MobilePhotoGallery = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-2" />
-            <CarouselNext className="right-2" />
+            <CarouselPrevious className="left-2 md:left-4" />
+            <CarouselNext className="right-2 md:right-4" />
           </Carousel>
-        </div>
-
-        {/* Desktop Grid */}
-        <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-12">
-          {photos.map((photo, index) => (
-            <div
-              key={index}
-              className="relative group cursor-pointer"
-              style={{
-                animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
-                animationDelay: `${index * 0.2}s`
-              }}
-            >
-              <div 
-                className={`relative bg-white p-4 shadow-2xl transform transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-10 ${
-                  index === 0 ? "rotate-[-5deg]" : 
-                  index === 1 ? "rotate-[4deg]" : 
-                  index === 2 ? "rotate-[-3deg]" : 
-                  "rotate-[5deg]"
-                }`}
-              >
-                <div className="aspect-[3/4] overflow-hidden rounded-sm">
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="text-center mt-3 font-script text-gray-700 text-base">
-                  {photo.alt}
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
 
         <div className="text-center space-y-6">

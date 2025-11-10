@@ -1,7 +1,8 @@
 import TourCard from "./TourCard";
 import praiaCarneiros from "@/assets/praia-carneiros.jpg";
 import saoMiguel from "@/assets/sao-miguel.jpg";
-import maragogi from "@/assets/maragogi.jpg";
+import maragogiBarraGrande from "@/assets/maragogi-barra-grande.jpg";
+import maragogiPontaMangue from "@/assets/maragogi-ponta-mangue.jpg";
 import buggyTour from "@/assets/buggy-tour.jpg";
 import recifeOlinda from "@/assets/recife-olinda.jpg";
 import ilhaSantoAleixo from "@/assets/ilha-santo-aleixo.jpg";
@@ -58,7 +59,7 @@ const Tours = () => {
     },
     {
       title: "Maragogi - Barra Grande",
-      image: maragogi,
+      image: maragogiBarraGrande,
       description: "O Caribe Brasileiro, onde o mar ganha tons de azul e verde, com piscinas naturais cheias de peixes coloridos para explorar e se apaixonar.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO LANCHA - 2 HORAS:",
@@ -77,7 +78,7 @@ const Tours = () => {
     },
     {
       title: "Maragogi - Ponta de Mangue",
-      image: maragogi,
+      image: maragogiPontaMangue,
       description: "Mar azul-turquesa, cenários paradisíacos, águas mornas e piscinas naturais que convidam a momentos únicos em contato com a natureza.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO LANCHA - 2 HORAS:",
