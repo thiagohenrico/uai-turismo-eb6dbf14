@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CadasturBadge from "@/components/CadasturBadge";
+import cadasturCertificate from "@/assets/cadastur-certificate.jpg";
 
 const SobreNos = () => {
   return (
@@ -132,23 +133,16 @@ const SobreNos = () => {
                   <div className="flex items-start gap-4">
                     <Building2 className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Razão Social</h3>
-                      <p className="text-muted-foreground">Uai Turismo LTDA</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <Building2 className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                    <div>
                       <h3 className="font-semibold text-foreground mb-1">CNPJ</h3>
                       <p className="text-muted-foreground">54.181.357/0001-42</p>
-                      <p className="text-sm text-muted-foreground mt-1">MARCOS VINICIUS SILVA SOUZA</p>
+                      <p className="text-sm text-muted-foreground mt-1">MARCOS VINICIUS SILVA SOUZA (MEI)</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <Shield className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">CADASTUR</h3>
-                      <p className="text-muted-foreground">Empresa Credenciada</p>
+                      <p className="text-muted-foreground">54.181.357/0001-42</p>
                     </div>
                   </div>
                 </div>
@@ -174,6 +168,18 @@ const SobreNos = () => {
                       <p className="text-muted-foreground">contato@uaitur.com</p>
                     </div>
                   </div>
+                </div>
+              </div>
+              
+              {/* Certificado Cadastur */}
+              <div className="mt-12">
+                <h3 className="text-xl font-semibold text-foreground mb-4 text-center">Certificado CADASTUR</h3>
+                <div className="flex justify-center">
+                  <img 
+                    src={cadasturCertificate} 
+                    alt="Certificado CADASTUR - Uai Turismo" 
+                    className="max-w-full h-auto rounded-lg shadow-lg border border-border"
+                  />
                 </div>
               </div>
             </div>

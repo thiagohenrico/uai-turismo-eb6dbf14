@@ -34,6 +34,8 @@ const BookingDialog = ({ isOpen, onClose, preSelectedTour }: BookingDialogProps)
     departureTime: "",
     needsTransfer: false,
     transferPeople: "",
+    transferArrivalTime: "",
+    transferDepartureTime: "",
     accommodation: "",
     tours: preSelectedTour ? [preSelectedTour] : [] as string[],
   });
@@ -59,7 +61,7 @@ const BookingDialog = ({ isOpen, onClose, preSelectedTour }: BookingDialogProps)
     message += `\n\n🏨 Hospedagem: ${formData.accommodation}\n🕐 Horário de chegada: ${formData.arrivalTime}\n🕐 Horário de saída: ${formData.departureTime}`;
 
     if (formData.needsTransfer) {
-      message += `\n🚗 Precisa de translado: Sim (${formData.transferPeople} pessoas)`;
+      message += `\n🚗 Precisa de translado: Sim (${formData.transferPeople} pessoas)\n🕐 Horário de chegada do voo: ${formData.transferArrivalTime}\n🕐 Horário de saída do voo: ${formData.transferDepartureTime}`;
     }
 
     if (formData.tours.length > 0) {
@@ -153,6 +155,56 @@ const BookingDialog = ({ isOpen, onClose, preSelectedTour }: BookingDialogProps)
               <div className="flex items-center gap-2">
                 <input
                   type="checkbox"
+                  id="needsTransfer"
+                  checked={formData.needsTransfer}
+                  onChange={(e) => setFormData({ ...formData, needsTransfer: e.target.checked })}
+                  className="w-4 h-4 rounded border-input"
+                />
+                <Label htmlFor="needsTransfer" className="cursor-pointer">
+                  Precisa de translado?
+                </Label>
+              </div>
+              {formData.needsTransfer && (
+                <div className="space-y-4 pl-6 border-l-2 border-primary/30">
+                  <Input
+                    id="transferPeople"
+                    type="number"
+                    min="1"
+                    value={formData.transferPeople}
+                    onChange={(e) => setFormData({ ...formData, transferPeople: e.target.value })}
+                    placeholder="Quantas pessoas para o translado?"
+                    className="bg-background"
+                  />
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="transferArrivalTime">Horário de Chegada do Voo</Label>
+                      <Input
+                        id="transferArrivalTime"
+                        type="time"
+                        value={formData.transferArrivalTime}
+                        onChange={(e) => setFormData({ ...formData, transferArrivalTime: e.target.value })}
+                        className="bg-background"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="transferDepartureTime">Horário de Saída do Voo</Label>
+                      <Input
+                        id="transferDepartureTime"
+                        type="time"
+                        value={formData.transferDepartureTime}
+                        onChange={(e) => setFormData({ ...formData, transferDepartureTime: e.target.value })}
+                        className="bg-background"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <input
+                  type="checkbox"
                   id="hasChildren"
                   checked={formData.hasChildren}
                   onChange={(e) => setFormData({ ...formData, hasChildren: e.target.checked })}
@@ -222,31 +274,6 @@ const BookingDialog = ({ isOpen, onClose, preSelectedTour }: BookingDialogProps)
               </div>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  id="needsTransfer"
-                  checked={formData.needsTransfer}
-                  onChange={(e) => setFormData({ ...formData, needsTransfer: e.target.checked })}
-                  className="w-4 h-4 rounded border-input"
-                />
-                <Label htmlFor="needsTransfer" className="cursor-pointer">
-                  Precisa de translado?
-                </Label>
-              </div>
-              {formData.needsTransfer && (
-                <Input
-                  id="transferPeople"
-                  type="number"
-                  min="1"
-                  value={formData.transferPeople}
-                  onChange={(e) => setFormData({ ...formData, transferPeople: e.target.value })}
-                  placeholder="Quantas pessoas para o translado?"
-                  className="bg-background"
-                />
-              )}
-            </div>
 
             <div className="space-y-2 text-sm text-muted-foreground bg-muted/50 p-4 rounded-lg border border-border">
               <p className="flex items-start gap-2">

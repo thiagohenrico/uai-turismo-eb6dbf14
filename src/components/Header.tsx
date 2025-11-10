@@ -39,16 +39,16 @@ const Header = ({ onReserveClick }: HeaderProps) => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
-            <button onClick={() => scrollToSection("inicio")} className="font-elegant text-2xl text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection("inicio")} className="text-lg text-foreground hover:text-primary transition-colors">
               Início
             </button>
-            <button onClick={() => scrollToSection("passeios")} className="font-elegant text-2xl text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection("passeios")} className="text-lg text-foreground hover:text-primary transition-colors">
               Passeios
             </button>
-            <button onClick={() => scrollToSection("galeria")} className="font-elegant text-2xl text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection("galeria")} className="text-lg text-foreground hover:text-primary transition-colors">
               Galeria
             </button>
-            <Link to="/sobre-nos" className="font-elegant text-2xl text-foreground hover:text-primary transition-colors">
+            <Link to="/sobre-nos" className="text-lg text-foreground hover:text-primary transition-colors">
               Sobre nós
             </Link>
             <Button onClick={onReserveClick} size="lg" className="bg-primary hover:bg-primary/90">
@@ -65,16 +65,16 @@ const Header = ({ onReserveClick }: HeaderProps) => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="lg:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-primary/20 pt-4">
-            <button onClick={() => scrollToSection("inicio")} className="font-elegant text-xl text-foreground hover:text-primary transition-colors text-left">
+            <button onClick={() => scrollToSection("inicio")} className="text-lg text-foreground hover:text-primary transition-colors text-left">
               Início
             </button>
-            <button onClick={() => scrollToSection("passeios")} className="font-elegant text-xl text-foreground hover:text-primary transition-colors text-left">
+            <button onClick={() => scrollToSection("passeios")} className="text-lg text-foreground hover:text-primary transition-colors text-left">
               Passeios
             </button>
-            <button onClick={() => scrollToSection("galeria")} className="font-elegant text-xl text-foreground hover:text-primary transition-colors text-left">
+            <button onClick={() => scrollToSection("galeria")} className="text-lg text-foreground hover:text-primary transition-colors text-left">
               Galeria
             </button>
-            <Link to="/sobre-nos" className="font-elegant text-xl text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
+            <Link to="/sobre-nos" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
               Sobre nós
             </Link>
             <Button onClick={() => { onReserveClick?.(); setIsOpen(false); }} size="lg" className="w-full bg-primary hover:bg-primary/90">
