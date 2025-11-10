@@ -1,6 +1,6 @@
 const WhatsAppButton = () => {
   const handleClick = () => {
-    window.open("https://w.app/uaitur", "_blank");
+    window.open("https://wa.me/5581997484915?text=Olá! Gostaria de mais informações sobre os passeios.", "_blank");
   };
 
   return (

@@ -23,33 +23,23 @@ const BookingForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    let message = `Olá! Gostaria de solicitar um orçamento:\n
-📅 Data disponível: ${formData.checkIn}
-📅 Data final disponível: ${formData.checkOut}
-
-👥 Número de adultos: ${formData.adults}`;
+    let message = `Olá! Gostaria de solicitar um orçamento:\n\n📅 Data disponível: ${formData.checkIn}\n📅 Data final disponível: ${formData.checkOut}\n\n👥 Número de adultos: ${formData.adults}`;
 
     if (formData.hasChildren) {
-      message += `
-👶 Crianças: Sim (Idades: ${formData.childrenAges})`;
+      message += `\n👶 Crianças: Sim (Idades: ${formData.childrenAges})`;
     }
 
-    message += `
-
-🏨 Hospedagem: ${formData.accommodation}
-🕐 Horário de chegada: ${formData.arrivalTime}
-🕐 Horário de saída: ${formData.departureTime}`;
+    message += `\n\n🏨 Hospedagem: ${formData.accommodation}\n🕐 Horário de chegada: ${formData.arrivalTime}\n🕐 Horário de saída: ${formData.departureTime}`;
 
     if (formData.needsTransfer) {
-      message += `
-🚗 Precisa de translado: Sim (${formData.transferPeople} pessoas)`;
+      message += `\n🚗 Precisa de translado: Sim (${formData.transferPeople} pessoas)`;
     }
 
     if (formData.tours.length > 0) {
-      message += `\n\nPasseios selecionados:\n${formData.tours.join(", ")}`;
+      message += `\n\n🎯 Passeios selecionados:\n${formData.tours.join(", ")}`;
     }
     
-    const whatsappUrl = `https://w.app/uaitur?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5581997484915?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
