@@ -8,14 +8,14 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Gradient background with vibrant blue */
-    --background: 220 26% 14%;
+    /* Vibrant blue theme from reference */
+    --background: 210 100% 50%;
     --foreground: 0 0% 100%;
 
-    --card: 220 20% 18%;
+    --card: 210 95% 45%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 220 20% 18%;
+    --popover: 210 95% 45%;
     --popover-foreground: 0 0% 100%;
 
     /* Orange/Yellow from logo - primary CTA */
@@ -26,8 +26,8 @@ All colors MUST be HSL.
     --secondary: 35 91% 55%;
     --secondary-foreground: 0 0% 0%;
 
-    --muted: 220 17% 25%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 210 80% 55%;
+    --muted-foreground: 210 30% 95%;
 
     --accent: 45 93% 58%;
     --accent-foreground: 0 0% 0%;
@@ -35,8 +35,8 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 17% 25%;
-    --input: 220 17% 25%;
+    --border: 210 70% 60%;
+    --input: 210 70% 60%;
     --ring: 45 93% 58%;
 
     --radius: 0.75rem;
@@ -58,8 +58,6 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply text-foreground;
-    background: linear-gradient(180deg, hsl(var(--vibrant-blue)) 0%, hsl(var(--deep-navy)) 100%);
-    background-attachment: fixed;
+    @apply bg-background text-foreground;
   }
 }
