@@ -20,7 +20,7 @@ const HeroCollage = () => {
 
   return (
     <>
-      <section className="relative min-h-screen bg-gradient-to-b from-[#0A2540] via-[#0D3B5C] to-[#0A2540] overflow-hidden pt-24">
+      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-24">
         {/* Title */}
         <div className="relative z-10 pb-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wider px-4">
@@ -115,7 +115,7 @@ const HeroCollage = () => {
             <Button 
               onClick={scrollToTours}
               variant="outline"
-              className="bg-white/10 border-2 border-white text-white text-lg px-10 py-6 rounded-full hover:bg-white hover:text-[#0A2540] transition-all transform hover:scale-105 font-bold backdrop-blur-sm"
+              className="bg-white/10 border-2 border-white text-white text-lg px-10 py-6 rounded-full hover:bg-white hover:text-deep-navy transition-all transform hover:scale-105 font-bold backdrop-blur-sm"
             >
               VER PASSEIOS
             </Button>
@@ -129,9 +129,9 @@ const HeroCollage = () => {
               className="w-full h-auto"
               controls
               playsInline
-              poster={client2}
+              preload="metadata"
             >
-              <source src={heroVideo} type="video/mp4" />
+              <source src={`${heroVideo}#t=1`} type="video/mp4" />
               Seu navegador não suporta a reprodução de vídeos.
             </video>
           </div>
