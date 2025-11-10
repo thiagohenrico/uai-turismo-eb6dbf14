@@ -5,6 +5,7 @@ import BookingForm from "@/components/BookingForm";
 import Tours from "@/components/Tours";
 import ImportantInfo from "@/components/ImportantInfo";
 import FAQ from "@/components/FAQ";
+import FrequentQuestions from "@/components/FrequentQuestions";
 import Reviews from "@/components/Reviews";
 import ClientGallery from "@/components/ClientGallery";
 import Footer from "@/components/Footer";
@@ -22,6 +23,7 @@ const Index = () => {
         <ClientGallery />
         <FAQ />
         <Reviews />
+        <FrequentQuestions />
       </main>
       <Footer />
       <WhatsAppButton />
