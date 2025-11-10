@@ -20,13 +20,15 @@ const Index = () => {
       <Header onReserveClick={() => setIsBookingOpen(true)} />
       <main>
         <HeroCollage onReserveClick={() => setIsBookingOpen(true)} />
-        <Tours />
-        <CadasturBadge />
-        <ClientGallery />
-        <FAQ />
-        <Reviews />
-        <InstagramFeed />
-        <FrequentQuestions />
+        <div className="bg-[hsl(220,26%,14%)]">
+          <Tours />
+          <CadasturBadge />
+          <ClientGallery />
+          <FAQ />
+          <Reviews />
+          <InstagramFeed />
+          <FrequentQuestions />
+        </div>
       </main>
       <Footer />
       <WhatsAppButton onClick={() => setIsBookingOpen(true)} />
