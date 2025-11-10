@@ -23,8 +23,10 @@ const HeroCollage = () => {
       <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-24">
         {/* Title */}
         <div className="relative z-10 pb-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wider px-4">
-            Seu turismo no lugar certo
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider px-4">
+            Experiências inesquecíveis no litoral Sul de{" "}
+            <span className="text-primary">Pernambuco</span> e Norte de{" "}
+            <span className="text-primary">Alagoas!</span>
           </h1>
         </div>
 
