@@ -24,23 +24,20 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-primary">Links Rápidos</h4>
             <div className="space-y-2">
-              <a href="#orcamento" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                Orçamento
+              <a href="/" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                Início
               </a>
-              <a href="#passeios" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/passeios" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
                 Passeios
               </a>
-              <a href="#avaliacoes" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                Avaliações
-              </a>
-              <a href="#galeria" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/galeria" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
                 Galeria
               </a>
-              <a href="#duvidas" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                Dúvidas
+              <a href="/perguntas-frequentes" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                Perguntas Frequentes
               </a>
-              <a href="#contato" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                Contato
+              <a href="/sobre-nos" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                Sobre nós
               </a>
             </div>
           </div>
