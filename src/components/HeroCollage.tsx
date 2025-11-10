@@ -28,75 +28,75 @@ const HeroCollage = () => {
           </h1>
         </div>
 
-        {/* Photo collage */}
+        {/* Photo collage - Polaroid style */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 pb-20">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4 items-center justify-center">
-            {/* Photo 1 */}
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4">
+            {/* Photo 1 - Top Left */}
             <div 
-              className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-300 hover:scale-110 hover:z-20"
-              style={{ marginTop: '20px' }}
+              className="relative transform -rotate-12 hover:rotate-0 transition-all duration-300 hover:scale-110 hover:z-20"
+              style={{ marginTop: '40px' }}
             >
-              <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
+              <div className="bg-white p-3 shadow-[0_8px_30px_rgba(0,0,0,0.4)] rounded-sm">
                 <img 
                   src={client2} 
                   alt="Cliente curtindo nas piscinas naturais" 
-                  className="w-full h-40 md:h-56 object-cover rounded"
+                  className="w-full aspect-square object-cover"
                 />
               </div>
             </div>
 
-            {/* Photo 2 */}
+            {/* Photo 2 - Center Left */}
             <div 
-              className="relative transform rotate-4 hover:rotate-0 transition-transform duration-300 hover:scale-110 hover:z-20"
-              style={{ marginTop: '-10px' }}
+              className="relative transform rotate-6 hover:rotate-0 transition-all duration-300 hover:scale-110 hover:z-20"
+              style={{ marginTop: '-20px' }}
             >
-              <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
+              <div className="bg-white p-3 shadow-[0_8px_30px_rgba(0,0,0,0.4)] rounded-sm">
                 <img 
                   src={client4} 
                   alt="Amigos nas águas cristalinas de Maragogi" 
-                  className="w-full h-44 md:h-64 object-cover rounded"
+                  className="w-full aspect-square object-cover"
                 />
               </div>
             </div>
 
-            {/* Photo 3 */}
+            {/* Photo 3 - Center */}
             <div 
-              className="relative transform -rotate-3 hover:rotate-0 transition-transform duration-300 hover:scale-110 hover:z-20"
-              style={{ marginTop: '30px' }}
+              className="relative transform -rotate-6 hover:rotate-0 transition-all duration-300 hover:scale-110 hover:z-20"
+              style={{ marginTop: '50px' }}
             >
-              <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
+              <div className="bg-white p-3 shadow-[0_8px_30px_rgba(0,0,0,0.4)] rounded-sm">
                 <img 
                   src={client8} 
                   alt="Grupo comemorando em Maragogi" 
-                  className="w-full h-40 md:h-60 object-cover rounded"
+                  className="w-full aspect-square object-cover"
                 />
               </div>
             </div>
 
-            {/* Photo 4 */}
+            {/* Photo 4 - Center Right */}
             <div 
-              className="relative transform rotate-5 hover:rotate-0 transition-transform duration-300 hover:scale-110 hover:z-20"
+              className="relative transform rotate-8 hover:rotate-0 transition-all duration-300 hover:scale-110 hover:z-20"
               style={{ marginTop: '10px' }}
             >
-              <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
+              <div className="bg-white p-3 shadow-[0_8px_30px_rgba(0,0,0,0.4)] rounded-sm">
                 <img 
                   src={client15} 
                   alt="Grande grupo em Maragogi" 
-                  className="w-full h-42 md:h-58 object-cover rounded"
+                  className="w-full aspect-square object-cover"
                 />
               </div>
             </div>
 
-            {/* Photo 5 */}
+            {/* Photo 5 - Top Right */}
             <div 
-              className="relative transform rotate-3 hover:rotate-0 transition-transform duration-300 hover:scale-110 hover:z-20"
-              style={{ marginTop: '-20px' }}
+              className="relative transform -rotate-8 hover:rotate-0 transition-all duration-300 hover:scale-110 hover:z-20"
+              style={{ marginTop: '-10px' }}
             >
-              <div className="bg-white p-2 md:p-3 shadow-2xl rounded-lg">
+              <div className="bg-white p-3 shadow-[0_8px_30px_rgba(0,0,0,0.4)] rounded-sm">
                 <img 
                   src={client30} 
                   alt="Grupo feliz em Maragogi" 
-                  className="w-full h-40 md:h-56 object-cover rounded"
+                  className="w-full aspect-square object-cover"
                 />
               </div>
             </div>
