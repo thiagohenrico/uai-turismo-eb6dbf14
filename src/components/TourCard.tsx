@@ -11,14 +11,10 @@ interface TourCardProps {
   itineraryItems?: string[];
   includes: string[];
   note?: string;
+  onReserveClick?: () => void;
 }
 
-const TourCard = ({ title, image, description, duration, itinerary, itineraryItems, includes, note }: TourCardProps) => {
-  const handleBooking = () => {
-    const element = document.getElementById("orcamento");
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
+const TourCard = ({ title, image, description, duration, itinerary, itineraryItems, includes, note, onReserveClick }: TourCardProps) => {
   return (
     <Card className="overflow-hidden bg-card border-border hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-64 overflow-hidden">
@@ -63,9 +59,13 @@ const TourCard = ({ title, image, description, duration, itinerary, itineraryIte
           <p className="text-xs text-muted-foreground italic">{note}</p>
         )}
 
-        <Button onClick={handleBooking} className="w-full" size="lg">
-          Reservar Este Passeio
-        </Button>
+      <Button
+        onClick={onReserveClick}
+        className="w-full bg-gradient-to-r from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white font-bold"
+        size="lg"
+      >
+        Reservar Este Passeio
+      </Button>
       </div>
     </Card>
   );

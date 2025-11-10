@@ -1,7 +1,5 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import MobilePhotoGallery from "@/components/MobilePhotoGallery";
-import BookingForm from "@/components/BookingForm";
+import HeroCollage from "@/components/HeroCollage";
 import Tours from "@/components/Tours";
 import ImportantInfo from "@/components/ImportantInfo";
 import FAQ from "@/components/FAQ";
@@ -16,8 +14,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <main>
-        <MobilePhotoGallery />
-        <BookingForm />
+        <HeroCollage />
         <Tours />
         <ImportantInfo />
         <ClientGallery />

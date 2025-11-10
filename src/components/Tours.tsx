@@ -15,8 +15,17 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import React from "react";
+import BookingDialog from "./BookingDialog";
 
 const Tours = () => {
+  const [isBookingOpen, setIsBookingOpen] = React.useState(false);
+  const [selectedTour, setSelectedTour] = React.useState<string>("");
+
+  const handleReserve = (tourTitle: string) => {
+    setSelectedTour(tourTitle);
+    setIsBookingOpen(true);
+  };
   const tours = [
     {
       title: "Praia dos Carneiros",
@@ -198,7 +207,7 @@ const Tours = () => {
           <CarouselContent>
             {tours.map((tour, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <TourCard {...tour} />
+                <TourCard {...tour} onReserveClick={() => handleReserve(tour.title)} />
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -209,6 +218,12 @@ const Tours = () => {
           <CarouselNext className="md:hidden right-2" />
         </Carousel>
       </div>
+      
+      <BookingDialog 
+        isOpen={isBookingOpen} 
+        onClose={() => setIsBookingOpen(false)} 
+        preSelectedTour={selectedTour}
+      />
     </section>
   );
 };
