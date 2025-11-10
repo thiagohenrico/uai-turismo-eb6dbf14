@@ -8,6 +8,7 @@ import client4 from "@/assets/client-4.jpg";
 import client8 from "@/assets/client-8.jpg";
 import client15 from "@/assets/client-15.jpg";
 import client30 from "@/assets/client-30.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
 
 const HeroCollage = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -118,6 +119,21 @@ const HeroCollage = () => {
             >
               VER PASSEIOS
             </Button>
+          </div>
+        </div>
+
+        {/* Video Section */}
+        <div className="relative z-10 max-w-2xl mx-auto px-4 pb-12">
+          <div className="rounded-2xl overflow-hidden shadow-2xl">
+            <video 
+              className="w-full h-auto"
+              controls
+              playsInline
+              poster={client2}
+            >
+              <source src={heroVideo} type="video/mp4" />
+              Seu navegador não suporta a reprodução de vídeos.
+            </video>
           </div>
         </div>
 
