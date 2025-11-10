@@ -49,14 +49,14 @@ const BookingForm = () => {
       message += `\n\nPasseios selecionados:\n${formData.tours.join(", ")}`;
     }
     
-    const whatsappUrl = `https://wa.me/5581997484915?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://w.app/uaitur?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
   return (
     <section id="orcamento" className="py-20 bg-card">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 px-2">
           Reserve Sua <span className="text-primary">Experiência</span>
         </h2>
 

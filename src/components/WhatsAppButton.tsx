@@ -1,8 +1,6 @@
 const WhatsAppButton = () => {
   const handleClick = () => {
-    const message = "Olá! Gostaria de mais informações sobre os passeios.";
-    const whatsappUrl = `https://wa.me/5581997484915?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank");
+    window.open("https://w.app/uaitur", "_blank");
   };
 
   return (

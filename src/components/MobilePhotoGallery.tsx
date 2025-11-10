@@ -2,6 +2,10 @@ import buggyTour from "@/assets/buggy-tour.jpg";
 import maragogi from "@/assets/maragogi.jpg";
 import praiaCarneiros from "@/assets/praia-carneiros.jpg";
 import saoMiguel from "@/assets/sao-miguel.jpg";
+import recifeOlinda from "@/assets/recife-olinda.jpg";
+import ilhaSantoAleixo from "@/assets/ilha-santo-aleixo.jpg";
+import caboSantoAgostinho from "@/assets/cabo-santo-agostinho.jpg";
+import { ChevronDown } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -17,6 +21,9 @@ const MobilePhotoGallery = () => {
     { src: praiaCarneiros, alt: "Praia dos Carneiros" },
     { src: maragogi, alt: "Maragogi" },
     { src: saoMiguel, alt: "São Miguel dos Milagres" },
+    { src: recifeOlinda, alt: "Recife e Olinda" },
+    { src: ilhaSantoAleixo, alt: "Ilha de Santo Aleixo" },
+    { src: caboSantoAgostinho, alt: "Cabo de Santo Agostinho" },
   ];
 
   return (
@@ -29,8 +36,8 @@ const MobilePhotoGallery = () => {
       </div>
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+        <div className="text-center mb-8 md:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 px-2 leading-tight">
             Experiências inesquecíveis no litoral Sul de <span className="text-primary">Pernambuco</span> e Norte de <span className="text-secondary">Alagoas!</span>
           </h1>
         </div>
@@ -115,16 +122,22 @@ const MobilePhotoGallery = () => {
           ))}
         </div>
 
-        <div className="text-center">
+        <div className="text-center space-y-6">
           <button
             onClick={() => {
               const element = document.getElementById("orcamento");
               element?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-full font-bold text-lg shadow-2xl hover:shadow-primary/50 transition-all transform hover:scale-105"
+            className="bg-primary hover:bg-primary/90 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg shadow-2xl hover:shadow-primary/50 transition-all transform hover:scale-105"
           >
             RESERVE JÁ
           </button>
+          
+          {/* Scroll indicator for mobile */}
+          <div className="md:hidden flex flex-col items-center gap-2 animate-bounce">
+            <p className="text-white text-sm">Ver Destinos</p>
+            <ChevronDown className="w-6 h-6 text-primary" />
+          </div>
         </div>
       </div>
 

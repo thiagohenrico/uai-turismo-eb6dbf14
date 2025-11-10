@@ -4,6 +4,8 @@ import saoMiguel from "@/assets/sao-miguel.jpg";
 import maragogi from "@/assets/maragogi.jpg";
 import buggyTour from "@/assets/buggy-tour.jpg";
 import recifeOlinda from "@/assets/recife-olinda.jpg";
+import ilhaSantoAleixo from "@/assets/ilha-santo-aleixo.jpg";
+import caboSantoAgostinho from "@/assets/cabo-santo-agostinho.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -94,7 +96,7 @@ const Tours = () => {
     },
     {
       title: "Cabo de Santo Agostinho - Passeios de Buggy",
-      image: buggyTour,
+      image: caboSantoAgostinho,
       description: "Te levamos até Cabo de Santo Agostinho e lá você conhece pontos históricos, praias e mirantes em um roteiro especial feito de Buggy.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO - 3 HORAS",
@@ -112,7 +114,7 @@ const Tours = () => {
     },
     {
       title: "Ilha de Santo Aleixo",
-      image: saoMiguel,
+      image: ilhaSantoAleixo,
       description: "Ilha ecológica preservada com trilhas, praias paradisíacas e vida selvagem única.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO:",
@@ -153,7 +155,7 @@ const Tours = () => {
     },
     {
       title: "Porto de Galinhas - Passeios de Buggy",
-      image: praiaCarneiros,
+      image: buggyTour,
       description: "O Ponta a Ponta de Buggy em Porto de Galinhas te apresenta as praias do Balneário que possuem características únicas, te fazendo mergulhar em paisagens paradisíacas!",
       duration: "PASSEIO PRIVATIVO (manhã ou tarde)",
       itinerary: "ROTEIRO - 4 HORAS:",
@@ -173,10 +175,10 @@ const Tours = () => {
   return (
     <section id="passeios" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 px-2">
           Nossos Principais <span className="text-primary">Destinos</span>
         </h2>
-        <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground text-base md:text-lg mb-8 md:mb-12 max-w-2xl mx-auto px-4">
           Explore os lugares mais incríveis do litoral nordestino com conforto e segurança
         </p>
 
@@ -201,6 +203,9 @@ const Tours = () => {
           </CarouselContent>
           <CarouselPrevious className="hidden md:flex" />
           <CarouselNext className="hidden md:flex" />
+          {/* Mobile navigation arrows */}
+          <CarouselPrevious className="md:hidden left-2" />
+          <CarouselNext className="md:hidden right-2" />
         </Carousel>
       </div>
     </section>
