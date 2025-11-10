@@ -1,10 +1,12 @@
 import { Shield } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const CadasturBadge = () => {
   return (
-    <section className="py-8 bg-card/50 backdrop-blur-sm">
+    <section className="py-12 bg-card/50 backdrop-blur-sm">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center justify-center gap-4 text-center">
+        <div className="flex flex-col items-center justify-center gap-6 text-center">
           <div className="flex items-center gap-3">
             <Shield className="w-8 h-8 md:w-10 md:h-10 text-primary" />
             <div className="text-left">
@@ -20,6 +22,11 @@ const CadasturBadge = () => {
             Empresa oficialmente registrada no Ministério do Turismo, 
             garantindo qualidade e segurança nos nossos serviços.
           </p>
+          <Link to="/sobre-nos">
+            <Button size="lg" variant="outline" className="mt-2">
+              Conheça Nossa Empresa
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

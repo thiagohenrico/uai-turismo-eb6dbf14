@@ -140,7 +140,8 @@ const SobreNos = () => {
                     <Building2 className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">CNPJ</h3>
-                      <p className="text-muted-foreground">XX.XXX.XXX/XXXX-XX</p>
+                      <p className="text-muted-foreground">54.181.357/0001-42</p>
+                      <p className="text-sm text-muted-foreground mt-1">MARCOS VINICIUS SILVA SOUZA</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -163,14 +164,14 @@ const SobreNos = () => {
                     <Phone className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Telefone</h3>
-                      <p className="text-muted-foreground">(81) 9XXXX-XXXX</p>
+                      <p className="text-muted-foreground">(81) 99748-4915</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <Mail className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">E-mail</h3>
-                      <p className="text-muted-foreground">contato@uaiturismo.com.br</p>
+                      <p className="text-muted-foreground">contato@uaitur.com</p>
                     </div>
                   </div>
                 </div>
