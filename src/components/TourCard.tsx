@@ -1,6 +1,7 @@
-import { Clock, MapPin, Check } from "lucide-react";
+import { Clock } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 interface TourCardProps {
   title: string;
@@ -12,9 +13,10 @@ interface TourCardProps {
   includes: string[];
   note?: string;
   onReserveClick?: () => void;
+  detailsLink?: string;
 }
 
-const TourCard = ({ title, image, description, duration, itinerary, itineraryItems, includes, note, onReserveClick }: TourCardProps) => {
+const TourCard = ({ title, image, description, duration, itinerary, itineraryItems, includes, note, onReserveClick, detailsLink }: TourCardProps) => {
   return (
     <Card className="overflow-hidden bg-card border-border hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-64 overflow-hidden">
@@ -59,13 +61,26 @@ const TourCard = ({ title, image, description, duration, itinerary, itineraryIte
           <p className="text-xs text-muted-foreground italic">{note}</p>
         )}
 
-      <Button
-        onClick={onReserveClick}
-        className="w-full bg-gradient-to-r from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white font-bold"
-        size="lg"
-      >
-        Reservar Este Passeio
-      </Button>
+        <div className="flex flex-col gap-3 pt-2">
+          {detailsLink && (
+            <Link to={detailsLink}>
+              <Button 
+                variant="outline"
+                className="w-full"
+                size="lg"
+              >
+                Ver Detalhes
+              </Button>
+            </Link>
+          )}
+          <Button
+            onClick={onReserveClick}
+            className="w-full"
+            size="lg"
+          >
+            Reservar Este Passeio
+          </Button>
+        </div>
       </div>
     </Card>
   );

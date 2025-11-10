@@ -30,6 +30,7 @@ const Tours = () => {
     {
       title: "Praia dos Carneiros",
       image: praiaCarneiros,
+      detailsLink: "/passeios/praia-carneiros",
       description: "Um paraíso de águas cristalinas, coqueiral infinito e uma charmosa igrejinha à beira-mar, perfeito para relaxar e viver momentos inesquecíveis.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO LANCHA - 2 HORAS:",
@@ -50,6 +51,7 @@ const Tours = () => {
     {
       title: "São Miguel dos Milagres - Alagoas",
       image: saoMiguel,
+      detailsLink: "/passeios/sao-miguel",
       description: "Um refúgio de tranquilidade, com mar calmo em tons de azul, areia branca e extensos coqueirais que criam um cenário de pura paz.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO JANGADA - 2 HORAS:",
@@ -69,6 +71,7 @@ const Tours = () => {
     {
       title: "Maragogi - Barra Grande",
       image: maragogiBarraGrande,
+      detailsLink: "/passeios/maragogi-barra-grande",
       description: "O Caribe Brasileiro, onde o mar ganha tons de azul e verde, com piscinas naturais cheias de peixes coloridos para explorar e se apaixonar.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO LANCHA - 2 HORAS:",
@@ -88,6 +91,7 @@ const Tours = () => {
     {
       title: "Maragogi - Ponta de Mangue",
       image: maragogiPontaMangue,
+      detailsLink: "/passeios/maragogi-ponta-mangue",
       description: "Mar azul-turquesa, cenários paradisíacos, águas mornas e piscinas naturais que convidam a momentos únicos em contato com a natureza.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO LANCHA - 2 HORAS:",
@@ -107,6 +111,7 @@ const Tours = () => {
     {
       title: "Cabo de Santo Agostinho - Passeios de Buggy",
       image: caboSantoAgostinho,
+      detailsLink: "/passeios/cabo-santo-agostinho",
       description: "Te levamos até Cabo de Santo Agostinho e lá você conhece pontos históricos, praias e mirantes em um roteiro especial feito de Buggy.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO - 3 HORAS",
@@ -125,6 +130,7 @@ const Tours = () => {
     {
       title: "Ilha de Santo Aleixo",
       image: ilhaSantoAleixo,
+      detailsLink: "/passeios/ilha-santo-aleixo",
       description: "Ilha ecológica preservada com trilhas, praias paradisíacas e vida selvagem única.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO:",
@@ -144,6 +150,7 @@ const Tours = () => {
     {
       title: "City Tour Recife e Olinda",
       image: recifeOlinda,
+      detailsLink: "/passeios/city-tour",
       description: "Mergulhe na história e cultura pernambucana visitando os principais pontos turísticos.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO:",
@@ -166,6 +173,7 @@ const Tours = () => {
     {
       title: "Porto de Galinhas - Passeios de Buggy",
       image: buggyTour,
+      detailsLink: "/passeios/porto-galinhas",
       description: "O Ponta a Ponta de Buggy em Porto de Galinhas te apresenta as praias do Balneário que possuem características únicas, te fazendo mergulhar em paisagens paradisíacas!",
       duration: "PASSEIO PRIVATIVO (manhã ou tarde)",
       itinerary: "ROTEIRO - 4 HORAS:",
