@@ -68,7 +68,7 @@ const FrequentQuestions = ({ onReserveClick }: FrequentQuestionsProps) => {
           Perguntas <span className="text-primary">Frequentes</span>
         </h2>
         <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
-          Tire suas dúvidas sobre nossos passeios e serviços
+          Tire suas dúvidas sobre nossos passeios e serviços.
         </p>
 
         <div className="max-w-3xl mx-auto">

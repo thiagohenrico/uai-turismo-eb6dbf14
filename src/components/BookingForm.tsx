@@ -72,19 +72,19 @@ const BookingForm = () => {
           <Card className="p-6 bg-muted border-border">
             <Ship className="w-12 h-12 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Passeio de Lancha</h3>
-            <p className="text-muted-foreground">Explore as águas cristalinas em lanchas confortáveis e seguras</p>
+            <p className="text-muted-foreground">Explore as águas cristalinas em lanchas confortáveis e seguras.</p>
           </Card>
 
           <Card className="p-6 bg-muted border-border">
             <Route className="w-12 h-12 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Roteiros Exclusivos</h3>
-            <p className="text-muted-foreground">Experiências personalizadas para tornar sua viagem única</p>
+            <p className="text-muted-foreground">Experiências personalizadas para tornar sua viagem única.</p>
           </Card>
 
           <Card className="p-6 bg-muted border-border md:col-span-2">
             <Bus className="w-12 h-12 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Transporte Completo</h3>
-            <p className="text-muted-foreground">Buscamos e deixamos você no local de hospedagem</p>
+            <p className="text-muted-foreground">Buscamos e deixamos você no local de hospedagem.</p>
           </Card>
         </div>
 

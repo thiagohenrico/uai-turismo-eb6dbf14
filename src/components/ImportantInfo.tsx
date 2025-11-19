@@ -42,7 +42,7 @@ const ImportantInfo = () => {
           Informações <span className="text-primary">Importantes</span>
         </h2>
         <p className="text-center text-muted-foreground text-lg mb-12">
-          Tudo que você precisa saber para aproveitar ao máximo sua experiência conosco
+          Tudo que você precisa saber para aproveitar ao máximo sua experiência conosco.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
