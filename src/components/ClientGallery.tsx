@@ -91,7 +91,7 @@ const ClientGallery = () => {
             </h2>
           </div>
           <p className="text-muted-foreground text-lg">
-            Momentos inesquecíveis capturados pelos nossos clientes
+            Momentos inesquecíveis capturados pelos nossos clientes.
           </p>
         </div>
 
