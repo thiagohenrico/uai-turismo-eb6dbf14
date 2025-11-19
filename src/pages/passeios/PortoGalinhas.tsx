@@ -91,11 +91,11 @@ const PortoGalinhas = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>🚐🏖️ Buscamos e deixamos no local de hospedagem</span>
+                    <span>🚐🏖️ Buscamos e deixamos no local de hospedagem.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>📸 Fotos cortesia durante o passeio</span>
+                    <span>📸 Fotos cortesia durante o passeio.</span>
                   </li>
                 </ul>
               </div>
