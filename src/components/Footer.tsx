@@ -37,7 +37,7 @@ const Footer = () => {
                 Perguntas Frequentes
               </a>
               <a href="/sobre-nos" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-                Sobre nós
+                Sobre Nós
               </a>
             </div>
           </div>
