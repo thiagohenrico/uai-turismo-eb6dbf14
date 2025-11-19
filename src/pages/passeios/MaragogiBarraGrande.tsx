@@ -73,7 +73,7 @@ const MaragogiBarraGrande = () => {
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Piscinas Naturais - As famosas Galés com águas cristalinas.</span>
+                    <span>Piscinas Naturais - Águas cristalinas.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
