@@ -36,7 +36,7 @@ import client31 from "@/assets/client-31.jpg";
 import client32 from "@/assets/client-32.jpg";
 import client33 from "@/assets/client-33.jpg";
 import client34 from "@/assets/client-34.jpg";
-import heroVideo from "@/assets/hero-video.mp4";
+
 
 const allClientPhotos = [
   client1, client2, client3, client4, client5, client6, client7, client8, client9, client10,
@@ -164,13 +164,17 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               className="relative transform rotate-[10deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
               style={{ marginTop: '50px' }}
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
-                <img 
-                  src={currentPhotos[5] || client1} 
-                  alt="Clientes aproveitando o passeio" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+            <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe 
+                  src="https://www.youtube.com/embed/s3oA1Zzh7DE?autoplay=1&mute=1&loop=1&playlist=s3oA1Zzh7DE&controls=0&showinfo=0&rel=0&modestbranding=1"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full rounded-sm"
+                  style={{ border: 'none' }}
                 />
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -197,15 +201,15 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
         {/* Video Section */}
         <div className="relative z-10 max-w-2xl mx-auto px-4 pb-12">
           <div className="rounded-2xl overflow-hidden shadow-2xl">
-            <video 
-              className="w-full h-auto"
-              controls
-              playsInline
-              preload="metadata"
-            >
-              <source src={`${heroVideo}#t=5`} type="video/mp4" />
-              Seu navegador não suporta a reprodução de vídeos.
-            </video>
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe 
+                src="https://www.youtube.com/embed/s3oA1Zzh7DE"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full"
+                style={{ border: 'none' }}
+              />
+            </div>
           </div>
         </div>
 
