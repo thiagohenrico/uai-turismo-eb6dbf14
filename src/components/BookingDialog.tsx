@@ -30,8 +30,6 @@ const BookingDialog = ({ isOpen, onClose, preSelectedTour }: BookingDialogProps)
     adults: "",
     hasChildren: false,
     childrenAges: "",
-    arrivalTime: "",
-    departureTime: "",
     needsTransfer: false,
     transferPeople: "",
     transferArrivalTime: "",
@@ -58,7 +56,7 @@ const BookingDialog = ({ isOpen, onClose, preSelectedTour }: BookingDialogProps)
       message += `\n👶 Crianças: Sim (Idades: ${formData.childrenAges})`;
     }
 
-    message += `\n\n🏨 Hospedagem: ${formData.accommodation}\n🕐 Horário de chegada: ${formData.arrivalTime}\n🕐 Horário de saída: ${formData.departureTime}`;
+    message += `\n\n🏨 Hospedagem: ${formData.accommodation}`;
 
     if (formData.needsTransfer) {
       message += `\n🚗 Precisa de translado: Sim (${formData.transferPeople} pessoas)\n🕐 Horário de chegada do voo: ${formData.transferArrivalTime}\n🕐 Horário de saída do voo: ${formData.transferDepartureTime}`;
@@ -224,32 +222,6 @@ const BookingDialog = ({ isOpen, onClose, preSelectedTour }: BookingDialogProps)
                   className="bg-background"
                 />
               )}
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="arrivalTime">Horário de Chegada</Label>
-                <Input
-                  id="arrivalTime"
-                  type="time"
-                  value={formData.arrivalTime}
-                  onChange={(e) => setFormData({ ...formData, arrivalTime: e.target.value })}
-                  required
-                  className="bg-background"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="departureTime">Horário de Saída</Label>
-                <Input
-                  id="departureTime"
-                  type="time"
-                  value={formData.departureTime}
-                  onChange={(e) => setFormData({ ...formData, departureTime: e.target.value })}
-                  required
-                  className="bg-background"
-                />
-              </div>
             </div>
 
             <div className="space-y-4">
