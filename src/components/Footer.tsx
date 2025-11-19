@@ -45,7 +45,6 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-primary">Contato</h4>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground font-semibold">Marcos Vinicius Silva Souza</p>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-sm text-muted-foreground">Porto de Galinhas - PE</span>
