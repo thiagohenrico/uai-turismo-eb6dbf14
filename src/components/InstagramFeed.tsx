@@ -2,16 +2,6 @@ const InstagramFeed = () => {
   return (
     <section className="py-16 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            ✨ Nosso Instagram ao vivo
-          </h2>
-          <p className="text-lg md:text-xl text-muted-foreground">
-            🌴 Acompanhe nossos Reels, fotos e bastidores em tempo real!
-          </p>
-        </div>
-
         {/* Instagram Feed Embed */}
         <div 
           id="uai-instagram-feed" 
