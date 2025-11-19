@@ -165,15 +165,11 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               style={{ marginTop: '50px' }}
             >
             <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <iframe 
-                  src="https://www.youtube.com/embed/s3oA1Zzh7DE?autoplay=1&mute=1&loop=1&playlist=s3oA1Zzh7DE&controls=0&showinfo=0&rel=0&modestbranding=1"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full rounded-sm"
-                  style={{ border: 'none' }}
-                />
-              </div>
+              <img 
+                src={currentPhotos[5] || client1} 
+                alt="Clientes aproveitando o passeio" 
+                className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+              />
             </div>
             </div>
           </div>
