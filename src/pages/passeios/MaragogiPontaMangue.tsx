@@ -69,15 +69,15 @@ const MaragogiPontaMangue = () => {
                 <ul className="space-y-3 ml-9">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Crôa da Bruna - Banco de areia com águas cristalinas</span>
+                    <span>Crôa da Bruna - Banco de areia com águas cristalinas.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Piscinas Naturais - Perfeitas para snorkel e mergulho</span>
+                    <span>Piscinas Naturais - Perfeitas para snorkel e mergulho.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Praia do Xaréu - Praia paradisíaca com infraestrutura completa</span>
+                    <span>Praia do Xaréu - Praia paradisíaca com infraestrutura completa.</span>
                   </li>
                 </ul>
               </div>

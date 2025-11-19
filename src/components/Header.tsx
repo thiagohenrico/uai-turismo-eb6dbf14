@@ -43,7 +43,7 @@ const Header = ({ onReserveClick }: HeaderProps) => {
               Perguntas Frequentes
             </Link>
             <Link to="/sobre-nos" className="text-lg text-foreground hover:text-primary transition-colors">
-              Sobre nós
+              Sobre Nós
             </Link>
             <Button onClick={onReserveClick} size="lg" className="bg-primary hover:bg-primary/90">
               RESERVE JÁ
@@ -72,7 +72,7 @@ const Header = ({ onReserveClick }: HeaderProps) => {
               Perguntas Frequentes
             </Link>
             <Link to="/sobre-nos" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
-              Sobre nós
+              Sobre Nós
             </Link>
             <Button onClick={() => { onReserveClick?.(); setIsOpen(false); }} size="lg" className="w-full bg-primary hover:bg-primary/90">
               RESERVE JÁ

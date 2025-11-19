@@ -69,31 +69,31 @@ const CityTour = () => {
                 <ul className="space-y-3 ml-9">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Orla da Praia de Boa Viagem - Uma das praias urbanas mais famosas do Brasil</span>
+                    <span>Orla da Praia de Boa Viagem - Uma das praias urbanas mais famosas do Brasil.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Marco Zero e Rua do Bom Jesus - Coração do Recife Antigo</span>
+                    <span>Marco Zero e Rua do Bom Jesus - Coração do Recife Antigo.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Embaixada dos Bonecos Gigantes - Tradição do carnaval pernambucano</span>
+                    <span>Embaixada dos Bonecos Gigantes - Tradição do carnaval pernambucano.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Alto da Sé - Vista panorâmica de Olinda e Recife</span>
+                    <span>Alto da Sé - Vista panorâmica de Olinda e Recife.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Igreja de São Salvador do Mundo - Patrimônio histórico</span>
+                    <span>Igreja de São Salvador do Mundo - Patrimônio histórico.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Feira de Artesanato - Arte e cultura local</span>
+                    <span>Feira de Artesanato - Arte e cultura local.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Mosteiro de São Bento - Arquitetura barroca impressionante</span>
+                    <span>Mosteiro de São Bento - Arquitetura barroca impressionante.</span>
                   </li>
                 </ul>
               </div>

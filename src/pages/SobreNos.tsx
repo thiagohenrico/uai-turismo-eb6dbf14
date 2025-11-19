@@ -94,27 +94,27 @@ const SobreNos = () => {
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span><strong className="text-foreground">Praia dos Carneiros:</strong> Paraíso de águas cristalinas com a famosa Capela de São Benedito</span>
+                  <span><strong className="text-foreground">Praia dos Carneiros:</strong> Paraíso de águas cristalinas com a famosa Capela de São Benedito.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span><strong className="text-foreground">São Miguel dos Milagres:</strong> Refúgio de tranquilidade com piscinas naturais espetaculares</span>
+                  <span><strong className="text-foreground">São Miguel dos Milagres:</strong> Refúgio de tranquilidade com piscinas naturais espetaculares.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span><strong className="text-foreground">Maragogi:</strong> O Caribe Brasileiro com suas Galés e praias paradisíacas</span>
+                  <span><strong className="text-foreground">Maragogi:</strong> O Caribe Brasileiro com suas Galés e praias paradisíacas.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span><strong className="text-foreground">Passeios de Buggy:</strong> Aventura pelas praias de Porto de Galinhas e Cabo de Santo Agostinho</span>
+                  <span><strong className="text-foreground">Passeios de Buggy:</strong> Aventura pelas praias de Porto de Galinhas e Cabo de Santo Agostinho.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span><strong className="text-foreground">Ilha de Santo Aleixo:</strong> Santuário ecológico com fauna única</span>
+                  <span><strong className="text-foreground">Ilha de Santo Aleixo:</strong> Santuário ecológico com fauna única.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span><strong className="text-foreground">City Tour:</strong> História e cultura de Recife e Olinda</span>
+                  <span><strong className="text-foreground">City Tour:</strong> História e cultura de Recife e Olinda.</span>
                 </li>
               </ul>
             </div>
