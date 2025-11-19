@@ -27,44 +27,6 @@ const TourCard = ({ title, image, description, duration, itinerary, itineraryIte
       <div className="p-6 space-y-4 flex flex-col flex-1">
         <h3 className="text-2xl font-bold text-center">{title}</h3>
         <p className="text-muted-foreground text-center">{description}</p>
-        
-        {!simplified && (
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Clock className="w-4 h-4 text-primary" />
-            <span>{duration}</span>
-          </div>
-        )}
-
-        {!simplified && itinerary && itineraryItems && (
-          <div className="space-y-2">
-            <h4 className="font-semibold text-primary">{itinerary}</h4>
-            <ul className="space-y-1 text-sm">
-              {itineraryItems.map((item, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <span className="text-primary">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {!simplified && (
-          <div className="space-y-2">
-            <h4 className="font-semibold text-primary">INCLUSO:</h4>
-            <ul className="space-y-2">
-              {includes.map((item, index) => (
-                <li key={index} className="flex items-start gap-2 text-sm">
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {!simplified && note && (
-          <p className="text-xs text-muted-foreground italic">{note}</p>
-        )}
 
         <div className="flex flex-col gap-3 pt-2 mt-auto">
           {detailsLink && (
