@@ -24,11 +24,11 @@ const TourCard = ({ title, image, description, duration, itinerary, itineraryIte
         <img src={image} alt={title} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
       </div>
       
-      <div className="p-6 space-y-4 flex flex-col flex-1">
-        <h3 className="text-2xl font-bold text-center">{title}</h3>
-        <p className="text-muted-foreground text-center">{description}</p>
+      <div className="p-6 flex flex-col flex-1">
+        <h3 className="text-2xl font-bold text-center mb-3">{title}</h3>
+        <p className="text-muted-foreground text-center mb-4 flex-1">{description}</p>
 
-        <div className="flex flex-col gap-3 pt-2 mt-auto">
+        <div className="flex flex-col gap-3 mt-auto">
           {detailsLink && (
             <Link to={detailsLink}>
               <Button 
