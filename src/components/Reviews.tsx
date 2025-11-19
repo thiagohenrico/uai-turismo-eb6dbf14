@@ -147,7 +147,7 @@ const Reviews = () => {
             O Que Dizem Nossos <span className="text-primary">Clientes</span>
           </h2>
           <p className="text-muted-foreground mb-6">
-            Avaliações reais de clientes verificadas pelo Google
+            Avaliações reais de clientes verificadas pelo Google.
           </p>
           <Button 
             variant="outline" 
