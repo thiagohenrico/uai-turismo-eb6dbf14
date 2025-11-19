@@ -69,15 +69,15 @@ const MaragogiBarraGrande = () => {
                 <ul className="space-y-3 ml-9">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Caminho de Moisés - Bancos de areia que aparecem na maré baixa</span>
+                    <span>Caminho de Moisés - Bancos de areia que aparecem na maré baixa.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Piscinas Naturais - As famosas Galés com águas cristalinas</span>
+                    <span>Piscinas Naturais - As famosas Galés com águas cristalinas.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Praia de Antunes - Uma das praias mais bonitas da região</span>
+                    <span>Praia de Antunes - Uma das praias mais bonitas da região.</span>
                   </li>
                 </ul>
               </div>

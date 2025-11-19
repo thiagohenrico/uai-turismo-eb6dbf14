@@ -69,15 +69,15 @@ const CaboSantoAgostinho = () => {
                 <ul className="space-y-3 ml-9">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Praias de Calhetas, Enseada dos Corais e Gaibu - Belezas naturais imperdíveis</span>
+                    <span>Praias de Calhetas, Enseada dos Corais e Gaibu - Belezas naturais imperdíveis.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Mirantes do Faroleiro e do Paraíso - Vistas panorâmicas espetaculares</span>
+                    <span>Mirantes do Faroleiro e do Paraíso - Vistas panorâmicas espetaculares.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Degustação de doces e licores - Sabores típicos da região</span>
+                    <span>Degustação de doces e licores - Sabores típicos da região.</span>
                   </li>
                 </ul>
               </div>

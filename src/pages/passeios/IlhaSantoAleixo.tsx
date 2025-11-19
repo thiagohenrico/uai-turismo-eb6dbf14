@@ -69,19 +69,19 @@ const IlhaSantoAleixo = () => {
                 <ul className="space-y-3 ml-9">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Trilha Ecológica - Caminhada pela natureza preservada da ilha</span>
+                    <span>Trilha Ecológica - Caminhada pela natureza preservada da ilha.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Praia da Ferradura - Uma das praias mais bonitas da região</span>
+                    <span>Praia da Ferradura - Uma das praias mais bonitas da região.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Piscinas Naturais - Águas cristalinas perfeitas para mergulho</span>
+                    <span>Piscinas Naturais - Águas cristalinas perfeitas para mergulho.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Fotos com esquilos - Interação com os famosos esquilos da ilha</span>
+                    <span>Fotos com esquilos - Interação com os famosos esquilos da ilha.</span>
                   </li>
                 </ul>
               </div>

@@ -74,19 +74,19 @@ const PraiaCarneiros = () => {
                 <ul className="space-y-3 ml-9">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Capela de São Benedito - A famosa igrejinha à beira-mar</span>
+                    <span>Capela de São Benedito - A famosa igrejinha à beira-mar.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Banho de Argila - Experiência relaxante e renovadora</span>
+                    <span>Banho de Argila - Experiência relaxante e renovadora.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Banco de Areia - Piscinas naturais de águas cristalinas</span>
+                    <span>Banco de Areia - Piscinas naturais de águas cristalinas.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Encontro dos Rios/Manguezal - Beleza natural única</span>
+                    <span>Encontro dos Rios/Manguezal - Beleza natural única.</span>
                   </li>
                 </ul>
               </div>

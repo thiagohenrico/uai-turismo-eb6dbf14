@@ -69,15 +69,15 @@ const SaoMiguel = () => {
                 <ul className="space-y-3 ml-9">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Piscinas Naturais - Águas cristalinas repletas de vida marinha</span>
+                    <span>Piscinas Naturais - Águas cristalinas repletas de vida marinha.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Fotos boia de melancia e rede - Registros incríveis para suas redes sociais</span>
+                    <span>Fotos boia de melancia e rede - Registros incríveis para suas redes sociais.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Parada do pulo - Diversão garantida para toda a família</span>
+                    <span>Parada do pulo - Diversão garantida para toda a família.</span>
                   </li>
                 </ul>
               </div>

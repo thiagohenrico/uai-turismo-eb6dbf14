@@ -69,19 +69,19 @@ const PortoGalinhas = () => {
                 <ul className="space-y-3 ml-9">
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Praia de Muro Alto - Piscina natural gigante formada por recifes</span>
+                    <span>Praia de Muro Alto - Piscina natural gigante formada por recifes.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Pontal do Cupê - Piscinas naturais de águas cristalinas</span>
+                    <span>Pontal do Cupê - Piscinas naturais de águas cristalinas.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Coqueiral de Maracaípe - Cenário paradisíaco com coqueiros</span>
+                    <span>Coqueiral de Maracaípe - Cenário paradisíaco com coqueiros.</span>
                   </li>
                   <li className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="text-primary mt-1 flex-shrink-0" size={20} />
-                    <span>Pontal de Maracaípe - Encontro do rio com o mar e santuário dos cavalos-marinhos</span>
+                    <span>Pontal de Maracaípe - Encontro do rio com o mar e santuário dos cavalos-marinhos.</span>
                   </li>
                 </ul>
               </div>
