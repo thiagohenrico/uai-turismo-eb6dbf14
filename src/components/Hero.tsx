@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         <p className="text-xl md:text-2xl text-foreground mb-8 max-w-3xl mx-auto font-light">
-          Descubra as praias mais paradisíacas do Nordeste com roteiros exclusivos e atendimento personalizado.
+          Descubra as praias mais paradisíacas do Nordeste, com roteiros exclusivos e atendimento personalizado.
         </p>
 
         <Button size="lg" className="text-lg px-10 py-7 bg-primary hover:bg-primary/90" onClick={scrollToBooking}>

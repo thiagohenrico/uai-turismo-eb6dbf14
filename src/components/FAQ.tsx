@@ -48,7 +48,7 @@ const FAQ = () => {
           Informações <span className="text-primary">Importantes</span>
         </h2>
         <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
-          Tudo o que você precisa saber antes de reservar seu passeio.
+          Tudo o que você precisa saber, antes de reservar seu passeio.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
