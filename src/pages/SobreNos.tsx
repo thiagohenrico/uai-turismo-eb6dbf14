@@ -17,9 +17,9 @@ const SobreNos = () => {
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
                 Sobre a <span className="text-primary">Uai Turismo</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/90">
-                Sua experiência inesquecível no litoral nordestino começa aqui
-              </p>
+               <p className="text-lg md:text-xl text-white/90">
+                  Sua experiência inesquecível no litoral nordestino começa aqui.
+                </p>
             </div>
           </div>
         </section>
@@ -35,14 +35,14 @@ const SobreNos = () => {
                 Nossa <span className="text-primary">História</span>
               </h2>
               <div className="prose prose-lg max-w-none text-muted-foreground">
-                <p className="text-lg leading-relaxed mb-6">
+               <p className="text-lg leading-relaxed mb-6">
                   A Uai Turismo nasceu da paixão por mostrar as belezas naturais do litoral Sul de Pernambuco e Norte de Alagoas. Com anos de experiência no mercado de turismo, nossa empresa se dedica a criar experiências únicas e memoráveis para nossos clientes.
                 </p>
-                <p className="text-lg leading-relaxed mb-6">
+              <p className="text-lg leading-relaxed mb-6">
                   Somos especializados em passeios personalizados que revelam os destinos mais paradisíacos da região, sempre com foco em qualidade, segurança e satisfação dos nossos clientes. Nossa equipe é formada por profissionais qualificados e apaixonados pelo que fazem.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Trabalhamos com uma seleção criteriosa de destinos, priorizando locais que oferecem experiências autênticas e contato direto com a natureza. Cada passeio é cuidadosamente planejado para garantir o máximo aproveitamento do seu tempo e investimento.
+                  Trabalhamos com uma seleção criteriosa de destinos, priorizando locais que oferecem experiências autênticas e contato direto com a natureza. Cada passeio é cuidadosamente planejado, para garantir o máximo aproveitamento do seu tempo e investimento.
                 </p>
               </div>
             </div>
@@ -168,18 +168,6 @@ const SobreNos = () => {
                       <p className="text-muted-foreground">contato@uaitur.com</p>
                     </div>
                   </div>
-                </div>
-              </div>
-              
-              {/* Certificado Cadastur */}
-              <div className="mt-12">
-                <h3 className="text-xl font-semibold text-foreground mb-4 text-center">Certificado CADASTUR</h3>
-                <div className="flex justify-center">
-                  <img 
-                    src={cadasturCertificate} 
-                    alt="Certificado CADASTUR - Uai Turismo" 
-                    className="max-w-full h-auto rounded-lg shadow-lg border border-border"
-                  />
                 </div>
               </div>
             </div>
