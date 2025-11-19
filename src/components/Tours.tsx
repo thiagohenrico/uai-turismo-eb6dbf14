@@ -49,7 +49,7 @@ const Tours = () => {
       note: "*Day use em restaurante à beira-mar não incluso."
     },
     {
-      title: "São Miguel dos Milagres - Alagoas",
+      title: "São Miguel dos Milagres",
       image: saoMiguel,
       detailsLink: "/passeios/sao-miguel",
       description: "Um refúgio de tranquilidade, com mar calmo em tons de azul, areia branca e extensos coqueirais que criam um cenário de pura paz.",
@@ -197,13 +197,13 @@ const Tours = () => {
           Nossos Principais <span className="text-primary">Destinos</span>
         </h2>
         <p className="text-center text-muted-foreground text-base md:text-lg mb-8 md:mb-12 max-w-2xl mx-auto px-4">
-          Explore os lugares mais incríveis do litoral nordestino com conforto e segurança
+          Explore os lugares mais incríveis do litoral nordestino com conforto e segurança.
         </p>
 
         {/* Mobile: Vertical scroll */}
         <div className="md:hidden flex flex-col gap-6">
           {tours.map((tour, index) => (
-            <TourCard key={index} {...tour} onReserveClick={() => handleReserve(tour.title)} simplified />
+            <TourCard key={index} {...tour} onReserveClick={() => handleReserve(tour.title)} />
           ))}
         </div>
 
@@ -224,7 +224,7 @@ const Tours = () => {
             <CarouselContent>
               {tours.map((tour, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <TourCard {...tour} onReserveClick={() => handleReserve(tour.title)} simplified />
+                  <TourCard {...tour} onReserveClick={() => handleReserve(tour.title)} />
                 </CarouselItem>
               ))}
             </CarouselContent>

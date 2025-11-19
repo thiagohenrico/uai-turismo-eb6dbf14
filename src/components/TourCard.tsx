@@ -19,14 +19,14 @@ interface TourCardProps {
 
 const TourCard = ({ title, image, description, duration, itinerary, itineraryItems, includes, note, onReserveClick, detailsLink, simplified = false }: TourCardProps) => {
   return (
-    <Card className="overflow-hidden bg-card border-border hover:shadow-xl transition-shadow duration-300">
+    <Card className="overflow-hidden bg-card border-border hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
       <div className="relative h-64 overflow-hidden">
         <img src={image} alt={title} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
       </div>
       
-      <div className="p-6 space-y-4">
-        <h3 className="text-2xl font-bold">{title}</h3>
-        <p className="text-muted-foreground">{description}</p>
+      <div className="p-6 space-y-4 flex flex-col flex-1">
+        <h3 className="text-2xl font-bold text-center">{title}</h3>
+        <p className="text-muted-foreground text-center">{description}</p>
         
         {!simplified && (
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -66,7 +66,7 @@ const TourCard = ({ title, image, description, duration, itinerary, itineraryIte
           <p className="text-xs text-muted-foreground italic">{note}</p>
         )}
 
-        <div className="flex flex-col gap-3 pt-2">
+        <div className="flex flex-col gap-3 pt-2 mt-auto">
           {detailsLink && (
             <Link to={detailsLink}>
               <Button 

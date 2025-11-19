@@ -23,8 +23,6 @@ const BookingForm = () => {
     adults: "",
     hasChildren: false,
     childrenAges: "",
-    arrivalTime: "",
-    departureTime: "",
     needsTransfer: false,
     transferPeople: "",
     accommodation: "",
@@ -49,7 +47,7 @@ const BookingForm = () => {
       message += `\n👶 Crianças: Sim (Idades: ${formData.childrenAges})`;
     }
 
-    message += `\n\n🏨 Hospedagem: ${formData.accommodation}\n🕐 Horário de chegada: ${formData.arrivalTime}\n🕐 Horário de saída: ${formData.departureTime}`;
+    message += `\n\n🏨 Hospedagem: ${formData.accommodation}`;
 
     if (formData.needsTransfer) {
       message += `\n🚗 Precisa de translado: Sim (${formData.transferPeople} pessoas)`;
@@ -179,32 +177,6 @@ const BookingForm = () => {
                   className="bg-background"
                 />
               )}
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <Label htmlFor="arrivalTime">Horário de Chegada</Label>
-                <Input
-                  id="arrivalTime"
-                  type="time"
-                  value={formData.arrivalTime}
-                  onChange={(e) => setFormData({ ...formData, arrivalTime: e.target.value })}
-                  required
-                  className="bg-background"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="departureTime">Horário de Saída</Label>
-                <Input
-                  id="departureTime"
-                  type="time"
-                  value={formData.departureTime}
-                  onChange={(e) => setFormData({ ...formData, departureTime: e.target.value })}
-                  required
-                  className="bg-background"
-                />
-              </div>
             </div>
 
             <div className="space-y-4">
