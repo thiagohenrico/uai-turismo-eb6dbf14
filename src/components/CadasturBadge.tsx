@@ -23,11 +23,6 @@ const CadasturBadge = () => {
             Empresa oficialmente registrada no Ministério do Turismo, 
             garantindo qualidade e segurança nos nossos serviços.
           </p>
-          <Link to="/sobre-nos">
-            <Button size="lg" variant="outline" className="mt-2">
-              Conheça Nossa Empresa
-            </Button>
-          </Link>
           <div className="mt-8 max-w-2xl mx-auto">
             <img 
               src={cadasturCertificate} 

@@ -102,7 +102,7 @@ const SobreNos = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span><strong className="text-foreground">Maragogi:</strong> O Caribe Brasileiro com suas Galés e praias paradisíacas.</span>
+                  <span><strong className="text-foreground">Maragogi:</strong> O Caribe Brasileiro com praias paradisíacas.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
