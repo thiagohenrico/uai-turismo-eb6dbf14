@@ -66,6 +66,9 @@ import client56 from "@/assets/client-56.jpg";
 import client57 from "@/assets/client-57.jpg";
 import client58 from "@/assets/client-58.jpg";
 import client59 from "@/assets/client-59.jpg";
+import client60 from "@/assets/client-60.jpg";
+import client61 from "@/assets/client-61.jpg";
+import client62 from "@/assets/client-62.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -113,21 +116,17 @@ const ClientGallery = () => {
     { src: client42, alt: "Cliente com cachorro na praia", location: "Maragogi Ponta de Mangue" },
     { src: client43, alt: "Casal com guia no buggy", location: "Buggy Porto de Galinhas" },
     { src: client44, alt: "Casal na Ilha de Santo Aleixo", location: "Ilha de Santo Aleixo" },
-    { src: client45, alt: "Grupo nas piscinas naturais de Maragogi", location: "Maragogi Barra Grande" },
-    { src: client46, alt: "Casal curtindo Maragogi", location: "Maragogi Barra Grande" },
-    { src: client47, alt: "Família com guia em Maragogi", location: "Maragogi Ponta de Mangue" },
-    { src: client48, alt: "Casal nas águas cristalinas", location: "Maragogi Ponta de Mangue" },
-    { src: client49, alt: "Grupo feliz em Maragogi", location: "Maragogi Ponta de Mangue" },
     { src: client50, alt: "Cliente nas praias de São Miguel", location: "São Miguel dos Milagres" },
     { src: client51, alt: "Grupo no buggy pelo Cabo", location: "Buggy Cabo de Santo Agostinho" },
     { src: client52, alt: "Casal em aventura de buggy", location: "Buggy Porto de Galinhas" },
     { src: client53, alt: "Grupo na praia dos Carneiros", location: "Praia dos Carneiros" },
     { src: client54, alt: "Casal apaixonado em Carneiros", location: "Praia dos Carneiros" },
-    { src: client55, alt: "Casal na Capela dos Carneiros", location: "Praia dos Carneiros" },
     { src: client56, alt: "Cliente nas piscinas naturais de Carneiros", location: "Praia dos Carneiros" },
-    { src: client57, alt: "Grupo de amigos em Recife", location: "City Tour Recife e Olinda" },
     { src: client58, alt: "Cliente em Olinda", location: "City Tour Recife e Olinda" },
     { src: client59, alt: "Cliente com cobra no Ecopark", location: "Ecopark Maragogi" },
+    { src: client60, alt: "Cliente relaxando na Ilha de Santo Aleixo", location: "Ilha de Santo Aleixo" },
+    { src: client61, alt: "Grande grupo em Maragogi", location: "Maragogi Ponta de Mangue" },
+    { src: client62, alt: "Cliente feliz em Maragogi", location: "Maragogi Ponta de Mangue" },
   ];
 
   return (
