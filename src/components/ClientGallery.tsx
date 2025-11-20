@@ -76,89 +76,86 @@ import client66 from "@/assets/client-66.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
-    // Buggy Cabo de Santo Agostinho
-    { src: client1, alt: "Momentos especiais", location: "Buggy Cabo de Santo Agostinho" },
-    { src: client2, alt: "Aventura de buggy", location: "Buggy Cabo de Santo Agostinho" },
-    { src: client3, alt: "Família feliz", location: "Buggy Cabo de Santo Agostinho" },
-    { src: client4, alt: "Grupo animado", location: "Buggy Cabo de Santo Agostinho" },
-    { src: client5, alt: "Diversão garantida", location: "Buggy Cabo de Santo Agostinho" },
-    { src: client6, alt: "Paisagens incríveis", location: "Buggy Cabo de Santo Agostinho" },
+    // Buggy Cabo de Santo Agostinho (4 fotos)
+    { src: client1, alt: "Cliente satisfeito no passeio", location: "Buggy Cabo de Santo Agostinho" },
+    { src: client2, alt: "Família aproveitando o passeio", location: "Buggy Cabo de Santo Agostinho" },
+    { src: client3, alt: "Grupo animado na aventura", location: "Buggy Cabo de Santo Agostinho" },
+    { src: client4, alt: "Momento especial no buggy", location: "Buggy Cabo de Santo Agostinho" },
     
-    // Buggy Porto de Galinhas
-    { src: client7, alt: "Passeio de buggy", location: "Buggy Porto de Galinhas" },
-    { src: client8, alt: "Aventura inesquecível", location: "Buggy Porto de Galinhas" },
-    { src: client9, alt: "Coqueirais lindos", location: "Buggy Porto de Galinhas" },
-    { src: client10, alt: "Momentos especiais", location: "Buggy Porto de Galinhas" },
-    { src: client11, alt: "Grupo feliz", location: "Buggy Porto de Galinhas" },
-    { src: client12, alt: "Cenários perfeitos", location: "Buggy Porto de Galinhas" },
+    // Buggy Porto de Galinhas (4 fotos)
+    { src: client5, alt: "Aventura inesquecível", location: "Buggy Porto de Galinhas" },
+    { src: client6, alt: "Diversão garantida", location: "Buggy Porto de Galinhas" },
+    { src: client7, alt: "Paisagens paradisíacas", location: "Buggy Porto de Galinhas" },
+    { src: client8, alt: "Coração de areia decorado", location: "Buggy Porto de Galinhas" },
     
-    // Praia dos Carneiros
-    { src: client13, alt: "Águas cristalinas", location: "Praia dos Carneiros" },
-    { src: client14, alt: "Criança feliz", location: "Praia dos Carneiros" },
-    { src: client15, alt: "Casal apaixonado", location: "Praia dos Carneiros" },
-    { src: client16, alt: "Família na praia", location: "Praia dos Carneiros" },
-    { src: client17, alt: "Letreiro dos Carneiros", location: "Praia dos Carneiros" },
-    { src: client18, alt: "Grupo de amigos", location: "Praia dos Carneiros" },
-    { src: client19, alt: "Paraíso tropical", location: "Praia dos Carneiros" },
-    { src: client20, alt: "Momento perfeito", location: "Praia dos Carneiros" },
+    // Carneiros (8 fotos)
+    { src: client9, alt: "Águas cristalinas", location: "Carneiros" },
+    { src: client10, alt: "Criança feliz na praia", location: "Carneiros" },
+    { src: client11, alt: "Casal apaixonado", location: "Carneiros" },
+    { src: client12, alt: "Família curtindo", location: "Carneiros" },
+    { src: client13, alt: "Letreiro dos Carneiros", location: "Carneiros" },
+    { src: client14, alt: "Grupo de amigos", location: "Carneiros" },
+    { src: client15, alt: "Família na praia", location: "Carneiros" },
+    { src: client16, alt: "Momento perfeito", location: "Carneiros" },
     
-    // City Tour Recife/Olinda
-    { src: client21, alt: "Centro histórico", location: "City Tour Recife/Olinda" },
-    { src: client22, alt: "Igreja histórica", location: "City Tour Recife/Olinda" },
-    { src: client23, alt: "Arquitetura colonial", location: "City Tour Recife/Olinda" },
-    { src: client24, alt: "Ladeiras de Olinda", location: "City Tour Recife/Olinda" },
-    { src: client25, alt: "Casario colorido", location: "City Tour Recife/Olinda" },
-    { src: client26, alt: "Cultura nordestina", location: "City Tour Recife/Olinda" },
+    // City Tour (6 fotos)
+    { src: client17, alt: "Igreja histórica", location: "City Tour" },
+    { src: client18, alt: "Família no centro histórico", location: "City Tour" },
+    { src: client19, alt: "Arquitetura colonial", location: "City Tour" },
+    { src: client20, alt: "Grupo animado", location: "City Tour" },
+    { src: client21, alt: "Ladeiras coloridas de Olinda", location: "City Tour" },
+    { src: client22, alt: "Marco Zero do Recife", location: "City Tour" },
     
-    // Ecopark Maragogi
-    { src: client27, alt: "Contato com a natureza", location: "Ecopark Maragogi" },
-    { src: client28, alt: "Animais exóticos", location: "Ecopark Maragogi" },
-    { src: client29, alt: "Aventura ecológica", location: "Ecopark Maragogi" },
+    // Ecopark Maragogi (3 fotos)
+    { src: client23, alt: "Contato com animais", location: "Ecopark Maragogi" },
+    { src: client24, alt: "Casal com arara", location: "Ecopark Maragogi" },
+    { src: client25, alt: "Aventura com cobra", location: "Ecopark Maragogi" },
     
-    // Ilha de Santo Aleixo
-    { src: client30, alt: "Paraíso preservado", location: "Ilha de Santo Aleixo" },
-    { src: client31, alt: "Casal na ilha", location: "Ilha de Santo Aleixo" },
-    { src: client32, alt: "Águas transparentes", location: "Ilha de Santo Aleixo" },
-    { src: client33, alt: "Vista panorâmica", location: "Ilha de Santo Aleixo" },
-    { src: client34, alt: "Paz e tranquilidade", location: "Ilha de Santo Aleixo" },
+    // Ilha de Santo Aleixo (5 fotos)
+    { src: client26, alt: "Casal na ilha paradisíaca", location: "Ilha de Santo Aleixo" },
+    { src: client27, alt: "Família na ilha", location: "Ilha de Santo Aleixo" },
+    { src: client28, alt: "Casal apaixonado", location: "Ilha de Santo Aleixo" },
+    { src: client29, alt: "Vista panorâmica da ilha", location: "Ilha de Santo Aleixo" },
+    { src: client30, alt: "Momento especial", location: "Ilha de Santo Aleixo" },
     
-    // Maragogi Barra Grande
-    { src: client35, alt: "Piscinas naturais", location: "Maragogi Barra Grande" },
+    // Maragogi Barra Grande (11 fotos)
+    { src: client31, alt: "Piscinas naturais lotadas", location: "Maragogi Barra Grande" },
+    { src: client32, alt: "Mar tranquilo", location: "Maragogi Barra Grande" },
+    { src: client33, alt: "Casal feliz mergulhando", location: "Maragogi Barra Grande" },
+    { src: client34, alt: "Coqueiro na praia", location: "Maragogi Barra Grande" },
+    { src: client35, alt: "Casal nas águas azuis", location: "Maragogi Barra Grande" },
     { src: client36, alt: "Relaxamento total", location: "Maragogi Barra Grande" },
-    { src: client37, alt: "Casal mergulhando", location: "Maragogi Barra Grande" },
-    { src: client38, alt: "Flutuação perfeita", location: "Maragogi Barra Grande" },
-    { src: client39, alt: "Águas azuis", location: "Maragogi Barra Grande" },
-    { src: client40, alt: "Grupo animado", location: "Maragogi Barra Grande" },
-    { src: client41, alt: "Casal feliz", location: "Maragogi Barra Grande" },
-    { src: client42, alt: "Família unida", location: "Maragogi Barra Grande" },
-    { src: client43, alt: "Mergulho inesquecível", location: "Maragogi Barra Grande" },
-    { src: client44, alt: "Diversão garantida", location: "Maragogi Barra Grande" },
-    { src: client45, alt: "Cenário paradisíaco", location: "Maragogi Barra Grande" },
-    { src: client46, alt: "Momento especial", location: "Maragogi Barra Grande" },
-    { src: client47, alt: "Casal apaixonado", location: "Maragogi Barra Grande" },
+    { src: client37, alt: "Grupo animado", location: "Maragogi Barra Grande" },
+    { src: client38, alt: "Casal curtindo", location: "Maragogi Barra Grande" },
+    { src: client39, alt: "Família unida", location: "Maragogi Barra Grande" },
+    { src: client40, alt: "Arco de flores decorativo", location: "Maragogi Barra Grande" },
+    { src: client41, alt: "Grande grupo celebrando", location: "Maragogi Barra Grande" },
     
-    // Maragogi Ponta de Mangue
-    { src: client48, alt: "Bancos de areia", location: "Maragogi Ponta de Mangue" },
-    { src: client49, alt: "Mar turquesa", location: "Maragogi Ponta de Mangue" },
-    { src: client50, alt: "Coqueiro na praia", location: "Maragogi Ponta de Mangue" },
-    { src: client51, alt: "Trio feliz", location: "Maragogi Ponta de Mangue" },
-    { src: client52, alt: "Família completa", location: "Maragogi Ponta de Mangue" },
-    { src: client53, alt: "Grupo comemorando", location: "Maragogi Ponta de Mangue" },
-    { src: client54, alt: "Casal curtindo", location: "Maragogi Ponta de Mangue" },
-    { src: client55, alt: "Estrutura da praia", location: "Maragogi Ponta de Mangue" },
-    { src: client56, alt: "Selfie perfeita", location: "Maragogi Ponta de Mangue" },
-    { src: client57, alt: "Arco de flores", location: "Maragogi Ponta de Mangue" },
-    { src: client58, alt: "Boia e diversão", location: "Maragogi Ponta de Mangue" },
-    { src: client59, alt: "Amor na praia", location: "Maragogi Ponta de Mangue" },
-    { src: client60, alt: "Relaxamento total", location: "Maragogi Ponta de Mangue" },
+    // Maragogi Ponta de Mangue (15 fotos)
+    { src: client42, alt: "Pose com coqueiro", location: "Maragogi Ponta de Mangue" },
+    { src: client43, alt: "Mergulho nas águas cristalinas", location: "Maragogi Ponta de Mangue" },
+    { src: client44, alt: "Trio de amigas", location: "Maragogi Ponta de Mangue" },
+    { src: client45, alt: "Casal na praia", location: "Maragogi Ponta de Mangue" },
+    { src: client46, alt: "Família completa", location: "Maragogi Ponta de Mangue" },
+    { src: client47, alt: "Grupo na piscina", location: "Maragogi Ponta de Mangue" },
+    { src: client48, alt: "Quarteto de amigos", location: "Maragogi Ponta de Mangue" },
+    { src: client49, alt: "Estrutura de palha", location: "Maragogi Ponta de Mangue" },
+    { src: client50, alt: "Mulher com cachorro", location: "Maragogi Ponta de Mangue" },
+    { src: client51, alt: "Grupo grande celebrando", location: "Maragogi Ponta de Mangue" },
+    { src: client52, alt: "Letreiro colorido", location: "Maragogi Ponta de Mangue" },
+    { src: client53, alt: "Relaxando na praia", location: "Maragogi Ponta de Mangue" },
+    { src: client54, alt: "Pose divertida nas pedras", location: "Maragogi Ponta de Mangue" },
+    { src: client55, alt: "Grupo de mulheres", location: "Maragogi Ponta de Mangue" },
+    { src: client56, alt: "Mulher sentada na praia", location: "Maragogi Ponta de Mangue" },
     
-    // São Miguel dos Milagres
-    { src: client61, alt: "Boias divertidas", location: "São Miguel dos Milagres" },
-    { src: client62, alt: "Casal na praia", location: "São Miguel dos Milagres" },
-    { src: client63, alt: "Pose descontraída", location: "São Miguel dos Milagres" },
-    { src: client64, alt: "Águas calmas", location: "São Miguel dos Milagres" },
-    { src: client65, alt: "Paisagem única", location: "São Miguel dos Milagres" },
-    { src: client66, alt: "Momento inesquecível", location: "São Miguel dos Milagres" },
+    // Porto de Galinhas (1 foto)
+    { src: client57, alt: "Casal com guarda-sol colorido", location: "Porto de Galinhas" },
+    
+    // São Miguel dos Milagres (4 fotos)
+    { src: client58, alt: "Mulher com boia de melancia", location: "São Miguel dos Milagres" },
+    { src: client59, alt: "Homem na praia", location: "São Miguel dos Milagres" },
+    { src: client60, alt: "Mulher nas dunas", location: "São Miguel dos Milagres" },
+    { src: client61, alt: "Mulher no deck verde", location: "São Miguel dos Milagres" },
   ];
 
   return (
