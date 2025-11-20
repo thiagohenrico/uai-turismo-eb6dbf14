@@ -206,6 +206,9 @@ const ClientGallery = () => {
                         <p className="text-yellow-400 font-bold text-sm md:text-base drop-shadow-lg">
                           {photo.location}
                         </p>
+                        <p className="text-white/90 text-xs md:text-sm drop-shadow-lg mt-1">
+                          {photo.alt}
+                        </p>
                       </div>
                     </div>
                   </div>
