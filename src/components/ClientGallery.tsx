@@ -44,40 +44,40 @@ import client34 from "@/assets/client-34.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
-    { src: client1, alt: "Cliente feliz em passeio com cobra" },
-    { src: client2, alt: "Cliente curtindo nas piscinas naturais" },
-    { src: client3, alt: "Casal apaixonado em Porto de Galinhas" },
-    { src: client4, alt: "Amigos nas águas cristalinas de Maragogi" },
-    { src: client5, alt: "Casal com arara em passeio" },
-    { src: client6, alt: "Cliente relaxando no barco" },
-    { src: client7, alt: "Cliente feliz na praia" },
-    { src: client8, alt: "Grupo comemorando em Maragogi" },
-    { src: client9, alt: "Família curtindo o dia de praia" },
-    { src: client10, alt: "Casal em aventura radical" },
-    { src: client11, alt: "Cliente com cachorrinho na praia" },
-    { src: client12, alt: "Grupo animado no passeio de buggy" },
-    { src: client13, alt: "Família com bebê nas piscinas naturais" },
-    { src: client14, alt: "Cliente aproveitando as águas cristalinas" },
-    { src: client15, alt: "Grande grupo em Maragogi" },
-    { src: client16, alt: "Grupo em frente à Capela de São Benedito" },
-    { src: client17, alt: "Casal no passeio de barco" },
-    { src: client18, alt: "Cliente relaxando na boia de melancia" },
-    { src: client19, alt: "Família com criança em Carneiros" },
-    { src: client20, alt: "Grupo no buggy amarelo" },
-    { src: client21, alt: "Família com criança na praia" },
-    { src: client22, alt: "Cliente no letreiro de Olinda" },
-    { src: client23, alt: "Casal sob os guarda-sóis coloridos" },
-    { src: client24, alt: "Cliente nas ruas coloridas de Olinda" },
-    { src: client25, alt: "Amigas na piscina" },
-    { src: client26, alt: "Grupo de amigos em Recife" },
-    { src: client27, alt: "Grupo de amigas no buggy" },
-    { src: client28, alt: "Cliente com chapéu em Maragogi" },
-    { src: client29, alt: "Grupo com peixes nas águas cristalinas" },
-    { src: client30, alt: "Grupo feliz em Maragogi" },
-    { src: client31, alt: "Grupo de amigas em Recife" },
-    { src: client32, alt: "Cliente no barco em Maragogi" },
-    { src: client33, alt: "Família nas piscinas naturais" },
-    { src: client34, alt: "Criança com letreiro de Maragogi" },
+    { src: client1, alt: "Cliente feliz em passeio com cobra", location: "Porto de Galinhas" },
+    { src: client2, alt: "Cliente curtindo nas piscinas naturais", location: "Porto de Galinhas" },
+    { src: client3, alt: "Casal apaixonado em Porto de Galinhas", location: "Porto de Galinhas" },
+    { src: client4, alt: "Amigos nas águas cristalinas de Maragogi", location: "Maragogi" },
+    { src: client5, alt: "Casal com arara em passeio", location: "Porto de Galinhas" },
+    { src: client6, alt: "Cliente relaxando no barco", location: "Praia dos Carneiros" },
+    { src: client7, alt: "Cliente feliz na praia", location: "Porto de Galinhas" },
+    { src: client8, alt: "Grupo comemorando em Maragogi", location: "Maragogi" },
+    { src: client9, alt: "Família curtindo o dia de praia", location: "Porto de Galinhas" },
+    { src: client10, alt: "Casal em aventura radical", location: "Buggy Cabo de Santo Agostinho" },
+    { src: client11, alt: "Cliente com cachorrinho na praia", location: "Porto de Galinhas" },
+    { src: client12, alt: "Grupo animado no passeio de buggy", location: "Buggy Porto de Galinhas" },
+    { src: client13, alt: "Família com bebê nas piscinas naturais", location: "Porto de Galinhas" },
+    { src: client14, alt: "Cliente aproveitando as águas cristalinas", location: "Maragogi" },
+    { src: client15, alt: "Grande grupo em Maragogi", location: "Maragogi Barra Grande" },
+    { src: client16, alt: "Grupo em frente à Capela de São Benedito", location: "Praia dos Carneiros" },
+    { src: client17, alt: "Casal no passeio de barco", location: "Praia dos Carneiros" },
+    { src: client18, alt: "Cliente relaxando na boia de melancia", location: "Porto de Galinhas" },
+    { src: client19, alt: "Família com criança em Carneiros", location: "Praia dos Carneiros" },
+    { src: client20, alt: "Grupo no buggy amarelo", location: "Buggy Porto de Galinhas" },
+    { src: client21, alt: "Família com criança na praia", location: "São Miguel dos Milagres" },
+    { src: client22, alt: "Cliente no letreiro de Olinda", location: "City Tour Recife e Olinda" },
+    { src: client23, alt: "Casal sob os guarda-sóis coloridos", location: "Praia dos Carneiros" },
+    { src: client24, alt: "Cliente nas ruas coloridas de Olinda", location: "City Tour Recife e Olinda" },
+    { src: client25, alt: "Amigas na piscina", location: "Porto de Galinhas" },
+    { src: client26, alt: "Grupo de amigos em Recife", location: "City Tour Recife e Olinda" },
+    { src: client27, alt: "Grupo de amigas no buggy", location: "Buggy Porto de Galinhas" },
+    { src: client28, alt: "Cliente com chapéu em Maragogi", location: "Maragogi Ponta de Mangue" },
+    { src: client29, alt: "Grupo com peixes nas águas cristalinas", location: "Maragogi" },
+    { src: client30, alt: "Grupo feliz em Maragogi", location: "Maragogi Barra Grande" },
+    { src: client31, alt: "Grupo de amigas em Recife", location: "City Tour Recife e Olinda" },
+    { src: client32, alt: "Cliente no barco em Maragogi", location: "Maragogi" },
+    { src: client33, alt: "Família nas piscinas naturais", location: "Porto de Galinhas" },
+    { src: client34, alt: "Criança com letreiro de Maragogi", location: "Maragogi" },
   ];
 
   return (
@@ -112,12 +112,17 @@ const ClientGallery = () => {
               {clientPhotos.map((photo, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow group">
                       <img
                         src={photo.src}
                         alt={photo.alt}
-                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
+                        <p className="text-white font-semibold text-sm md:text-base">
+                          {photo.location}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </CarouselItem>
