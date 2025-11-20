@@ -35,14 +35,20 @@ const SobreNos = () => {
                 Nossa <span className="text-primary">História</span>
               </h2>
               <div className="prose prose-lg max-w-none text-muted-foreground">
-               <p className="text-lg leading-relaxed mb-6">
-                  A Uai Turismo nasceu da paixão por mostrar as belezas naturais do litoral Sul de Pernambuco e Norte de Alagoas. Com anos de experiência no mercado de turismo, nossa empresa se dedica a criar experiências únicas e memoráveis para nossos clientes.
+                <p className="text-lg leading-relaxed mb-6">
+                  A Uai Turismo nasceu da paixão em compartilhar as maravilhas do litoral Sul de Pernambuco e do Norte de Alagoas com quem deseja viver dias inesquecíveis. Com experiência sólida no mercado e um olhar atento para cada detalhe, transformamos passeios em memórias que ficam para sempre.
                 </p>
-              <p className="text-lg leading-relaxed mb-6">
-                  Somos especializados em passeios personalizados que revelam os destinos mais paradisíacos da região, sempre com foco em qualidade, segurança e satisfação dos nossos clientes. Nossa equipe é formada por profissionais qualificados e apaixonados pelo que fazem.
+                <p className="text-lg leading-relaxed mb-6">
+                  O nome Uai carrega nossa história no próprio som: o fundador, mineiro de Belo Horizonte, veio passear em Porto de Galinhas e… não voltou mais. Se apaixonou pela região, pelas pessoas e por esse ritmo único do litoral. Decidiu ficar e criar uma empresa que mostrasse toda a beleza desse pedaço do paraíso para mais pessoas, unindo o acolhimento mineiro à alma vibrante do Nordeste.
+                </p>
+                <p className="text-lg leading-relaxed mb-6">
+                  Com esse DNA, nos especializamos em levar você aos cenários mais paradisíacos da região: de Maragogi à Praia dos Carneiros, da São Miguel dos Milagres ao Cabo de Santo Agostinho. Nossa missão é simples: unir qualidade, segurança e cuidado para que cada viajante se sinta especial do início ao fim.
+                </p>
+                <p className="text-lg leading-relaxed mb-6">
+                  Nossa equipe é formada por profissionais apaixonados pelo que fazem e comprometidos em proporcionar uma experiência verdadeira, autêntica e cheia de atenção. Cada roteiro é planejado com carinho, respeitando o ritmo da natureza e garantindo que seu tempo e investimento sejam aproveitados ao máximo.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Trabalhamos com uma seleção criteriosa de destinos, priorizando locais que oferecem experiências autênticas e contato direto com a natureza. Cada passeio é cuidadosamente planejado, para garantir o máximo aproveitamento do seu tempo e investimento.
+                  Mais do que passeios, oferecemos vivências. Mais do que clientes, recebemos amigos. Essa é a essência da Uai Turismo!
                 </p>
               </div>
             </div>

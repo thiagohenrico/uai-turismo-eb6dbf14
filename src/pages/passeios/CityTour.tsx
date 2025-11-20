@@ -32,7 +32,7 @@ const CityTour = () => {
                 City Tour Recife e Olinda
               </h1>
               <p className="text-lg md:text-xl text-white/90 max-w-3xl">
-                Mergulhe na história e cultura pernambucana
+                Uma imersão na cultura, história e beleza do Nordeste
               </p>
             </div>
           </div>
@@ -45,11 +45,8 @@ const CityTour = () => {
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
                   Sobre o Passeio
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  O City Tour por Recife e Olinda é uma viagem pela rica história e cultura de Pernambuco. Conheça os principais pontos turísticos, monumentos históricos, igrejas centenárias e locais que contam a história do Brasil colonial.
-                </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Olinda, Patrimônio Cultural da Humanidade pela UNESCO, encanta com suas ladeiras coloridas, casarões coloniais e vistas panorâmicas. Recife, a Veneza Brasileira, impressiona com sua modernidade mesclada à história, com destaque para o Marco Zero e o bairro do Recife Antigo.
+                  Uma imersão na cultura, história e beleza do Nordeste em um passeio que une tradição e modernidade. Entre pontes, igrejas seculares, casarios coloridos e mirantes de tirar o fôlego, você conhece de perto a essência de duas cidades vibrantes, cheias de arte, sabores e memórias.
                 </p>
               </div>
 
