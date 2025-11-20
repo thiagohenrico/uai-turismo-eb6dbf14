@@ -116,11 +116,11 @@ const SobreNos = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span><strong className="text-foreground">Ilha de Santo Aleixo:</strong> Santuário ecológico com fauna única.</span>
+                  <span><strong className="text-foreground">Ilha de Santo Aleixo:</strong> Um paraíso de águas cristalinas, areia clara e formações rochosas únicas.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span><strong className="text-foreground">City Tour:</strong> História e cultura de Recife e Olinda.</span>
+                  <span><strong className="text-foreground">City Tour:</strong> Uma imersão na cultura, história e beleza do Nordeste entre pontes, igrejas seculares e casarios coloridos.</span>
                 </li>
               </ul>
             </div>

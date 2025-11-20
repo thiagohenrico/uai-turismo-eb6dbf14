@@ -131,7 +131,7 @@ const Tours = () => {
       title: "Ilha de Santo Aleixo",
       image: ilhaSantoAleixo,
       detailsLink: "/passeios/ilha-santo-aleixo",
-      description: "Ilha ecológica preservada com trilhas, praias paradisíacas e vida selvagem única.",
+      description: "Um paraíso de águas cristalinas, areia clara e formações rochosas únicas espera por você. O passeio oferece uma experiência tranquila e encantadora, com tempo para relaxar, explorar piscinas naturais, caminhar por trilhas leves e curtir um cenário preservado que parece ter parado no tempo.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO:",
       itineraryItems: [
@@ -151,7 +151,7 @@ const Tours = () => {
       title: "City Tour Recife e Olinda",
       image: recifeOlinda,
       detailsLink: "/passeios/city-tour",
-      description: "Mergulhe na história e cultura pernambucana visitando os principais pontos turísticos.",
+      description: "Uma imersão na cultura, história e beleza do Nordeste em um passeio que une tradição e modernidade. Entre pontes, igrejas seculares, casarios coloridos e mirantes de tirar o fôlego, você conhece de perto a essência de duas cidades vibrantes, cheias de arte, sabores e memórias.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO:",
       itineraryItems: [
