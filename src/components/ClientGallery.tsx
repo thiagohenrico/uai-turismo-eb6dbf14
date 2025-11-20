@@ -41,6 +41,16 @@ import client31 from "@/assets/client-31.jpg";
 import client32 from "@/assets/client-32.jpg";
 import client33 from "@/assets/client-33.jpg";
 import client34 from "@/assets/client-34.jpg";
+import client35 from "@/assets/client-35.jpg";
+import client36 from "@/assets/client-36.jpg";
+import client37 from "@/assets/client-37.jpg";
+import client38 from "@/assets/client-38.jpg";
+import client39 from "@/assets/client-39.jpg";
+import client40 from "@/assets/client-40.jpg";
+import client41 from "@/assets/client-41.jpg";
+import client42 from "@/assets/client-42.jpg";
+import client43 from "@/assets/client-43.jpg";
+import client44 from "@/assets/client-44.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -78,6 +88,16 @@ const ClientGallery = () => {
     { src: client32, alt: "Cliente no barco em Maragogi", location: "Maragogi" },
     { src: client33, alt: "Família nas piscinas naturais", location: "Porto de Galinhas" },
     { src: client34, alt: "Criança com letreiro de Maragogi", location: "Maragogi" },
+    { src: client35, alt: "Clientes em buggy no Cabo de Santo Agostinho", location: "Buggy Cabo de Santo Agostinho" },
+    { src: client36, alt: "Grupo em buggys em Porto de Galinhas", location: "Buggy Porto de Galinhas" },
+    { src: client37, alt: "Casal no barco em Carneiros", location: "Praia dos Carneiros" },
+    { src: client38, alt: "Família feliz em Carneiros", location: "Praia dos Carneiros" },
+    { src: client39, alt: "Grupo com guia em Maragogi", location: "Maragogi Barra Grande" },
+    { src: client40, alt: "Grupo no arco Caminho de Moisés", location: "Maragogi Barra Grande" },
+    { src: client41, alt: "Família nas águas cristalinas", location: "Maragogi Ponta de Mangue" },
+    { src: client42, alt: "Cliente com cachorro na praia", location: "Maragogi Ponta de Mangue" },
+    { src: client43, alt: "Casal com guia no buggy", location: "Buggy Porto de Galinhas" },
+    { src: client44, alt: "Casal na Ilha de Santo Aleixo", location: "Ilha de Santo Aleixo" },
   ];
 
   return (
