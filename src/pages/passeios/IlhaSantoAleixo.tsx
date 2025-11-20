@@ -32,7 +32,7 @@ const IlhaSantoAleixo = () => {
                 Ilha de Santo Aleixo
               </h1>
               <p className="text-lg md:text-xl text-white/90 max-w-3xl">
-                Ilha ecológica preservada com vida selvagem única
+                Um paraíso de águas cristalinas, areia clara e formações rochosas únicas
               </p>
             </div>
           </div>
@@ -45,11 +45,8 @@ const IlhaSantoAleixo = () => {
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
                   Sobre o Passeio
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  A Ilha de Santo Aleixo é um verdadeiro santuário ecológico localizado no litoral sul de Pernambuco. Com sua natureza preservada, praias paradisíacas e uma população única de esquilos, a ilha oferece uma experiência de conexão com a natureza como poucas no Brasil.
-                </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Durante o passeio, você poderá fazer trilhas ecológicas, conhecer a famosa Praia da Ferradura com suas águas cristalinas, explorar piscinas naturais e interagir com os simpáticos esquilos que habitam a ilha. É um programa perfeito para quem busca tranquilidade e contato com a natureza.
+                  Um paraíso de águas cristalinas, areia clara e formações rochosas únicas espera por você. O passeio oferece uma experiência tranquila e encantadora, com tempo para relaxar, explorar piscinas naturais, caminhar por trilhas leves e curtir um cenário preservado que parece ter parado no tempo. Uma escolha perfeita para quem busca beleza, sossego e conexão com a natureza.
                 </p>
               </div>
 
