@@ -98,13 +98,13 @@ const ClientGallery = () => {
     { src: client15, alt: "Família na praia", location: "Carneiros" },
     { src: client16, alt: "Momento perfeito", location: "Carneiros" },
     
-    // City Tour (6 fotos)
-    { src: client17, alt: "Igreja histórica", location: "City Tour" },
-    { src: client18, alt: "Família no centro histórico", location: "City Tour" },
-    { src: client19, alt: "Arquitetura colonial", location: "City Tour" },
-    { src: client20, alt: "Grupo animado", location: "City Tour" },
-    { src: client21, alt: "Ladeiras coloridas de Olinda", location: "City Tour" },
-    { src: client22, alt: "Marco Zero do Recife", location: "City Tour" },
+    // Citytour (6 fotos)
+    { src: client17, alt: "Igreja histórica", location: "Citytour" },
+    { src: client18, alt: "Família no centro histórico", location: "Citytour" },
+    { src: client19, alt: "Arquitetura colonial", location: "Citytour" },
+    { src: client20, alt: "Grupo animado", location: "Citytour" },
+    { src: client21, alt: "Ladeiras coloridas de Olinda", location: "Citytour" },
+    { src: client22, alt: "Marco Zero do Recife", location: "Citytour" },
     
     // Ecopark Maragogi (3 fotos)
     { src: client23, alt: "Contato com animais", location: "Ecopark Maragogi" },
