@@ -65,6 +65,13 @@ import client55 from "@/assets/client-55.jpg";
 import client56 from "@/assets/client-56.jpg";
 import client57 from "@/assets/client-57.jpg";
 import client58 from "@/assets/client-58.jpg";
+import client59 from "@/assets/client-59.jpg";
+import client60 from "@/assets/client-60.jpg";
+import client61 from "@/assets/client-61.jpg";
+import client62 from "@/assets/client-62.jpg";
+import client63 from "@/assets/client-63.jpg";
+import client64 from "@/assets/client-64.jpg";
+import client65 from "@/assets/client-65.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -119,6 +126,13 @@ const ClientGallery = () => {
     { src: client54, alt: "Casal apaixonado em Carneiros", location: "Praia dos Carneiros" },
     { src: client56, alt: "Cliente nas piscinas naturais de Carneiros", location: "Praia dos Carneiros" },
     { src: client58, alt: "Cliente em Olinda", location: "City Tour Recife e Olinda" },
+    { src: client59, alt: "Grupo com guia nas águas cristalinas", location: "Maragogi Ponta de Mangue" },
+    { src: client60, alt: "Cliente relaxando na praia", location: "Maragogi Ponta de Mangue" },
+    { src: client61, alt: "Criança na praia", location: "Maragogi Ponta de Mangue" },
+    { src: client62, alt: "Casal nos guarda-sóis coloridos", location: "Porto de Galinhas" },
+    { src: client63, alt: "Família com bebê no mirante", location: "Buggy Cabo de Santo Agostinho" },
+    { src: client64, alt: "Grupo com guarda-chuvas em Recife", location: "City Tour Recife e Olinda" },
+    { src: client65, alt: "Família com bebê nas piscinas", location: "Maragogi Ponta de Mangue" },
   ];
 
   return (
