@@ -51,6 +51,16 @@ import client41 from "@/assets/client-41.jpg";
 import client42 from "@/assets/client-42.jpg";
 import client43 from "@/assets/client-43.jpg";
 import client44 from "@/assets/client-44.jpg";
+import client45 from "@/assets/client-45.jpg";
+import client46 from "@/assets/client-46.jpg";
+import client47 from "@/assets/client-47.jpg";
+import client48 from "@/assets/client-48.jpg";
+import client49 from "@/assets/client-49.jpg";
+import client50 from "@/assets/client-50.jpg";
+import client51 from "@/assets/client-51.jpg";
+import client52 from "@/assets/client-52.jpg";
+import client53 from "@/assets/client-53.jpg";
+import client54 from "@/assets/client-54.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -98,6 +108,16 @@ const ClientGallery = () => {
     { src: client42, alt: "Cliente com cachorro na praia", location: "Maragogi Ponta de Mangue" },
     { src: client43, alt: "Casal com guia no buggy", location: "Buggy Porto de Galinhas" },
     { src: client44, alt: "Casal na Ilha de Santo Aleixo", location: "Ilha de Santo Aleixo" },
+    { src: client45, alt: "Grupo nas piscinas naturais de Maragogi", location: "Maragogi Barra Grande" },
+    { src: client46, alt: "Casal curtindo Maragogi", location: "Maragogi Barra Grande" },
+    { src: client47, alt: "Família com guia em Maragogi", location: "Maragogi Ponta de Mangue" },
+    { src: client48, alt: "Casal nas águas cristalinas", location: "Maragogi Ponta de Mangue" },
+    { src: client49, alt: "Grupo feliz em Maragogi", location: "Maragogi Ponta de Mangue" },
+    { src: client50, alt: "Cliente nas praias de São Miguel", location: "São Miguel dos Milagres" },
+    { src: client51, alt: "Grupo no buggy pelo Cabo", location: "Buggy Cabo de Santo Agostinho" },
+    { src: client52, alt: "Casal em aventura de buggy", location: "Buggy Porto de Galinhas" },
+    { src: client53, alt: "Grupo na praia dos Carneiros", location: "Praia dos Carneiros" },
+    { src: client54, alt: "Casal apaixonado em Carneiros", location: "Praia dos Carneiros" },
   ];
 
   return (
