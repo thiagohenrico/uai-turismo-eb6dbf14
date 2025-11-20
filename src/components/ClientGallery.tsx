@@ -72,10 +72,11 @@ import client62 from "@/assets/client-62.jpg";
 import client63 from "@/assets/client-63.jpg";
 import client64 from "@/assets/client-64.jpg";
 import client65 from "@/assets/client-65.jpg";
+import client66 from "@/assets/client-66.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
-    { src: client1, alt: "Cliente feliz em passeio com cobra", location: "Porto de Galinhas" },
+    { src: client1, alt: "Cliente feliz em passeio com cobra", location: "Ecopark Maragogi" },
     { src: client2, alt: "Cliente curtindo nas piscinas naturais", location: "Porto de Galinhas" },
     { src: client3, alt: "Casal apaixonado em Porto de Galinhas", location: "Porto de Galinhas" },
     { src: client4, alt: "Amigos nas águas cristalinas de Maragogi", location: "Maragogi" },
@@ -130,9 +131,10 @@ const ClientGallery = () => {
     { src: client60, alt: "Cliente relaxando na praia", location: "Maragogi Ponta de Mangue" },
     { src: client61, alt: "Criança na praia", location: "Maragogi Ponta de Mangue" },
     { src: client62, alt: "Casal nos guarda-sóis coloridos", location: "Porto de Galinhas" },
-    { src: client63, alt: "Família com bebê no mirante", location: "Buggy Cabo de Santo Agostinho" },
+    { src: client63, alt: "Família com bebê no mirante", location: "Porto de Galinhas" },
     { src: client64, alt: "Grupo com guarda-chuvas em Recife", location: "City Tour Recife e Olinda" },
     { src: client65, alt: "Família com bebê nas piscinas", location: "Maragogi Ponta de Mangue" },
+    { src: client66, alt: "Cliente no barco em São Miguel", location: "São Miguel dos Milagres" },
   ];
 
   return (
