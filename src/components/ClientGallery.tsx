@@ -65,10 +65,6 @@ import client55 from "@/assets/client-55.jpg";
 import client56 from "@/assets/client-56.jpg";
 import client57 from "@/assets/client-57.jpg";
 import client58 from "@/assets/client-58.jpg";
-import client59 from "@/assets/client-59.jpg";
-import client60 from "@/assets/client-60.jpg";
-import client61 from "@/assets/client-61.jpg";
-import client62 from "@/assets/client-62.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -123,10 +119,6 @@ const ClientGallery = () => {
     { src: client54, alt: "Casal apaixonado em Carneiros", location: "Praia dos Carneiros" },
     { src: client56, alt: "Cliente nas piscinas naturais de Carneiros", location: "Praia dos Carneiros" },
     { src: client58, alt: "Cliente em Olinda", location: "City Tour Recife e Olinda" },
-    { src: client59, alt: "Cliente com cobra no Ecopark", location: "Ecopark Maragogi" },
-    { src: client60, alt: "Cliente relaxando na Ilha de Santo Aleixo", location: "Ilha de Santo Aleixo" },
-    { src: client61, alt: "Grande grupo em Maragogi", location: "Maragogi Ponta de Mangue" },
-    { src: client62, alt: "Cliente feliz em Maragogi", location: "Maragogi Ponta de Mangue" },
   ];
 
   return (
