@@ -61,6 +61,11 @@ import client51 from "@/assets/client-51.jpg";
 import client52 from "@/assets/client-52.jpg";
 import client53 from "@/assets/client-53.jpg";
 import client54 from "@/assets/client-54.jpg";
+import client55 from "@/assets/client-55.jpg";
+import client56 from "@/assets/client-56.jpg";
+import client57 from "@/assets/client-57.jpg";
+import client58 from "@/assets/client-58.jpg";
+import client59 from "@/assets/client-59.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -118,6 +123,11 @@ const ClientGallery = () => {
     { src: client52, alt: "Casal em aventura de buggy", location: "Buggy Porto de Galinhas" },
     { src: client53, alt: "Grupo na praia dos Carneiros", location: "Praia dos Carneiros" },
     { src: client54, alt: "Casal apaixonado em Carneiros", location: "Praia dos Carneiros" },
+    { src: client55, alt: "Casal na Capela dos Carneiros", location: "Praia dos Carneiros" },
+    { src: client56, alt: "Cliente nas piscinas naturais de Carneiros", location: "Praia dos Carneiros" },
+    { src: client57, alt: "Grupo de amigos em Recife", location: "City Tour Recife e Olinda" },
+    { src: client58, alt: "Cliente em Olinda", location: "City Tour Recife e Olinda" },
+    { src: client59, alt: "Cliente com cobra no Ecopark", location: "Ecopark Maragogi" },
   ];
 
   return (
