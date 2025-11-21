@@ -7,75 +7,52 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import client1 from "@/assets/client-1.jpg";
-import client2 from "@/assets/client-2.jpg";
-import client3 from "@/assets/client-3.jpg";
-import client4 from "@/assets/client-4.jpg";
-import client5 from "@/assets/client-5.jpg";
-import client6 from "@/assets/client-6.jpg";
-import client7 from "@/assets/client-7.jpg";
-import client8 from "@/assets/client-8.jpg";
-import client9 from "@/assets/client-9.jpg";
-import client10 from "@/assets/client-10.jpg";
-import client11 from "@/assets/client-11.jpg";
-import client12 from "@/assets/client-12.jpg";
-import client13 from "@/assets/client-13.jpg";
-import client14 from "@/assets/client-14.jpg";
-import client15 from "@/assets/client-15.jpg";
-import client16 from "@/assets/client-16.jpg";
-import client17 from "@/assets/client-17.jpg";
-import client18 from "@/assets/client-18.jpg";
-import client19 from "@/assets/client-19.jpg";
-import client20 from "@/assets/client-20.jpg";
-import client21 from "@/assets/client-21.jpg";
-import client22 from "@/assets/client-22.jpg";
-import client23 from "@/assets/client-23.jpg";
-import client24 from "@/assets/client-24.jpg";
-import client25 from "@/assets/client-25.jpg";
-import client26 from "@/assets/client-26.jpg";
-import client27 from "@/assets/client-27.jpg";
-import client28 from "@/assets/client-28.jpg";
-import client29 from "@/assets/client-29.jpg";
-import client30 from "@/assets/client-30.jpg";
-import client31 from "@/assets/client-31.jpg";
-import client32 from "@/assets/client-32.jpg";
-import client33 from "@/assets/client-33.jpg";
-import client34 from "@/assets/client-34.jpg";
-import client35 from "@/assets/client-35.jpg";
-import client36 from "@/assets/client-36.jpg";
-import client37 from "@/assets/client-37.jpg";
-import client38 from "@/assets/client-38.jpg";
-import client39 from "@/assets/client-39.jpg";
-import client40 from "@/assets/client-40.jpg";
-import client41 from "@/assets/client-41.jpg";
-import client42 from "@/assets/client-42.jpg";
-import client43 from "@/assets/client-43.jpg";
-import client44 from "@/assets/client-44.jpg";
-import client45 from "@/assets/client-45.jpg";
-import client46 from "@/assets/client-46.jpg";
-import client47 from "@/assets/client-47.jpg";
-import client48 from "@/assets/client-48.jpg";
-import client49 from "@/assets/client-49.jpg";
-import client50 from "@/assets/client-50.jpg";
-import client51 from "@/assets/client-51.jpg";
-import client52 from "@/assets/client-52.jpg";
-import client53 from "@/assets/client-53.jpg";
-import client54 from "@/assets/client-54.jpg";
-import client55 from "@/assets/client-55.jpg";
-import client56 from "@/assets/client-56.jpg";
-import client57 from "@/assets/client-57.jpg";
-import client58 from "@/assets/client-58.jpg";
-import client59 from "@/assets/client-59.jpg";
-import client60 from "@/assets/client-60.jpg";
-import client61 from "@/assets/client-61.jpg";
-import client62 from "@/assets/client-62.jpg";
-import client63 from "@/assets/client-63.jpg";
-import client64 from "@/assets/client-64.jpg";
-import client65 from "@/assets/client-65.jpg";
-import client66 from "@/assets/client-66.jpg";
+import galeriaBuggyCabo1 from "@/assets/galeria-buggy-cabo-1.jpg";
+import galeriaPortoGalinhas1 from "@/assets/galeria-porto-galinhas-1.jpg";
+import galeriaCarneiros1 from "@/assets/galeria-carneiros-1.jpg";
+import galeriaCarneiros2 from "@/assets/galeria-carneiros-2.jpg";
+import galeriaMaragogiBarraGrande1 from "@/assets/galeria-maragogi-barra-1.jpg";
+import galeriaMaragogiBarraGrande2 from "@/assets/galeria-maragogi-barra-2.jpg";
+import galeriaMaragogiPontaMangue1 from "@/assets/galeria-maragogi-ponta-1.jpg";
 
 const ClientGallery = () => {
-  const clientPhotos = [];
+  const clientPhotos = [
+    {
+      src: galeriaBuggyCabo1,
+      alt: "Clientes aproveitando o passeio de buggy",
+      location: "Buggy Cabo de Santo Agostinho"
+    },
+    {
+      src: galeriaPortoGalinhas1,
+      alt: "Grupo de clientes com os buggys na praia",
+      location: "Buggy Porto de Galinhas"
+    },
+    {
+      src: galeriaCarneiros1,
+      alt: "Casal aproveitando o passeio de lancha",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaCarneiros2,
+      alt: "Família curtindo a Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaMaragogiBarraGrande1,
+      alt: "Clientes nas águas cristalinas de Maragogi",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiBarraGrande2,
+      alt: "Grupo com guias da Uai Turismo em Maragogi",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiPontaMangue1,
+      alt: "Família nas piscinas naturais de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+  ];
 
   return (
     <section id="galeria" className="py-20 bg-muted/30">
