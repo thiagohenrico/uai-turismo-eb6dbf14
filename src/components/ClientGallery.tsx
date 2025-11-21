@@ -52,6 +52,16 @@ import galeriaMaragogiBarraGrande4 from "@/assets/galeria-maragogi-barra-4.jpg";
 import galeriaMaragogiBarraGrande5 from "@/assets/galeria-maragogi-barra-5.jpg";
 import galeriaMaragogiBarraGrande6 from "@/assets/galeria-maragogi-barra-6.jpg";
 import galeriaIlhaSantoAleixo4 from "@/assets/galeria-ilha-santo-aleixo-4.jpg";
+import galeriaEcoparkMaragogi2 from "@/assets/galeria-ecopark-maragogi-2.jpg";
+import galeriaCitytour5 from "@/assets/galeria-citytour-5.jpg";
+import galeriaCitytour6 from "@/assets/galeria-citytour-6.jpg";
+import galeriaBuggyCabo4 from "@/assets/galeria-buggy-cabo-4.jpg";
+import galeriaMaragogiBarraGrande7 from "@/assets/galeria-maragogi-barra-7.jpg";
+import galeriaMaragogiBarraGrande8 from "@/assets/galeria-maragogi-barra-8.jpg";
+import galeriaMaragogiBarraGrande9 from "@/assets/galeria-maragogi-barra-9.jpg";
+import galeriaIlhaSantoAleixo5 from "@/assets/galeria-ilha-santo-aleixo-5.jpg";
+import galeriaEcoparkMaragogi3 from "@/assets/galeria-ecopark-maragogi-3.jpg";
+import galeriaSaoMiguel4 from "@/assets/galeria-sao-miguel-4.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -279,6 +289,56 @@ const ClientGallery = () => {
       src: galeriaIlhaSantoAleixo4,
       alt: "Explorando a Ilha de Santo Aleixo",
       location: "Ilha de Santo Aleixo"
+    },
+    {
+      src: galeriaEcoparkMaragogi2,
+      alt: "Visitando o Ecopark Maragogi",
+      location: "Ecopark Maragogi"
+    },
+    {
+      src: galeriaCitytour5,
+      alt: "Descobrindo Recife e Olinda",
+      location: "City Tour Recife e Olinda"
+    },
+    {
+      src: galeriaCitytour6,
+      alt: "Passeio cultural por Recife e Olinda",
+      location: "City Tour Recife e Olinda"
+    },
+    {
+      src: galeriaBuggyCabo4,
+      alt: "Mais aventura em Cabo de Santo Agostinho",
+      location: "Buggy Cabo de Santo Agostinho"
+    },
+    {
+      src: galeriaMaragogiBarraGrande7,
+      alt: "Explorando Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiBarraGrande8,
+      alt: "Diversão em Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiBarraGrande9,
+      alt: "Passeio inesquecível em Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaIlhaSantoAleixo5,
+      alt: "Descobrindo a Ilha de Santo Aleixo",
+      location: "Ilha de Santo Aleixo"
+    },
+    {
+      src: galeriaEcoparkMaragogi3,
+      alt: "Aventura no Ecopark Maragogi",
+      location: "Ecopark Maragogi"
+    },
+    {
+      src: galeriaSaoMiguel4,
+      alt: "Apreciando São Miguel dos Milagres",
+      location: "São Miguel dos Milagres"
     },
   ];
 
