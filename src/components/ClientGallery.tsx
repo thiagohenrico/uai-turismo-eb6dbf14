@@ -42,6 +42,16 @@ import galeriaBuggyCabo2 from "@/assets/galeria-buggy-cabo-2.jpg";
 import galeriaCitytour4 from "@/assets/galeria-citytour-4.jpg";
 import galeriaMaragogiPontaMangue10 from "@/assets/galeria-maragogi-ponta-10.jpg";
 import galeriaSaoMiguel2 from "@/assets/galeria-sao-miguel-2.jpg";
+import galeriaSaoMiguel3 from "@/assets/galeria-sao-miguel-3.jpg";
+import galeriaBuggyCabo3 from "@/assets/galeria-buggy-cabo-3.jpg";
+import galeriaMaragogiPontaMangue11 from "@/assets/galeria-maragogi-ponta-11.jpg";
+import galeriaMaragogiPontaMangue12 from "@/assets/galeria-maragogi-ponta-12.jpg";
+import galeriaMaragogiPontaMangue13 from "@/assets/galeria-maragogi-ponta-13.jpg";
+import galeriaMaragogiBarraGrande3 from "@/assets/galeria-maragogi-barra-3.jpg";
+import galeriaMaragogiBarraGrande4 from "@/assets/galeria-maragogi-barra-4.jpg";
+import galeriaMaragogiBarraGrande5 from "@/assets/galeria-maragogi-barra-5.jpg";
+import galeriaMaragogiBarraGrande6 from "@/assets/galeria-maragogi-barra-6.jpg";
+import galeriaIlhaSantoAleixo4 from "@/assets/galeria-ilha-santo-aleixo-4.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -219,6 +229,56 @@ const ClientGallery = () => {
       src: galeriaSaoMiguel2,
       alt: "Cliente no catamaran em São Miguel dos Milagres",
       location: "São Miguel dos Milagres"
+    },
+    {
+      src: galeriaSaoMiguel3,
+      alt: "Clientes curtindo as belezas de São Miguel dos Milagres",
+      location: "São Miguel dos Milagres"
+    },
+    {
+      src: galeriaBuggyCabo3,
+      alt: "Aventura de buggy em Cabo de Santo Agostinho",
+      location: "Buggy Cabo de Santo Agostinho"
+    },
+    {
+      src: galeriaMaragogiPontaMangue11,
+      alt: "Família nas piscinas naturais de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaMaragogiPontaMangue12,
+      alt: "Clientes relaxando em Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaMaragogiPontaMangue13,
+      alt: "Grupo aproveitando as águas cristalinas",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaMaragogiBarraGrande3,
+      alt: "Cliente curtindo Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiBarraGrande4,
+      alt: "Família em Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiBarraGrande5,
+      alt: "Momentos especiais em Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiBarraGrande6,
+      alt: "Aventura em Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaIlhaSantoAleixo4,
+      alt: "Explorando a Ilha de Santo Aleixo",
+      location: "Ilha de Santo Aleixo"
     },
   ];
 
