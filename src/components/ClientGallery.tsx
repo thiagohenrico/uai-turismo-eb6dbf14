@@ -75,18 +75,13 @@ const ClientGallery = () => {
       location: "Buggy Cabo de Santo Agostinho"
     },
     {
+      src: galeriaMaragogiPontaMangue1,
+      alt: "Família nas piscinas naturais de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
       src: galeriaPortoGalinhas1,
       alt: "Grupo de clientes com os buggys na praia",
-      location: "Buggy Porto de Galinhas"
-    },
-    {
-      src: galeriaPortoGalinhas2,
-      alt: "Casal no buggy amarelo em meio aos coqueiros",
-      location: "Buggy Porto de Galinhas"
-    },
-    {
-      src: galeriaPortoGalinhas3,
-      alt: "Clientes com guia da Uai Turismo no buggy",
       location: "Buggy Porto de Galinhas"
     },
     {
@@ -95,29 +90,9 @@ const ClientGallery = () => {
       location: "Praia dos Carneiros"
     },
     {
-      src: galeriaCarneiros2,
-      alt: "Família curtindo a Praia dos Carneiros",
-      location: "Praia dos Carneiros"
-    },
-    {
-      src: galeriaMaragogiBarraGrande1,
-      alt: "Clientes nas águas cristalinas de Maragogi",
-      location: "Maragogi e Barra Grande"
-    },
-    {
-      src: galeriaMaragogiBarraGrande2,
-      alt: "Grupo com guias da Uai Turismo em Maragogi",
-      location: "Maragogi e Barra Grande"
-    },
-    {
-      src: galeriaMaragogiPontaMangue1,
-      alt: "Família nas piscinas naturais de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
-    },
-    {
-      src: galeriaMaragogiPontaMangue2,
-      alt: "Cliente com seu cachorro nas águas de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      src: galeriaSaoMiguel1,
+      alt: "Clientes curtindo São Miguel dos Milagres",
+      location: "São Miguel dos Milagres"
     },
     {
       src: galeriaIlhaSantoAleixo1,
@@ -125,54 +100,14 @@ const ClientGallery = () => {
       location: "Ilha de Santo Aleixo"
     },
     {
-      src: galeriaIlhaSantoAleixo2,
-      alt: "Casal aproveitando a vista da Ilha de Santo Aleixo",
-      location: "Ilha de Santo Aleixo"
-    },
-    {
-      src: galeriaMaragogiPontaMangue3,
+      src: galeriaMaragogiBarraGrande1,
       alt: "Clientes nas águas cristalinas de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi e Barra Grande"
     },
     {
-      src: galeriaMaragogiPontaMangue4,
-      alt: "Família aproveitando as piscinas naturais",
-      location: "Maragogi e Ponta de Mangue"
-    },
-    {
-      src: galeriaMaragogiPontaMangue5,
-      alt: "Grupo nas águas de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
-    },
-    {
-      src: galeriaSaoMiguel1,
-      alt: "Clientes curtindo São Miguel dos Milagres",
-      location: "São Miguel dos Milagres"
-    },
-    {
-      src: galeriaPortoGalinhas4,
-      alt: "Passeio de buggy em Porto de Galinhas",
+      src: galeriaPortoGalinhas2,
+      alt: "Casal no buggy amarelo em meio aos coqueiros",
       location: "Buggy Porto de Galinhas"
-    },
-    {
-      src: galeriaCarneiros3,
-      alt: "Clientes na Praia dos Carneiros",
-      location: "Praia dos Carneiros"
-    },
-    {
-      src: galeriaCarneiros4,
-      alt: "Família aproveitando a Praia dos Carneiros",
-      location: "Praia dos Carneiros"
-    },
-    {
-      src: galeriaCarneiros5,
-      alt: "Grupo curtindo o passeio na Praia dos Carneiros",
-      location: "Praia dos Carneiros"
-    },
-    {
-      src: galeriaCarneiros6,
-      alt: "Momento especial na Praia dos Carneiros",
-      location: "Praia dos Carneiros"
     },
     {
       src: galeriaCitytour1,
@@ -180,14 +115,19 @@ const ClientGallery = () => {
       location: "City Tour Recife e Olinda"
     },
     {
-      src: galeriaCitytour2,
-      alt: "Grupo no Marco Zero em Recife",
-      location: "City Tour Recife e Olinda"
+      src: galeriaMaragogiPontaMangue2,
+      alt: "Cliente com seu cachorro nas águas de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
     },
     {
-      src: galeriaCitytour3,
-      alt: "Cliente nas ruas coloridas de Olinda",
-      location: "City Tour Recife e Olinda"
+      src: galeriaCarneiros2,
+      alt: "Família curtindo a Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaBuggyCabo2,
+      alt: "Família no Mirante de Cabo de Santo Agostinho",
+      location: "Buggy Cabo de Santo Agostinho"
     },
     {
       src: galeriaEcoparkMaragogi1,
@@ -195,28 +135,103 @@ const ClientGallery = () => {
       location: "Ecopark Maragogi"
     },
     {
+      src: galeriaMaragogiBarraGrande2,
+      alt: "Grupo com guias da Uai Turismo em Maragogi",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaPortoGalinhas3,
+      alt: "Clientes com guia da Uai Turismo no buggy",
+      location: "Buggy Porto de Galinhas"
+    },
+    {
+      src: galeriaSaoMiguel2,
+      alt: "Cliente no catamaran em São Miguel dos Milagres",
+      location: "São Miguel dos Milagres"
+    },
+    {
+      src: galeriaMaragogiPontaMangue3,
+      alt: "Clientes nas águas cristalinas de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaIlhaSantoAleixo2,
+      alt: "Casal aproveitando a vista da Ilha de Santo Aleixo",
+      location: "Ilha de Santo Aleixo"
+    },
+    {
+      src: galeriaCarneiros3,
+      alt: "Clientes na Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaCitytour2,
+      alt: "Grupo no Marco Zero em Recife",
+      location: "City Tour Recife e Olinda"
+    },
+    {
+      src: galeriaMaragogiPontaMangue4,
+      alt: "Família aproveitando as piscinas naturais",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaPortoGalinhas4,
+      alt: "Passeio de buggy em Porto de Galinhas",
+      location: "Buggy Porto de Galinhas"
+    },
+    {
+      src: galeriaBuggyCabo3,
+      alt: "Aventura de buggy em Cabo de Santo Agostinho",
+      location: "Buggy Cabo de Santo Agostinho"
+    },
+    {
+      src: galeriaMaragogiBarraGrande3,
+      alt: "Cliente curtindo Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaCarneiros4,
+      alt: "Família aproveitando a Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaEcoparkMaragogi2,
+      alt: "Visitando o Ecopark Maragogi",
+      location: "Ecopark Maragogi"
+    },
+    {
+      src: galeriaMaragogiPontaMangue5,
+      alt: "Grupo nas águas de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaSaoMiguel3,
+      alt: "Clientes curtindo as belezas de São Miguel dos Milagres",
+      location: "São Miguel dos Milagres"
+    },
+    {
       src: galeriaIlhaSantoAleixo3,
       alt: "Cliente relaxando na Ilha de Santo Aleixo",
       location: "Ilha de Santo Aleixo"
     },
     {
+      src: galeriaCitytour3,
+      alt: "Cliente nas ruas coloridas de Olinda",
+      location: "City Tour Recife e Olinda"
+    },
+    {
+      src: galeriaMaragogiBarraGrande4,
+      alt: "Família em Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaCarneiros5,
+      alt: "Grupo curtindo o passeio na Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
       src: galeriaMaragogiPontaMangue6,
       alt: "Cliente nas águas cristalinas de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
-    },
-    {
-      src: galeriaMaragogiPontaMangue7,
-      alt: "Guia com clientes em Maragogi",
-      location: "Maragogi e Ponta de Mangue"
-    },
-    {
-      src: galeriaMaragogiPontaMangue8,
-      alt: "Cliente na areia de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
-    },
-    {
-      src: galeriaMaragogiPontaMangue9,
-      alt: "Criança nas piscinas naturais",
       location: "Maragogi e Ponta de Mangue"
     },
     {
@@ -225,13 +240,93 @@ const ClientGallery = () => {
       location: "Porto de Galinhas"
     },
     {
-      src: galeriaBuggyCabo2,
-      alt: "Família no Mirante de Cabo de Santo Agostinho",
+      src: galeriaBuggyCabo4,
+      alt: "Mais aventura em Cabo de Santo Agostinho",
       location: "Buggy Cabo de Santo Agostinho"
+    },
+    {
+      src: galeriaMaragogiBarraGrande5,
+      alt: "Momentos especiais em Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaCarneiros6,
+      alt: "Momento especial na Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaEcoparkMaragogi3,
+      alt: "Aventura no Ecopark Maragogi",
+      location: "Ecopark Maragogi"
+    },
+    {
+      src: galeriaMaragogiPontaMangue7,
+      alt: "Guia com clientes em Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaSaoMiguel4,
+      alt: "Apreciando São Miguel dos Milagres",
+      location: "São Miguel dos Milagres"
     },
     {
       src: galeriaCitytour4,
       alt: "Grupo com sombrinhas coloridas em Recife",
+      location: "City Tour Recife e Olinda"
+    },
+    {
+      src: galeriaIlhaSantoAleixo4,
+      alt: "Explorando a Ilha de Santo Aleixo",
+      location: "Ilha de Santo Aleixo"
+    },
+    {
+      src: galeriaMaragogiBarraGrande6,
+      alt: "Aventura em Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiPontaMangue8,
+      alt: "Cliente na areia de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaCarneiros7,
+      alt: "Família curtindo a Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaCitytour5,
+      alt: "Descobrindo Recife e Olinda",
+      location: "City Tour Recife e Olinda"
+    },
+    {
+      src: galeriaMaragogiBarraGrande7,
+      alt: "Explorando Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiPontaMangue9,
+      alt: "Criança nas piscinas naturais",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaSaoMiguel5,
+      alt: "Cliente curtindo São Miguel dos Milagres",
+      location: "São Miguel dos Milagres"
+    },
+    {
+      src: galeriaIlhaSantoAleixo5,
+      alt: "Descobrindo a Ilha de Santo Aleixo",
+      location: "Ilha de Santo Aleixo"
+    },
+    {
+      src: galeriaMaragogiBarraGrande8,
+      alt: "Diversão em Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaCitytour6,
+      alt: "Passeio cultural por Recife e Olinda",
       location: "City Tour Recife e Olinda"
     },
     {
@@ -240,19 +335,9 @@ const ClientGallery = () => {
       location: "Maragogi e Ponta de Mangue"
     },
     {
-      src: galeriaSaoMiguel2,
-      alt: "Cliente no catamaran em São Miguel dos Milagres",
-      location: "São Miguel dos Milagres"
-    },
-    {
-      src: galeriaSaoMiguel3,
-      alt: "Clientes curtindo as belezas de São Miguel dos Milagres",
-      location: "São Miguel dos Milagres"
-    },
-    {
-      src: galeriaBuggyCabo3,
-      alt: "Aventura de buggy em Cabo de Santo Agostinho",
-      location: "Buggy Cabo de Santo Agostinho"
+      src: galeriaMaragogiBarraGrande9,
+      alt: "Passeio inesquecível em Barra Grande",
+      location: "Maragogi e Barra Grande"
     },
     {
       src: galeriaMaragogiPontaMangue11,
@@ -260,99 +345,14 @@ const ClientGallery = () => {
       location: "Maragogi e Ponta de Mangue"
     },
     {
-      src: galeriaMaragogiPontaMangue12,
-      alt: "Clientes relaxando em Maragogi",
-      location: "Maragogi e Ponta de Mangue"
-    },
-    {
-      src: galeriaMaragogiPontaMangue13,
-      alt: "Grupo aproveitando as águas cristalinas",
-      location: "Maragogi e Ponta de Mangue"
-    },
-    {
-      src: galeriaMaragogiBarraGrande3,
-      alt: "Cliente curtindo Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
-    },
-    {
-      src: galeriaMaragogiBarraGrande4,
-      alt: "Família em Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
-    },
-    {
-      src: galeriaMaragogiBarraGrande5,
-      alt: "Momentos especiais em Barra Grande",
-      location: "Maragogi e Barra Grande"
-    },
-    {
-      src: galeriaMaragogiBarraGrande6,
-      alt: "Aventura em Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
-    },
-    {
-      src: galeriaIlhaSantoAleixo4,
-      alt: "Explorando a Ilha de Santo Aleixo",
-      location: "Ilha de Santo Aleixo"
-    },
-    {
-      src: galeriaEcoparkMaragogi2,
-      alt: "Visitando o Ecopark Maragogi",
-      location: "Ecopark Maragogi"
-    },
-    {
-      src: galeriaCitytour5,
-      alt: "Descobrindo Recife e Olinda",
-      location: "City Tour Recife e Olinda"
-    },
-    {
-      src: galeriaCitytour6,
-      alt: "Passeio cultural por Recife e Olinda",
-      location: "City Tour Recife e Olinda"
-    },
-    {
-      src: galeriaBuggyCabo4,
-      alt: "Mais aventura em Cabo de Santo Agostinho",
-      location: "Buggy Cabo de Santo Agostinho"
-    },
-    {
-      src: galeriaMaragogiBarraGrande7,
-      alt: "Explorando Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
-    },
-    {
-      src: galeriaMaragogiBarraGrande8,
-      alt: "Diversão em Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
-    },
-    {
-      src: galeriaMaragogiBarraGrande9,
-      alt: "Passeio inesquecível em Barra Grande",
-      location: "Maragogi e Barra Grande"
-    },
-    {
-      src: galeriaIlhaSantoAleixo5,
-      alt: "Descobrindo a Ilha de Santo Aleixo",
-      location: "Ilha de Santo Aleixo"
-    },
-    {
-      src: galeriaEcoparkMaragogi3,
-      alt: "Aventura no Ecopark Maragogi",
-      location: "Ecopark Maragogi"
-    },
-    {
-      src: galeriaSaoMiguel4,
-      alt: "Apreciando São Miguel dos Milagres",
-      location: "São Miguel dos Milagres"
-    },
-    {
-      src: galeriaSaoMiguel5,
-      alt: "Cliente curtindo São Miguel dos Milagres",
-      location: "São Miguel dos Milagres"
-    },
-    {
       src: galeriaMaragogiBarraGrande10,
       alt: "Relaxando em Maragogi e Barra Grande",
       location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiPontaMangue12,
+      alt: "Clientes relaxando em Maragogi",
+      location: "Maragogi e Ponta de Mangue"
     },
     {
       src: galeriaMaragogiBarraGrande11,
@@ -360,9 +360,9 @@ const ClientGallery = () => {
       location: "Maragogi e Barra Grande"
     },
     {
-      src: galeriaCarneiros7,
-      alt: "Família curtindo a Praia dos Carneiros",
-      location: "Praia dos Carneiros"
+      src: galeriaMaragogiPontaMangue13,
+      alt: "Grupo aproveitando as águas cristalinas",
+      location: "Maragogi e Ponta de Mangue"
     },
   ];
 
