@@ -9,11 +9,16 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import galeriaBuggyCabo1 from "@/assets/galeria-buggy-cabo-1.jpg";
 import galeriaPortoGalinhas1 from "@/assets/galeria-porto-galinhas-1.jpg";
+import galeriaPortoGalinhas2 from "@/assets/galeria-porto-galinhas-2.jpg";
+import galeriaPortoGalinhas3 from "@/assets/galeria-porto-galinhas-3.jpg";
 import galeriaCarneiros1 from "@/assets/galeria-carneiros-1.jpg";
 import galeriaCarneiros2 from "@/assets/galeria-carneiros-2.jpg";
 import galeriaMaragogiBarraGrande1 from "@/assets/galeria-maragogi-barra-1.jpg";
 import galeriaMaragogiBarraGrande2 from "@/assets/galeria-maragogi-barra-2.jpg";
 import galeriaMaragogiPontaMangue1 from "@/assets/galeria-maragogi-ponta-1.jpg";
+import galeriaMaragogiPontaMangue2 from "@/assets/galeria-maragogi-ponta-2.jpg";
+import galeriaIlhaSantoAleixo1 from "@/assets/galeria-ilha-santo-aleixo-1.jpg";
+import galeriaIlhaSantoAleixo2 from "@/assets/galeria-ilha-santo-aleixo-2.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -25,6 +30,16 @@ const ClientGallery = () => {
     {
       src: galeriaPortoGalinhas1,
       alt: "Grupo de clientes com os buggys na praia",
+      location: "Buggy Porto de Galinhas"
+    },
+    {
+      src: galeriaPortoGalinhas2,
+      alt: "Casal no buggy amarelo em meio aos coqueiros",
+      location: "Buggy Porto de Galinhas"
+    },
+    {
+      src: galeriaPortoGalinhas3,
+      alt: "Clientes com guia da Uai Turismo no buggy",
       location: "Buggy Porto de Galinhas"
     },
     {
@@ -51,6 +66,21 @@ const ClientGallery = () => {
       src: galeriaMaragogiPontaMangue1,
       alt: "Família nas piscinas naturais de Maragogi",
       location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaMaragogiPontaMangue2,
+      alt: "Cliente com seu cachorro nas águas de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaIlhaSantoAleixo1,
+      alt: "Casal com bebê na Ilha de Santo Aleixo",
+      location: "Ilha de Santo Aleixo"
+    },
+    {
+      src: galeriaIlhaSantoAleixo2,
+      alt: "Casal aproveitando a vista da Ilha de Santo Aleixo",
+      location: "Ilha de Santo Aleixo"
     },
   ];
 
