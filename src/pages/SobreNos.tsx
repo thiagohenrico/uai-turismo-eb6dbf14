@@ -75,11 +75,11 @@ const SobreNos = () => {
                       Com paixão pelo turismo e compromisso com a excelência, nossos proprietários lideram a Uai Turismo com dedicação e experiência, garantindo que cada passeio seja uma experiência inesquecível.
                     </p>
                   </div>
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-muted">
                     <img
                       src={proprietariosUai}
                       alt="Proprietários da Uai Turismo"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                 </div>
