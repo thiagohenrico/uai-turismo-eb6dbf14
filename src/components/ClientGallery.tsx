@@ -17,8 +17,18 @@ import galeriaMaragogiBarraGrande1 from "@/assets/galeria-maragogi-barra-1.jpg";
 import galeriaMaragogiBarraGrande2 from "@/assets/galeria-maragogi-barra-2.jpg";
 import galeriaMaragogiPontaMangue1 from "@/assets/galeria-maragogi-ponta-1.jpg";
 import galeriaMaragogiPontaMangue2 from "@/assets/galeria-maragogi-ponta-2.jpg";
+import galeriaMaragogiPontaMangue3 from "@/assets/galeria-maragogi-ponta-3.jpg";
+import galeriaMaragogiPontaMangue4 from "@/assets/galeria-maragogi-ponta-4.jpg";
+import galeriaMaragogiPontaMangue5 from "@/assets/galeria-maragogi-ponta-5.jpg";
 import galeriaIlhaSantoAleixo1 from "@/assets/galeria-ilha-santo-aleixo-1.jpg";
 import galeriaIlhaSantoAleixo2 from "@/assets/galeria-ilha-santo-aleixo-2.jpg";
+import galeriaSaoMiguel1 from "@/assets/galeria-sao-miguel-1.jpg";
+import galeriaPortoGalinhas4 from "@/assets/galeria-porto-galinhas-4.jpg";
+import galeriaCarneiros3 from "@/assets/galeria-carneiros-3.jpg";
+import galeriaCarneiros4 from "@/assets/galeria-carneiros-4.jpg";
+import galeriaCarneiros5 from "@/assets/galeria-carneiros-5.jpg";
+import galeriaCarneiros6 from "@/assets/galeria-carneiros-6.jpg";
+import galeriaCitytour1 from "@/assets/galeria-citytour-1.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -81,6 +91,56 @@ const ClientGallery = () => {
       src: galeriaIlhaSantoAleixo2,
       alt: "Casal aproveitando a vista da Ilha de Santo Aleixo",
       location: "Ilha de Santo Aleixo"
+    },
+    {
+      src: galeriaMaragogiPontaMangue3,
+      alt: "Clientes nas águas cristalinas de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaMaragogiPontaMangue4,
+      alt: "Família aproveitando as piscinas naturais",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaMaragogiPontaMangue5,
+      alt: "Grupo nas águas de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaSaoMiguel1,
+      alt: "Clientes curtindo São Miguel dos Milagres",
+      location: "São Miguel dos Milagres"
+    },
+    {
+      src: galeriaPortoGalinhas4,
+      alt: "Passeio de buggy em Porto de Galinhas",
+      location: "Buggy Porto de Galinhas"
+    },
+    {
+      src: galeriaCarneiros3,
+      alt: "Clientes na Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaCarneiros4,
+      alt: "Família aproveitando a Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaCarneiros5,
+      alt: "Grupo curtindo o passeio na Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaCarneiros6,
+      alt: "Momento especial na Praia dos Carneiros",
+      location: "Praia dos Carneiros"
+    },
+    {
+      src: galeriaCitytour1,
+      alt: "Clientes no city tour",
+      location: "City Tour Recife e Olinda"
     },
   ];
 
