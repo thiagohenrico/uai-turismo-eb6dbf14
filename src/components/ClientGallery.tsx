@@ -29,6 +29,16 @@ import galeriaCarneiros4 from "@/assets/galeria-carneiros-4.jpg";
 import galeriaCarneiros5 from "@/assets/galeria-carneiros-5.jpg";
 import galeriaCarneiros6 from "@/assets/galeria-carneiros-6.jpg";
 import galeriaCitytour1 from "@/assets/galeria-citytour-1.jpg";
+import galeriaCitytour2 from "@/assets/galeria-citytour-2.jpg";
+import galeriaCitytour3 from "@/assets/galeria-citytour-3.jpg";
+import galeriaEcoparkMaragogi1 from "@/assets/galeria-ecopark-maragogi-1.jpg";
+import galeriaIlhaSantoAleixo3 from "@/assets/galeria-ilha-santo-aleixo-3.jpg";
+import galeriaMaragogiPontaMangue6 from "@/assets/galeria-maragogi-ponta-6.jpg";
+import galeriaMaragogiPontaMangue7 from "@/assets/galeria-maragogi-ponta-7.jpg";
+import galeriaMaragogiPontaMangue8 from "@/assets/galeria-maragogi-ponta-8.jpg";
+import galeriaMaragogiPontaMangue9 from "@/assets/galeria-maragogi-ponta-9.jpg";
+import galeriaPortoGalinhas5 from "@/assets/galeria-porto-galinhas-5.jpg";
+import galeriaBuggyCabo2 from "@/assets/galeria-buggy-cabo-2.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -141,6 +151,56 @@ const ClientGallery = () => {
       src: galeriaCitytour1,
       alt: "Clientes no city tour",
       location: "City Tour Recife e Olinda"
+    },
+    {
+      src: galeriaCitytour2,
+      alt: "Grupo no Marco Zero em Recife",
+      location: "City Tour Recife e Olinda"
+    },
+    {
+      src: galeriaCitytour3,
+      alt: "Cliente nas ruas coloridas de Olinda",
+      location: "City Tour Recife e Olinda"
+    },
+    {
+      src: galeriaEcoparkMaragogi1,
+      alt: "Cliente com jiboia no Ecopark Maragogi",
+      location: "Ecopark Maragogi"
+    },
+    {
+      src: galeriaIlhaSantoAleixo3,
+      alt: "Cliente relaxando na Ilha de Santo Aleixo",
+      location: "Ilha de Santo Aleixo"
+    },
+    {
+      src: galeriaMaragogiPontaMangue6,
+      alt: "Cliente nas águas cristalinas de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaMaragogiPontaMangue7,
+      alt: "Guia com clientes em Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaMaragogiPontaMangue8,
+      alt: "Cliente na areia de Maragogi",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaMaragogiPontaMangue9,
+      alt: "Criança nas piscinas naturais",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaPortoGalinhas5,
+      alt: "Casal no ponto turístico de Porto de Galinhas",
+      location: "Porto de Galinhas"
+    },
+    {
+      src: galeriaBuggyCabo2,
+      alt: "Família no Mirante de Cabo de Santo Agostinho",
+      location: "Buggy Cabo de Santo Agostinho"
     },
   ];
 
