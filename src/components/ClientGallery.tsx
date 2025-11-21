@@ -266,13 +266,10 @@ const ClientGallery = () => {
                           target.style.opacity = '0.5';
                         }}
                       />
-                      <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <div className="bg-black/80 backdrop-blur-sm rounded px-3 py-2 inline-block">
-                          <p className="text-yellow-400 font-bold text-sm md:text-base">
+                      <div className="absolute bottom-2 left-2">
+                        <div className="bg-black/75 backdrop-blur-sm rounded px-2 py-1">
+                          <p className="text-yellow-400 font-semibold text-xs md:text-sm">
                             {photo.location}
-                          </p>
-                          <p className="text-white/90 text-xs md:text-sm mt-1">
-                            {photo.alt}
                           </p>
                         </div>
                       </div>
