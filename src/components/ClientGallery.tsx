@@ -39,6 +39,9 @@ import galeriaMaragogiPontaMangue8 from "@/assets/galeria-maragogi-ponta-8.jpg";
 import galeriaMaragogiPontaMangue9 from "@/assets/galeria-maragogi-ponta-9.jpg";
 import galeriaPortoGalinhas5 from "@/assets/galeria-porto-galinhas-5.jpg";
 import galeriaBuggyCabo2 from "@/assets/galeria-buggy-cabo-2.jpg";
+import galeriaCitytour4 from "@/assets/galeria-citytour-4.jpg";
+import galeriaMaragogiPontaMangue10 from "@/assets/galeria-maragogi-ponta-10.jpg";
+import galeriaSaoMiguel2 from "@/assets/galeria-sao-miguel-2.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -201,6 +204,21 @@ const ClientGallery = () => {
       src: galeriaBuggyCabo2,
       alt: "Família no Mirante de Cabo de Santo Agostinho",
       location: "Buggy Cabo de Santo Agostinho"
+    },
+    {
+      src: galeriaCitytour4,
+      alt: "Grupo com sombrinhas coloridas em Recife",
+      location: "City Tour Recife e Olinda"
+    },
+    {
+      src: galeriaMaragogiPontaMangue10,
+      alt: "Família com bebê nas piscinas naturais",
+      location: "Maragogi e Ponta de Mangue"
+    },
+    {
+      src: galeriaSaoMiguel2,
+      alt: "Cliente no catamaran em São Miguel dos Milagres",
+      location: "São Miguel dos Milagres"
     },
   ];
 
