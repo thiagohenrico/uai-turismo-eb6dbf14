@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CadasturBadge from "@/components/CadasturBadge";
 import cadasturCertificate from "@/assets/cadastur-certificate.jpg";
+import proprietariosUai from "@/assets/proprietarios-uai.jpg";
+import equipeUai from "@/assets/equipe-uai.jpg";
 
 const SobreNos = () => {
   return (
@@ -55,8 +57,60 @@ const SobreNos = () => {
           </div>
         </section>
 
-        {/* Nossos Diferenciais */}
+        {/* Nossa Equipe */}
         <section className="py-16 bg-card/30">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl md:text-4xl font-bold mb-12 text-center">
+              Conheça Quem Faz a <span className="text-primary">Uai Turismo</span>
+            </h2>
+            <div className="max-w-6xl mx-auto space-y-12">
+              {/* Proprietários */}
+              <div className="bg-card rounded-lg border border-border overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-6 p-6 md:p-8">
+                  <div className="flex flex-col justify-center">
+                    <h3 className="text-2xl font-bold text-foreground mb-4">
+                      Nossos Proprietários
+                    </h3>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      Com paixão pelo turismo e compromisso com a excelência, nossos proprietários lideram a Uai Turismo com dedicação e experiência, garantindo que cada passeio seja uma experiência inesquecível.
+                    </p>
+                  </div>
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                    <img
+                      src={proprietariosUai}
+                      alt="Proprietários da Uai Turismo"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Equipe */}
+              <div className="bg-card rounded-lg border border-border overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-6 p-6 md:p-8">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-lg order-2 md:order-1">
+                    <img
+                      src={equipeUai}
+                      alt="Equipe da Uai Turismo"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center order-1 md:order-2">
+                    <h3 className="text-2xl font-bold text-foreground mb-4">
+                      Nossa Equipe
+                    </h3>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      Profissionais qualificados, apaixonados pelo que fazem e comprometidos em proporcionar a melhor experiência. Nossa equipe está sempre pronta para receber você com um sorriso e fazer seu passeio ser perfeito.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Nossos Diferenciais */}
+        <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl md:text-4xl font-bold mb-12 text-center">
               Nossos <span className="text-primary">Diferenciais</span>
@@ -128,7 +182,7 @@ const SobreNos = () => {
         </section>
 
         {/* Dados da Empresa */}
-        <section className="py-16 bg-card/30">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-4xl font-bold mb-12 text-center">
