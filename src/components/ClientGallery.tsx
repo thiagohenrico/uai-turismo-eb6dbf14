@@ -62,6 +62,10 @@ import galeriaMaragogiBarraGrande9 from "@/assets/galeria-maragogi-barra-9.jpg";
 import galeriaIlhaSantoAleixo5 from "@/assets/galeria-ilha-santo-aleixo-5.jpg";
 import galeriaEcoparkMaragogi3 from "@/assets/galeria-ecopark-maragogi-3.jpg";
 import galeriaSaoMiguel4 from "@/assets/galeria-sao-miguel-4.jpg";
+import galeriaSaoMiguel5 from "@/assets/galeria-sao-miguel-5.jpg";
+import galeriaMaragogiBarraGrande10 from "@/assets/galeria-maragogi-barra-10.jpg";
+import galeriaMaragogiBarraGrande11 from "@/assets/galeria-maragogi-barra-11.jpg";
+import galeriaCarneiros7 from "@/assets/galeria-carneiros-7.jpg";
 
 const ClientGallery = () => {
   const clientPhotos = [
@@ -339,6 +343,26 @@ const ClientGallery = () => {
       src: galeriaSaoMiguel4,
       alt: "Apreciando São Miguel dos Milagres",
       location: "São Miguel dos Milagres"
+    },
+    {
+      src: galeriaSaoMiguel5,
+      alt: "Cliente curtindo São Miguel dos Milagres",
+      location: "São Miguel dos Milagres"
+    },
+    {
+      src: galeriaMaragogiBarraGrande10,
+      alt: "Relaxando em Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaMaragogiBarraGrande11,
+      alt: "Casal nas águas de Maragogi e Barra Grande",
+      location: "Maragogi e Barra Grande"
+    },
+    {
+      src: galeriaCarneiros7,
+      alt: "Família curtindo a Praia dos Carneiros",
+      location: "Praia dos Carneiros"
     },
   ];
 
