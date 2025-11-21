@@ -1,20 +1,31 @@
+import { useEffect } from "react";
+
 const InstagramFeed = () => {
+  useEffect(() => {
+    // Carrega o script do Elfsight
+    const script = document.createElement("script");
+    script.src = "https://elfsightcdn.com/platform.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Limpa o script ao desmontar o componente
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section className="py-16 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
-        {/* Instagram Feed Embed */}
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">
+          Siga-nos no Instagram
+        </h2>
+        
+        {/* Elfsight Instagram Feed */}
         <div 
-          id="uai-instagram-feed" 
-          className="max-w-7xl mx-auto p-5 bg-card rounded-3xl"
-        >
-          <iframe 
-            src="https://widgets.commoninja.com/iframe/ed5f6c60-6e99-4f31-88e7-898bf92f717f"
-            className="w-full h-[700px] md:h-[700px] sm:h-[550px] border-none overflow-hidden rounded-2xl shadow-lg" 
-            scrolling="no" 
-            allowFullScreen
-            title="UAI Turismo Instagram Feed"
-          />
-        </div>
+          className="elfsight-app-4d9f4101-ac82-4d5a-adef-8e7e1bbda3ba" 
+          data-elfsight-app-lazy
+        />
 
         {/* CTA para seguir no Instagram */}
         <div className="text-center mt-8">

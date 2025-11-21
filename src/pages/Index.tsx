@@ -7,6 +7,7 @@ import FAQ from "@/components/FAQ";
 import FrequentQuestions from "@/components/FrequentQuestions";
 import Reviews from "@/components/Reviews";
 import ClientGallery from "@/components/ClientGallery";
+import InstagramFeed from "@/components/InstagramFeed";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BookingDialog from "@/components/BookingDialog";
@@ -23,6 +24,7 @@ const Index = () => {
           <Tours />
           <CadasturBadge />
           <ClientGallery />
+          <InstagramFeed />
           <FAQ />
           <Reviews />
           <FrequentQuestions onReserveClick={() => setIsBookingOpen(true)} />
