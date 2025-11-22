@@ -77,7 +77,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiPontaMangue1,
       alt: "Família nas piscinas naturais de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaPortoGalinhas1,
@@ -102,7 +102,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiBarraGrande1,
       alt: "Clientes nas águas cristalinas de Maragogi",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaPortoGalinhas2,
@@ -117,7 +117,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiPontaMangue2,
       alt: "Cliente com seu cachorro nas águas de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaCarneiros2,
@@ -137,7 +137,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiBarraGrande2,
       alt: "Grupo com guias da Uai Turismo em Maragogi",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaPortoGalinhas3,
@@ -152,7 +152,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiPontaMangue3,
       alt: "Clientes nas águas cristalinas de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaIlhaSantoAleixo2,
@@ -172,7 +172,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiPontaMangue4,
       alt: "Família aproveitando as piscinas naturais",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaPortoGalinhas4,
@@ -187,7 +187,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiBarraGrande3,
       alt: "Cliente curtindo Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaCarneiros4,
@@ -202,7 +202,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiPontaMangue5,
       alt: "Grupo nas águas de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaSaoMiguel3,
@@ -222,7 +222,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiBarraGrande4,
       alt: "Família em Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaCarneiros5,
@@ -232,7 +232,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiPontaMangue6,
       alt: "Cliente nas águas cristalinas de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaPortoGalinhas5,
@@ -247,7 +247,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiBarraGrande5,
       alt: "Momentos especiais em Barra Grande",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaCarneiros6,
@@ -262,7 +262,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiPontaMangue7,
       alt: "Guia com clientes em Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaSaoMiguel4,
@@ -282,12 +282,12 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiBarraGrande6,
       alt: "Aventura em Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaMaragogiPontaMangue8,
       alt: "Cliente na areia de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaCarneiros7,
@@ -302,12 +302,12 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiBarraGrande7,
       alt: "Explorando Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaMaragogiPontaMangue9,
       alt: "Criança nas piscinas naturais",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaSaoMiguel5,
@@ -322,7 +322,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiBarraGrande8,
       alt: "Diversão em Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaCitytour6,
@@ -332,37 +332,37 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiPontaMangue10,
       alt: "Família com bebê nas piscinas naturais",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaMaragogiBarraGrande9,
       alt: "Passeio inesquecível em Barra Grande",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaMaragogiPontaMangue11,
       alt: "Família nas piscinas naturais de Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaMaragogiBarraGrande10,
       alt: "Relaxando em Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaMaragogiPontaMangue12,
       alt: "Clientes relaxando em Maragogi",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaMaragogiBarraGrande11,
       alt: "Casal nas águas de Maragogi e Barra Grande",
-      location: "Maragogi e Barra Grande"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaMaragogiPontaMangue13,
       alt: "Grupo aproveitando as águas cristalinas",
-      location: "Maragogi e Ponta de Mangue"
+      location: "Maragogi - Ponta de Mangue"
     },
   ];
 
