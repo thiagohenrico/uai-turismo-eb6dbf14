@@ -99,9 +99,17 @@ const SobreNos = () => {
                     <h3 className="text-2xl font-bold text-foreground mb-4">
                       Nossa Equipe
                     </h3>
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      Profissionais qualificados, apaixonados pelo que fazem e comprometidos em proporcionar a melhor experiência. Nossa equipe está sempre pronta para receber você com um sorriso e fazer seu passeio ser perfeito.
-                    </p>
+                    <div className="text-muted-foreground text-lg leading-relaxed space-y-4">
+                      <p>
+                        Profissionais qualificados, apaixonados pelo que fazem e comprometidos em entregar a melhor experiência. Nossa equipe de marinheiros, motoristas, guias, atendente, social media e gestor de tráfego, trabalha em sintonia para garantir que cada detalhe da sua viagem seja pensado com cuidado, segurança e carinho.
+                      </p>
+                      <p>
+                        Nos bastidores, nossa equipe de comunicação está sempre atenta para manter você bem informado, compartilhando dicas, atualizações e tudo o que faz parte do seu roteiro. Já em campo, nossos motoristas e guias conduzem cada passeio com responsabilidade e entusiasmo, enquanto os marinheiros oferecem toda a atenção necessária para que a experiência no mar seja tranquila, divertida e segura.
+                      </p>
+                      <p>
+                        Do momento em que você chega até o último instante do passeio, estamos ao seu lado, cuidando para que tudo aconteça de forma leve e organizada. Trabalhamos todos os dias para transformar sua viagem em memórias que emocionam, porque acreditamos que a experiência começa muito antes de você embarcar e continua viva muito depois de voltar pra casa.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
