@@ -93,15 +93,15 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
     // Initialize with random photos
     const getRandomPhotos = () => {
       const shuffled = [...allGalleryPhotos].sort(() => Math.random() - 0.5);
-      return shuffled.slice(0, 7);
+      return shuffled.slice(0, 15);
     };
     
     setCurrentPhotos(getRandomPhotos());
 
-    // Change photos every 6 seconds
+    // Change photos every 7 seconds
     const interval = setInterval(() => {
       setCurrentPhotos(getRandomPhotos());
-    }, 6000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, []);
@@ -113,133 +113,229 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
 
   return (
     <>
-      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-16 md:pt-20">
+      <section className="relative min-h-screen bg-gradient-to-br from-[#0a4b78] via-[#1a5f8a] to-[#2d7ba3] overflow-hidden pt-16 md:pt-20 pb-8">
         {/* Title */}
-        <div className="relative z-20 pb-8 md:pb-12 text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white tracking-wider px-4 leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
+        <div className="relative z-30 pb-6 md:pb-8 text-center px-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wide leading-tight drop-shadow-[0_6px_24px_rgba(0,0,0,0.9)] max-w-5xl mx-auto">
             Experiências inesquecíveis no litoral Sul de{" "}
-            <span className="text-primary">Pernambuco</span> e Norte de{" "}
-            <span className="text-primary">Alagoas!</span>
+            <span className="text-[#FFD700]">Pernambuco</span> e Norte de{" "}
+            <span className="text-[#FFD700]">Alagoas!</span>
           </h1>
         </div>
 
-        {/* Photo Mural Collage */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 pb-16 md:pb-20">
-          <div className="relative h-[600px] md:h-[700px] lg:h-[800px]">
-            {/* Large photo 1 - Bottom left */}
+        {/* Photo Mural Collage - Dense and Vibrant */}
+        <div className="relative z-10 max-w-[95%] mx-auto px-2 md:px-4 pb-6 md:pb-10">
+          <div className="relative h-[550px] md:h-[650px]">
+            {/* Photo 1 - Large left */}
             <div 
-              className="absolute left-0 bottom-0 w-[45%] md:w-[35%] transform -rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-10"
+              className="absolute left-[2%] top-[5%] w-[32%] md:w-[26%] transform -rotate-[8deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-15"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
                   src={currentPhotos[0] || galeriaBuggyCabo1} 
-                  alt="Clientes curtindo passeio de buggy" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+                  alt="Passeio tropical" 
+                  className="w-full aspect-[3/4] object-cover"
                 />
               </div>
             </div>
 
-            {/* Medium photo 2 - Top right */}
+            {/* Photo 2 - Top center */}
             <div 
-              className="absolute right-[5%] top-[5%] w-[40%] md:w-[32%] transform rotate-12 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-15"
+              className="absolute left-[28%] top-[2%] w-[38%] md:w-[30%] transform rotate-[6deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-18"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
                   src={currentPhotos[1] || galeriaPortoGalinhas1} 
-                  alt="Grupo nas piscinas naturais" 
-                  className="w-full aspect-[4/3] object-cover transition-opacity duration-500"
+                  alt="Aventura na praia" 
+                  className="w-full aspect-[4/3] object-cover"
                 />
               </div>
             </div>
 
-            {/* Large photo 3 - Center */}
+            {/* Photo 3 - Right top */}
             <div 
-              className="absolute left-[25%] md:left-[30%] top-[25%] md:top-[30%] w-[50%] md:w-[40%] transform rotate-3 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-25"
+              className="absolute right-[3%] top-[8%] w-[30%] md:w-[24%] transform -rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-20"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
                   src={currentPhotos[2] || galeriaMaragogiPontaMangue1} 
-                  alt="Família em Maragogi" 
-                  className="w-full aspect-[16/10] object-cover transition-opacity duration-500"
+                  alt="Maragogi paradise" 
+                  className="w-full aspect-square object-cover"
                 />
               </div>
             </div>
 
-            {/* Medium photo 4 - Bottom center */}
+            {/* Photo 4 - Center large */}
             <div 
-              className="absolute left-[35%] md:left-[40%] bottom-[8%] w-[38%] md:w-[28%] transform -rotate-8 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-18"
+              className="absolute left-[15%] top-[28%] w-[42%] md:w-[34%] transform rotate-[3deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-25"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-3 md:p-4 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
                   src={currentPhotos[3] || galeriaCarneiros1} 
-                  alt="Passeio na Praia dos Carneiros" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+                  alt="Experiência única" 
+                  className="w-full aspect-[16/11] object-cover"
                 />
               </div>
             </div>
 
-            {/* Medium photo 5 - Top left */}
+            {/* Photo 5 - Left middle */}
             <div 
-              className="absolute left-[8%] top-[15%] w-[36%] md:w-[26%] transform -rotate-12 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-20"
+              className="absolute left-0 top-[38%] w-[28%] md:w-[22%] transform rotate-[15deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-16"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
                   src={currentPhotos[4] || galeriaIlhaSantoAleixo1} 
-                  alt="Ilha de Santo Aleixo" 
-                  className="w-full aspect-[4/3] object-cover transition-opacity duration-500"
+                  alt="Ilha paradisíaca" 
+                  className="w-full aspect-[3/4] object-cover"
                 />
               </div>
             </div>
 
-            {/* Medium photo 6 - Bottom right */}
+            {/* Photo 6 - Right center */}
             <div 
-              className="absolute right-0 bottom-[12%] w-[40%] md:w-[32%] transform rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-16"
+              className="absolute right-[5%] top-[35%] w-[34%] md:w-[28%] transform -rotate-[7deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-22"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
                   src={currentPhotos[5] || galeriaMaragogiBarraGrande1} 
-                  alt="Maragogi Barra Grande" 
-                  className="w-full aspect-[4/5] object-cover transition-opacity duration-500"
+                  alt="Barra Grande" 
+                  className="w-full aspect-[4/3] object-cover"
                 />
               </div>
             </div>
 
-            {/* Medium photo 7 - Top center */}
+            {/* Photo 7 - Bottom left */}
             <div 
-              className="absolute left-[48%] md:left-[52%] top-[2%] w-[34%] md:w-[24%] transform rotate-10 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-12"
+              className="absolute left-[8%] bottom-[5%] w-[30%] md:w-[24%] transform -rotate-[10deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-19"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
                   src={currentPhotos[6] || galeriaSaoMiguel1} 
-                  alt="São Miguel dos Milagres" 
-                  className="w-full aspect-[4/3] object-cover transition-opacity duration-500"
+                  alt="São Miguel" 
+                  className="w-full aspect-square object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Photo 8 - Bottom center */}
+            <div 
+              className="absolute left-[32%] bottom-[3%] w-[36%] md:w-[30%] transform rotate-[8deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-17"
+            >
+              <div className="bg-white p-2 md:p-3 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
+                <img 
+                  src={currentPhotos[7] || galeriaPortoGalinhas2} 
+                  alt="Porto de Galinhas" 
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Photo 9 - Bottom right */}
+            <div 
+              className="absolute right-[2%] bottom-[8%] w-[28%] md:w-[22%] transform rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-14"
+            >
+              <div className="bg-white p-2 md:p-3 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
+                <img 
+                  src={currentPhotos[8] || galeriaCarneiros2} 
+                  alt="Carneiros beach" 
+                  className="w-full aspect-[3/4] object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Photo 10 - Small left top */}
+            <div 
+              className="absolute left-[5%] top-[18%] w-[24%] md:w-[18%] transform rotate-[18deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-12"
+            >
+              <div className="bg-white p-2 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
+                <img 
+                  src={currentPhotos[9] || galeriaCitytour1} 
+                  alt="City tour" 
+                  className="w-full aspect-square object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Photo 11 - Small top right */}
+            <div 
+              className="absolute right-[1%] top-[1%] w-[22%] md:w-[16%] transform rotate-[8deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-11"
+            >
+              <div className="bg-white p-2 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
+                <img 
+                  src={currentPhotos[10] || galeriaMaragogiPontaMangue2} 
+                  alt="Ponta de Mangue" 
+                  className="w-full aspect-[3/4] object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Photo 12 - Small center overlap */}
+            <div 
+              className="absolute left-[52%] top-[20%] w-[20%] md:w-[15%] transform -rotate-[15deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-26"
+            >
+              <div className="bg-white p-2 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
+                <img 
+                  src={currentPhotos[11] || galeriaEcoparkMaragogi1} 
+                  alt="Ecopark adventure" 
+                  className="w-full aspect-square object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Photo 13 - Small bottom center */}
+            <div 
+              className="absolute left-[25%] bottom-[18%] w-[22%] md:w-[17%] transform -rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-13"
+            >
+              <div className="bg-white p-2 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
+                <img 
+                  src={currentPhotos[12] || galeriaBuggyCabo2} 
+                  alt="Buggy adventure" 
+                  className="w-full aspect-square object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Photo 14 - Small right middle */}
+            <div 
+              className="absolute right-[8%] top-[52%] w-[20%] md:w-[15%] transform rotate-[20deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-10"
+            >
+              <div className="bg-white p-2 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
+                <img 
+                  src={currentPhotos[13] || galeriaIlhaSantoAleixo2} 
+                  alt="Santo Aleixo" 
+                  className="w-full aspect-[3/4] object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Photo 15 - Small left bottom */}
+            <div 
+              className="absolute left-[1%] bottom-[20%] w-[21%] md:w-[16%] transform -rotate-[8deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-9"
+            >
+              <div className="bg-white p-2 shadow-[0_12px_40px_rgba(0,0,0,0.7)] rounded-sm">
+                <img 
+                  src={currentPhotos[14] || galeriaSaoMiguel2} 
+                  alt="Milagres coast" 
+                  className="w-full aspect-square object-cover"
                 />
               </div>
             </div>
           </div>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="relative z-10 text-center pb-12">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
-            <Button 
-              onClick={onReserveClick}
-              className="bg-gradient-to-r from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white text-base md:text-lg px-8 md:px-10 py-5 md:py-6 rounded-full shadow-2xl hover:shadow-green-500/50 transition-all transform hover:scale-105 font-bold w-[90%] sm:w-auto"
-            >
-              RESERVE JÁ
-            </Button>
-            <Button 
-              onClick={scrollToTours}
-              variant="outline"
-              className="bg-white/10 border-2 border-white text-white text-base md:text-lg px-8 md:px-10 py-5 md:py-6 rounded-full hover:bg-white hover:text-deep-navy transition-all transform hover:scale-105 font-bold backdrop-blur-sm w-[90%] sm:w-auto"
-            >
-              VER PASSEIOS
-            </Button>
-          </div>
+        {/* CTA Button */}
+        <div className="relative z-30 text-center pb-8 md:pb-12">
+          <Button 
+            onClick={onReserveClick}
+            size="lg"
+            className="bg-[#FFD700] hover:bg-[#FFC700] text-black font-bold text-lg md:text-xl px-10 md:px-12 py-6 md:py-7 rounded-full shadow-[0_10px_40px_rgba(255,215,0,0.5)] hover:shadow-[0_15px_50px_rgba(255,215,0,0.7)] transition-all transform hover:scale-105"
+          >
+            RESERVE JÁ
+          </Button>
         </div>
 
         {/* Video Section */}
-        <div className="relative z-10 max-w-2xl mx-auto px-4 pb-12">
+        <div className="relative z-10 max-w-2xl mx-auto px-4 pb-8">
           <div className="rounded-2xl overflow-hidden shadow-2xl">
             <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
               <iframe 
