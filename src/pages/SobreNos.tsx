@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import CadasturBadge from "@/components/CadasturBadge";
 import cadasturCertificate from "@/assets/cadastur-certificate.jpg";
 import proprietariosUai from "@/assets/proprietarios-uai.jpg";
-import equipeUai from "@/assets/equipe-uai.jpg";
+import equipeUaiNew from "@/assets/equipe-uai-new.jpg";
 
 const SobreNos = () => {
   return (
@@ -60,9 +60,6 @@ const SobreNos = () => {
         {/* Nossa Equipe */}
         <section className="py-16 bg-card/30">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-4xl font-bold mb-12 text-center">
-              Conheça Quem Faz a <span className="text-primary">Uai Turismo</span>
-            </h2>
             <div className="max-w-6xl mx-auto space-y-12">
               {/* Proprietários */}
               <div className="bg-card rounded-lg border border-border overflow-hidden">
@@ -90,7 +87,7 @@ const SobreNos = () => {
                 <div className="grid md:grid-cols-2 gap-6 p-6 md:p-8">
                   <div className="relative aspect-[4/3] overflow-hidden rounded-lg order-2 md:order-1">
                     <img
-                      src={equipeUai}
+                      src={equipeUaiNew}
                       alt="Equipe da Uai Turismo"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
