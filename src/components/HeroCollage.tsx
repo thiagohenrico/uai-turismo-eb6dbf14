@@ -11,7 +11,6 @@ import client6 from "@/assets/client-6.jpg";
 import client7 from "@/assets/client-7.jpg";
 import client8 from "@/assets/client-8.jpg";
 import client9 from "@/assets/client-9.jpg";
-import client10 from "@/assets/client-10.jpg";
 import client11 from "@/assets/client-11.jpg";
 import client12 from "@/assets/client-12.jpg";
 import client13 from "@/assets/client-13.jpg";
@@ -39,7 +38,7 @@ import client34 from "@/assets/client-34.jpg";
 
 
 const allClientPhotos = [
-  client1, client2, client3, client4, client5, client6, client7, client8, client9, client10,
+  client1, client2, client3, client4, client5, client6, client7, client8, client9,
   client11, client12, client13, client14, client15, client16, client17, client18, client19, client20,
   client21, client22, client23, client24, client25, client26, client27, client28, client29, client30,
   client31, client32, client33, client34
