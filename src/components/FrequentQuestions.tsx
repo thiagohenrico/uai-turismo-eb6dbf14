@@ -78,7 +78,7 @@ const FrequentQuestions = ({ onReserveClick }: FrequentQuestionsProps) => {
                 <AccordionTrigger className="text-left text-lg font-semibold">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-base leading-relaxed">
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed text-center">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
