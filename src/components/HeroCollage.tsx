@@ -79,13 +79,13 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
       <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-32">
         {/* Photo collage - Polaroid style ABOVE title */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 pb-12">
-          <div className="relative h-[450px] md:h-[550px]">
+          <div className="relative h-[500px] md:h-[550px]">
             {/* Large central photo - tilted right */}
             <div 
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rotate-[8deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-20"
-              style={{ width: '280px', maxWidth: '45%' }}
+              style={{ width: 'min(280px, 42%)' }}
             >
-              <div className="bg-white p-4 md:p-5 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-3 md:p-5 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
                 <img 
                   src={currentPhotos[0] || client2} 
                   alt="Cliente curtindo nas piscinas naturais" 
@@ -96,10 +96,10 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
 
             {/* Medium photo - tilted left, overlapped on top */}
             <div 
-              className="absolute left-[15%] top-[10%] transform -rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-30"
-              style={{ width: '220px', maxWidth: '35%' }}
+              className="absolute left-[8%] md:left-[15%] top-[8%] md:top-[10%] transform -rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-30"
+              style={{ width: 'min(200px, 32%)' }}
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-2 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
                 <img 
                   src={currentPhotos[1] || client4} 
                   alt="Amigos nas águas cristalinas de Maragogi" 
@@ -110,10 +110,10 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
 
             {/* Medium photo 2 - bottom right */}
             <div 
-              className="absolute right-[10%] bottom-[8%] transform rotate-[15deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-25"
-              style={{ width: '200px', maxWidth: '32%' }}
+              className="absolute right-[5%] md:right-[10%] bottom-[6%] md:bottom-[8%] transform rotate-[15deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-25"
+              style={{ width: 'min(190px, 30%)' }}
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-2 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
                 <img 
                   src={currentPhotos[2] || client8} 
                   alt="Grupo comemorando em Maragogi" 
@@ -124,10 +124,10 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
 
             {/* Small photo - top right corner */}
             <div 
-              className="absolute right-[18%] top-[8%] transform rotate-[20deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-15"
-              style={{ width: '160px', maxWidth: '25%' }}
+              className="absolute right-[8%] md:right-[18%] top-[5%] md:top-[8%] transform rotate-[20deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-15"
+              style={{ width: 'min(150px, 24%)' }}
             >
-              <div className="bg-white p-3 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
                 <img 
                   src={currentPhotos[3] || client15} 
                   alt="Grande grupo em Maragogi" 
@@ -136,12 +136,12 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               </div>
             </div>
 
-            {/* Extra small photo - left middle */}
+            {/* Extra small photo - left bottom */}
             <div 
-              className="absolute left-[8%] top-[45%] transform -rotate-[18deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-18 hidden md:block"
-              style={{ width: '140px', maxWidth: '22%' }}
+              className="absolute left-[5%] md:left-[8%] bottom-[15%] md:bottom-[20%] transform -rotate-[18deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-18"
+              style={{ width: 'min(130px, 21%)' }}
             >
-              <div className="bg-white p-2 md:p-3 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
+              <div className="bg-white p-2 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
                 <img 
                   src={currentPhotos[4] || client30} 
                   alt="Grupo feliz em Maragogi" 
@@ -150,15 +150,29 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               </div>
             </div>
 
-            {/* Extra photo - bottom left */}
+            {/* Extra photo - bottom left corner */}
             <div 
-              className="absolute left-[20%] bottom-[5%] transform rotate-[10deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-22 hidden lg:block"
-              style={{ width: '170px', maxWidth: '28%' }}
+              className="absolute left-[15%] md:left-[20%] bottom-[2%] md:bottom-[5%] transform rotate-[10deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-22"
+              style={{ width: 'min(140px, 22%)' }}
             >
-              <div className="bg-white p-3 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
                 <img 
                   src={currentPhotos[5] || client1} 
                   alt="Clientes aproveitando o passeio" 
+                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+                />
+              </div>
+            </div>
+
+            {/* New photo - right middle */}
+            <div 
+              className="absolute right-[3%] top-[35%] md:top-[40%] transform rotate-[-8deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-17 hidden sm:block"
+              style={{ width: 'min(130px, 20%)' }}
+            >
+              <div className="bg-white p-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] rounded-sm">
+                <img 
+                  src={allClientPhotos[20] || client20} 
+                  alt="Experiência incrível no litoral" 
                   className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
                 />
               </div>
