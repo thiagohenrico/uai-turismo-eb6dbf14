@@ -102,7 +102,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiBarraGrande1,
       alt: "Clientes nas águas cristalinas de Maragogi",
-      location: "Maragogi - Barra Grande"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaPortoGalinhas2,
