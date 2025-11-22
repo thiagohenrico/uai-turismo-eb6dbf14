@@ -36,7 +36,7 @@ const SobreNos = () => {
               <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center">
                 Nossa <span className="text-primary">História</span>
               </h2>
-              <div className="prose prose-lg max-w-none text-muted-foreground">
+              <div className="prose prose-lg max-w-none text-muted-foreground text-center">
                 <p className="text-lg leading-relaxed mb-6">
                   A Uai Turismo nasceu da paixão em compartilhar as maravilhas do litoral Sul de Pernambuco e do Norte de Alagoas com quem deseja viver dias inesquecíveis. Com experiência sólida no mercado e um olhar atento para cada detalhe, transformamos passeios em memórias que ficam para sempre.
                 </p>
@@ -67,7 +67,7 @@ const SobreNos = () => {
               {/* Proprietários */}
               <div className="bg-card rounded-lg border border-border overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-6 p-6 md:p-8">
-                  <div className="flex flex-col justify-center">
+                  <div className="flex flex-col justify-center text-center">
                     <h3 className="text-2xl font-bold text-foreground mb-4">
                       Nossos Proprietários
                     </h3>
@@ -95,7 +95,7 @@ const SobreNos = () => {
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <div className="flex flex-col justify-center order-1 md:order-2">
+                  <div className="flex flex-col justify-center order-1 md:order-2 text-center">
                     <h3 className="text-2xl font-bold text-foreground mb-4">
                       Nossa Equipe
                     </h3>
@@ -124,22 +124,28 @@ const SobreNos = () => {
               Nossos <span className="text-primary">Diferenciais</span>
             </h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <div className="p-6 bg-card rounded-lg border border-border">
-                <Shield className="w-12 h-12 text-primary mb-4" />
+              <div className="p-6 bg-card rounded-lg border border-border text-center">
+                <div className="flex justify-center mb-4">
+                  <Shield className="w-12 h-12 text-primary" />
+                </div>
                 <h3 className="text-xl font-semibold mb-3 text-foreground">Segurança</h3>
                 <p className="text-muted-foreground">
                   Empresa credenciada no CADASTUR, garantindo qualidade e segurança em todos os nossos serviços.
                 </p>
               </div>
-              <div className="p-6 bg-card rounded-lg border border-border">
-                <Award className="w-12 h-12 text-primary mb-4" />
+              <div className="p-6 bg-card rounded-lg border border-border text-center">
+                <div className="flex justify-center mb-4">
+                  <Award className="w-12 h-12 text-primary" />
+                </div>
                 <h3 className="text-xl font-semibold mb-3 text-foreground">Qualidade</h3>
                 <p className="text-muted-foreground">
                   Parceiros selecionados e roteiros testados para garantir a melhor experiência possível.
                 </p>
               </div>
-              <div className="p-6 bg-card rounded-lg border border-border">
-                <Users className="w-12 h-12 text-primary mb-4" />
+              <div className="p-6 bg-card rounded-lg border border-border text-center">
+                <div className="flex justify-center mb-4">
+                  <Users className="w-12 h-12 text-primary" />
+                </div>
                 <h3 className="text-xl font-semibold mb-3 text-foreground">Atendimento</h3>
                 <p className="text-muted-foreground">
                   Equipe dedicada e atenciosa, pronta para tornar sua viagem inesquecível.
@@ -156,31 +162,31 @@ const SobreNos = () => {
               <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center">
                 Nossos <span className="text-primary">Passeios</span>
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-center">
                 Oferecemos uma variedade de passeios cuidadosamente selecionados para você conhecer o melhor do litoral nordestino:
               </p>
-              <ul className="space-y-4 text-muted-foreground">
-                <li className="flex items-start gap-3">
+              <ul className="space-y-4 text-muted-foreground text-center max-w-2xl mx-auto">
+                <li className="flex items-start gap-3 justify-center">
                   <span className="text-primary mt-1">•</span>
                   <span><strong className="text-foreground">Praia dos Carneiros:</strong> Paraíso de águas cristalinas com a famosa Capela de São Benedito.</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-start gap-3 justify-center">
                   <span className="text-primary mt-1">•</span>
                   <span><strong className="text-foreground">São Miguel dos Milagres:</strong> Refúgio de tranquilidade com piscinas naturais espetaculares.</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-start gap-3 justify-center">
                   <span className="text-primary mt-1">•</span>
                   <span><strong className="text-foreground">Maragogi:</strong> O Caribe Brasileiro com praias paradisíacas.</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-start gap-3 justify-center">
                   <span className="text-primary mt-1">•</span>
                   <span><strong className="text-foreground">Passeios de Buggy:</strong> Aventura pelas praias de Porto de Galinhas e Cabo de Santo Agostinho.</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-start gap-3 justify-center">
                   <span className="text-primary mt-1">•</span>
                   <span><strong className="text-foreground">Ilha de Santo Aleixo:</strong> Um paraíso de águas cristalinas, areia clara e formações rochosas únicas.</span>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-start gap-3 justify-center">
                   <span className="text-primary mt-1">•</span>
                   <span><strong className="text-foreground">City Tour:</strong> Uma imersão na cultura, história e beleza do Nordeste entre pontes, igrejas seculares e casarios coloridos.</span>
                 </li>
@@ -197,8 +203,8 @@ const SobreNos = () => {
                 Dados da <span className="text-primary">Empresa</span>
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
+                <div className="space-y-6 text-center md:text-left">
+                  <div className="flex items-start gap-4 justify-center md:justify-start">
                     <Building2 className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">CNPJ</h3>
@@ -206,7 +212,7 @@ const SobreNos = () => {
                       <p className="text-sm text-muted-foreground mt-1">MARCOS VINICIUS SILVA SOUZA (MEI)</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-4 justify-center md:justify-start">
                     <Shield className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">CADASTUR</h3>
@@ -214,22 +220,22 @@ const SobreNos = () => {
                     </div>
                   </div>
                 </div>
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
+                <div className="space-y-6 text-center md:text-left">
+                  <div className="flex items-start gap-4 justify-center md:justify-start">
                     <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Localização</h3>
                       <p className="text-muted-foreground">Porto de Galinhas, Pernambuco</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-4 justify-center md:justify-start">
                     <Phone className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Telefone</h3>
                       <p className="text-muted-foreground">(81) 99748-4915</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-4 justify-center md:justify-start">
                     <Mail className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">E-mail</h3>
