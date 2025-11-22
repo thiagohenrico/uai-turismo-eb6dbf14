@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CadasturBadge from "@/components/CadasturBadge";
 import cadasturCertificate from "@/assets/cadastur-certificate.jpg";
-import proprietariosUai from "@/assets/proprietarios-uai.jpg";
+import equipeUai from "@/assets/equipe-uai.jpg";
 import equipeUaiNew from "@/assets/equipe-uai-new.jpg";
 
 const SobreNos = () => {
@@ -61,33 +61,12 @@ const SobreNos = () => {
         <section className="py-16 bg-card/30">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto space-y-12">
-              {/* Proprietários */}
-              <div className="bg-card rounded-lg border border-border overflow-hidden">
-                <div className="grid md:grid-cols-2 gap-6 p-6 md:p-8">
-                  <div className="flex flex-col justify-center text-center">
-                    <h3 className="text-2xl font-bold text-foreground mb-4">
-                      Nossos Proprietários
-                    </h3>
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      Com paixão pelo turismo e compromisso com a excelência, nossos proprietários lideram a Uai Turismo com dedicação e experiência, garantindo que cada passeio seja uma experiência inesquecível.
-                    </p>
-                  </div>
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-muted">
-                    <img
-                      src={proprietariosUai}
-                      alt="Proprietários da Uai Turismo"
-                      className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Equipe */}
+              {/* Equipe - Foto 1 */}
               <div className="bg-card rounded-lg border border-border overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-6 p-6 md:p-8">
                   <div className="relative aspect-[4/3] overflow-hidden rounded-lg order-2 md:order-1">
                     <img
-                      src={equipeUaiNew}
+                      src={equipeUai}
                       alt="Equipe da Uai Turismo"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
@@ -107,6 +86,26 @@ const SobreNos = () => {
                         Do momento em que você chega até o último instante do passeio, estamos ao seu lado, cuidando para que tudo aconteça de forma leve e organizada. Trabalhamos todos os dias para transformar sua viagem em memórias que emocionam, porque acreditamos que a experiência começa muito antes de você embarcar e continua viva muito depois de voltar pra casa.
                       </p>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Equipe - Foto 2 */}
+              <div className="bg-card rounded-lg border border-border overflow-hidden">
+                <div className="grid md:grid-cols-2 gap-6 p-6 md:p-8">
+                  <div className="flex flex-col justify-center text-center">
+                    <div className="text-muted-foreground text-lg leading-relaxed">
+                      <p>
+                        Com dedicação e amor pelo que fazem, cada membro da nossa equipe contribui para criar experiências autênticas e memoráveis. Do planejamento à execução, trabalhamos unidos para superar expectativas e fazer de cada passeio um momento especial na vida dos nossos clientes.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-muted">
+                    <img
+                      src={equipeUaiNew}
+                      alt="Equipe Uai Turismo em ação"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
                   </div>
                 </div>
               </div>
