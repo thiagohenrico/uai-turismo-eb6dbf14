@@ -77,13 +77,13 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
   return (
     <>
       <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-20">
-        {/* Photo collage - Polaroid style ABOVE title - More compact and overlapped */}
+        {/* Photo collage - Polaroid style ABOVE title - Compact collage */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 pb-8">
-          <div className="relative h-[380px] md:h-[450px]">
-            {/* Large central photo - slightly tilted right */}
+          <div className="relative h-[420px] md:h-[480px]">
+            {/* Large central photo - slightly tilted */}
             <div 
-              className="absolute left-[50%] top-[45%] -translate-x-1/2 -translate-y-1/2 transform rotate-[6deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-25"
-              style={{ width: 'min(340px, 52%)' }}
+              className="absolute left-[50%] top-[48%] -translate-x-1/2 -translate-y-1/2 transform rotate-[4deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-25"
+              style={{ width: 'min(320px, 48%)' }}
             >
               <div className="bg-white p-4 md:p-6 shadow-[0_20px_60px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
@@ -94,10 +94,10 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               </div>
             </div>
 
-            {/* Medium-large photo - tilted left, overlapped on left side */}
+            {/* Left photo - tilted left, partial overlap */}
             <div 
-              className="absolute left-[12%] md:left-[10%] top-[35%] transform -rotate-[10deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-30"
-              style={{ width: 'min(280px, 44%)' }}
+              className="absolute left-[5%] md:left-[8%] top-[42%] transform -rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-30"
+              style={{ width: 'min(260px, 40%)' }}
             >
               <div className="bg-white p-3 md:p-5 shadow-[0_20px_60px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
@@ -108,10 +108,10 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               </div>
             </div>
 
-            {/* Medium photo - right side, tilted */}
+            {/* Right photo - tilted right, partial overlap */}
             <div 
-              className="absolute right-[8%] md:right-[12%] top-[40%] transform rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-28"
-              style={{ width: 'min(260px, 40%)' }}
+              className="absolute right-[5%] md:right-[8%] top-[45%] transform rotate-[14deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-28"
+              style={{ width: 'min(250px, 38%)' }}
             >
               <div className="bg-white p-3 md:p-5 shadow-[0_20px_60px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
@@ -122,9 +122,9 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               </div>
             </div>
 
-            {/* Smaller photo - top left, heavily tilted */}
+            {/* Top left photo - more visible */}
             <div 
-              className="absolute left-[8%] md:left-[15%] top-[8%] md:top-[5%] transform -rotate-[15deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-20"
+              className="absolute left-[18%] md:left-[22%] top-[8%] md:top-[6%] transform -rotate-[16deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-32"
               style={{ width: 'min(200px, 32%)' }}
             >
               <div className="bg-white p-2 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
@@ -136,9 +136,9 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               </div>
             </div>
 
-            {/* Smaller photo - top right */}
+            {/* Top right photo - more visible */}
             <div 
-              className="absolute right-[5%] md:right-[8%] top-[12%] md:top-[8%] transform rotate-[18deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-22"
+              className="absolute right-[18%] md:right-[22%] top-[10%] md:top-[8%] transform rotate-[18deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-33"
               style={{ width: 'min(190px, 30%)' }}
             >
               <div className="bg-white p-2 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
