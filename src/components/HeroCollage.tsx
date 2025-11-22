@@ -76,104 +76,76 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
 
   return (
     <>
-      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-32">
-        {/* Photo collage - Polaroid style ABOVE title */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 pb-12">
-          <div className="relative h-[500px] md:h-[550px]">
-            {/* Large central photo - tilted right */}
+      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-20">
+        {/* Photo collage - Polaroid style ABOVE title - More compact and overlapped */}
+        <div className="relative z-10 max-w-5xl mx-auto px-4 pb-8">
+          <div className="relative h-[380px] md:h-[450px]">
+            {/* Large central photo - slightly tilted right */}
             <div 
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rotate-[8deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-20"
-              style={{ width: 'min(280px, 42%)' }}
+              className="absolute left-[50%] top-[45%] -translate-x-1/2 -translate-y-1/2 transform rotate-[6deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-25"
+              style={{ width: 'min(340px, 52%)' }}
             >
-              <div className="bg-white p-3 md:p-5 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+              <div className="bg-white p-4 md:p-6 shadow-[0_20px_60px_rgba(0,0,0,0.7)] rounded-sm">
                 <img 
                   src={currentPhotos[0] || client2} 
                   alt="Cliente curtindo nas piscinas naturais" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+                  className="w-full aspect-[3/4] object-cover"
                 />
               </div>
             </div>
 
-            {/* Medium photo - tilted left, overlapped on top */}
+            {/* Medium-large photo - tilted left, overlapped on left side */}
             <div 
-              className="absolute left-[8%] md:left-[15%] top-[8%] md:top-[10%] transform -rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-30"
+              className="absolute left-[12%] md:left-[10%] top-[35%] transform -rotate-[10deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-30"
+              style={{ width: 'min(280px, 44%)' }}
+            >
+              <div className="bg-white p-3 md:p-5 shadow-[0_20px_60px_rgba(0,0,0,0.7)] rounded-sm">
+                <img 
+                  src={currentPhotos[1] || client4} 
+                  alt="Amigos nas águas cristalinas de Maragogi" 
+                  className="w-full aspect-[3/4] object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Medium photo - right side, tilted */}
+            <div 
+              className="absolute right-[8%] md:right-[12%] top-[40%] transform rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-28"
+              style={{ width: 'min(260px, 40%)' }}
+            >
+              <div className="bg-white p-3 md:p-5 shadow-[0_20px_60px_rgba(0,0,0,0.7)] rounded-sm">
+                <img 
+                  src={currentPhotos[2] || client8} 
+                  alt="Grupo comemorando em Maragogi" 
+                  className="w-full aspect-[3/4] object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Smaller photo - top left, heavily tilted */}
+            <div 
+              className="absolute left-[8%] md:left-[15%] top-[8%] md:top-[5%] transform -rotate-[15deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-20"
               style={{ width: 'min(200px, 32%)' }}
             >
               <div className="bg-white p-2 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
                 <img 
-                  src={currentPhotos[1] || client4} 
-                  alt="Amigos nas águas cristalinas de Maragogi" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+                  src={currentPhotos[3] || client15} 
+                  alt="Grande grupo em Maragogi" 
+                  className="w-full aspect-[3/4] object-cover"
                 />
               </div>
             </div>
 
-            {/* Medium photo 2 - bottom right */}
+            {/* Smaller photo - top right */}
             <div 
-              className="absolute right-[5%] md:right-[10%] bottom-[6%] md:bottom-[8%] transform rotate-[15deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-25"
+              className="absolute right-[5%] md:right-[8%] top-[12%] md:top-[8%] transform rotate-[18deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-40 z-22"
               style={{ width: 'min(190px, 30%)' }}
             >
               <div className="bg-white p-2 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
                 <img 
-                  src={currentPhotos[2] || client8} 
-                  alt="Grupo comemorando em Maragogi" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
-                />
-              </div>
-            </div>
-
-            {/* Small photo - top right corner */}
-            <div 
-              className="absolute right-[8%] md:right-[18%] top-[5%] md:top-[8%] transform rotate-[20deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-15"
-              style={{ width: 'min(150px, 24%)' }}
-            >
-              <div className="bg-white p-2 md:p-3 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
-                <img 
-                  src={currentPhotos[3] || client15} 
-                  alt="Grande grupo em Maragogi" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
-                />
-              </div>
-            </div>
-
-            {/* Extra small photo - left bottom */}
-            <div 
-              className="absolute left-[5%] md:left-[8%] bottom-[15%] md:bottom-[20%] transform -rotate-[18deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-18"
-              style={{ width: 'min(130px, 21%)' }}
-            >
-              <div className="bg-white p-2 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
-                <img 
                   src={currentPhotos[4] || client30} 
                   alt="Grupo feliz em Maragogi" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
-                />
-              </div>
-            </div>
-
-            {/* Extra photo - bottom left corner */}
-            <div 
-              className="absolute left-[15%] md:left-[20%] bottom-[2%] md:bottom-[5%] transform rotate-[10deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-22"
-              style={{ width: 'min(140px, 22%)' }}
-            >
-              <div className="bg-white p-2 md:p-3 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
-                <img 
-                  src={currentPhotos[5] || client1} 
-                  alt="Clientes aproveitando o passeio" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
-                />
-              </div>
-            </div>
-
-            {/* New photo - right middle */}
-            <div 
-              className="absolute right-[3%] top-[35%] md:top-[40%] transform rotate-[-8deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-17 hidden sm:block"
-              style={{ width: 'min(130px, 20%)' }}
-            >
-              <div className="bg-white p-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)] rounded-sm">
-                <img 
-                  src={allClientPhotos[20] || client20} 
-                  alt="Experiência incrível no litoral" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+                  className="w-full aspect-[3/4] object-cover"
                 />
               </div>
             </div>
@@ -181,7 +153,7 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
         </div>
 
         {/* Title BELOW photos */}
-        <div className="relative z-10 pb-12 text-center">
+        <div className="relative z-10 pb-16 text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white tracking-wider px-4 leading-tight drop-shadow-lg">
             Experiências inesquecíveis no litoral Sul de{" "}
             <span className="text-primary">Pernambuco</span> e Norte de{" "}
