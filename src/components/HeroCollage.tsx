@@ -1,48 +1,32 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
-// Import all client gallery images
-import client1 from "@/assets/client-1.jpg";
-import client2 from "@/assets/client-2.jpg";
-import client3 from "@/assets/client-3.jpg";
-import client4 from "@/assets/client-4.jpg";
-import client5 from "@/assets/client-5.jpg";
-import client6 from "@/assets/client-6.jpg";
-import client7 from "@/assets/client-7.jpg";
-import client8 from "@/assets/client-8.jpg";
-import client9 from "@/assets/client-9.jpg";
-import client10 from "@/assets/client-10.jpg";
-import client11 from "@/assets/client-11.jpg";
-import client12 from "@/assets/client-12.jpg";
-import client13 from "@/assets/client-13.jpg";
-import client14 from "@/assets/client-14.jpg";
-import client15 from "@/assets/client-15.jpg";
-import client16 from "@/assets/client-16.jpg";
-import client17 from "@/assets/client-17.jpg";
-import client18 from "@/assets/client-18.jpg";
-import client19 from "@/assets/client-19.jpg";
-import client20 from "@/assets/client-20.jpg";
-import client21 from "@/assets/client-21.jpg";
-import client22 from "@/assets/client-22.jpg";
-import client23 from "@/assets/client-23.jpg";
-import client24 from "@/assets/client-24.jpg";
-import client25 from "@/assets/client-25.jpg";
-import client26 from "@/assets/client-26.jpg";
-import client27 from "@/assets/client-27.jpg";
-import client28 from "@/assets/client-28.jpg";
-import client29 from "@/assets/client-29.jpg";
-import client30 from "@/assets/client-30.jpg";
-import client31 from "@/assets/client-31.jpg";
-import client32 from "@/assets/client-32.jpg";
-import client33 from "@/assets/client-33.jpg";
-import client34 from "@/assets/client-34.jpg";
+// Import destination photos
+import heroBeach from "@/assets/hero-beach.jpg";
+import buggyTour from "@/assets/buggy-tour.jpg";
+import caboSantoAgostinho from "@/assets/cabo-santo-agostinho.jpg";
+import maragogi from "@/assets/maragogi.jpg";
+import praiaCarneiros from "@/assets/praia-carneiros.jpg";
+import ilhaSantoAleixo from "@/assets/ilha-santo-aleixo.jpg";
+import maragogiBarraGrande from "@/assets/maragogi-barra-grande.jpg";
+import saoMiguel from "@/assets/sao-miguel.jpg";
+import recifeOlinda from "@/assets/recife-olinda.jpg";
 
+// Import gallery photos
+import galeriaPorto1 from "@/assets/galeria-porto-galinhas-1.jpg";
+import galeriaPorto2 from "@/assets/galeria-porto-galinhas-2.jpg";
+import galeriaMaragogi1 from "@/assets/galeria-maragogi-ponta-1.jpg";
+import galeriaMaragogi2 from "@/assets/galeria-maragogi-barra-1.jpg";
+import galeriaCarneiros1 from "@/assets/galeria-carneiros-1.jpg";
+import galeriaBuggy1 from "@/assets/galeria-buggy-cabo-1.jpg";
+import galeriaCityTour1 from "@/assets/galeria-citytour-1.jpg";
+import galeriaIlha1 from "@/assets/galeria-ilha-santo-aleixo-1.jpg";
 
-const allClientPhotos = [
-  client1, client2, client3, client4, client5, client6, client7, client8, client9, client10,
-  client11, client12, client13, client14, client15, client16, client17, client18, client19, client20,
-  client21, client22, client23, client24, client25, client26, client27, client28, client29, client30,
-  client31, client32, client33, client34
+const allDestinationPhotos = [
+  heroBeach, buggyTour, caboSantoAgostinho, maragogi, praiaCarneiros, 
+  ilhaSantoAleixo, maragogiBarraGrande, saoMiguel, recifeOlinda,
+  galeriaPorto1, galeriaPorto2, galeriaMaragogi1, galeriaMaragogi2,
+  galeriaCarneiros1, galeriaBuggy1, galeriaCityTour1, galeriaIlha1
 ];
 
 interface HeroCollageProps {
@@ -55,16 +39,16 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
   useEffect(() => {
     // Initialize with random photos
     const getRandomPhotos = () => {
-      const shuffled = [...allClientPhotos].sort(() => Math.random() - 0.5);
-      return shuffled.slice(0, 6);
+      const shuffled = [...allDestinationPhotos].sort(() => Math.random() - 0.5);
+      return shuffled.slice(0, 12);
     };
     
     setCurrentPhotos(getRandomPhotos());
 
-    // Change photos every 5 seconds
+    // Change photos every 6 seconds
     const interval = setInterval(() => {
       setCurrentPhotos(getRandomPhotos());
-    }, 5000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);
@@ -76,101 +60,173 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
 
   return (
     <>
-      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-24">
+      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-16 md:pt-20">
         {/* Title */}
-        <div className="relative z-10 pb-20 text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white tracking-wider px-4 leading-tight">
+        <div className="relative z-20 pb-8 md:pb-12 text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white tracking-wider px-4 leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
             Experiências inesquecíveis no litoral Sul de{" "}
             <span className="text-primary">Pernambuco</span> e Norte de{" "}
             <span className="text-primary">Alagoas!</span>
           </h1>
         </div>
 
-        {/* Photo collage - Polaroid style */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 pb-20">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-6">
-            {/* Photo 1 */}
+        {/* Photo Mural Collage */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 pb-16 md:pb-20">
+          <div className="relative h-[600px] md:h-[700px] lg:h-[800px]">
+            {/* Large photo 1 - Bottom left */}
             <div 
-              className="relative transform -rotate-[18deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
-              style={{ marginTop: '60px' }}
+              className="absolute left-0 bottom-0 w-[45%] md:w-[35%] transform -rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-10"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
+              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
                 <img 
-                  src={currentPhotos[0] || client2} 
-                  alt="Cliente curtindo nas piscinas naturais" 
+                  src={currentPhotos[0] || heroBeach} 
+                  alt="Praias paradisíacas de Pernambuco" 
                   className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
                 />
               </div>
             </div>
 
-            {/* Photo 2 */}
+            {/* Medium photo 2 - Top right */}
             <div 
-              className="relative transform rotate-[15deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
-              style={{ marginTop: '-30px' }}
+              className="absolute right-[5%] top-[5%] w-[38%] md:w-[28%] transform rotate-12 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-15"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
+              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
                 <img 
-                  src={currentPhotos[1] || client4} 
-                  alt="Amigos nas águas cristalinas de Maragogi" 
+                  src={currentPhotos[1] || buggyTour} 
+                  alt="Passeio de buggy nas dunas" 
+                  className="w-full aspect-square object-cover transition-opacity duration-500"
+                />
+              </div>
+            </div>
+
+            {/* Small photo 3 - Center left */}
+            <div 
+              className="absolute left-[8%] top-[15%] w-[32%] md:w-[22%] transform -rotate-12 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-20"
+            >
+              <div className="bg-white p-2 md:p-3 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+                <img 
+                  src={currentPhotos[2] || maragogi} 
+                  alt="Piscinas naturais de Maragogi" 
+                  className="w-full aspect-[4/3] object-cover transition-opacity duration-500"
+                />
+              </div>
+            </div>
+
+            {/* Large photo 4 - Center */}
+            <div 
+              className="absolute left-[25%] md:left-[30%] top-[25%] md:top-[30%] w-[48%] md:w-[38%] transform rotate-3 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-25"
+            >
+              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+                <img 
+                  src={currentPhotos[3] || praiaCarneiros} 
+                  alt="Praia dos Carneiros" 
+                  className="w-full aspect-[16/10] object-cover transition-opacity duration-500"
+                />
+              </div>
+            </div>
+
+            {/* Medium photo 5 - Bottom center */}
+            <div 
+              className="absolute left-[35%] md:left-[40%] bottom-[8%] w-[35%] md:w-[26%] transform -rotate-8 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-18"
+            >
+              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+                <img 
+                  src={currentPhotos[4] || ilhaSantoAleixo} 
+                  alt="Ilha de Santo Aleixo" 
                   className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
                 />
               </div>
             </div>
 
-            {/* Photo 3 */}
+            {/* Small photo 6 - Top left */}
             <div 
-              className="relative transform -rotate-[12deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
-              style={{ marginTop: '80px' }}
+              className="absolute left-[48%] md:left-[52%] top-[2%] w-[28%] md:w-[20%] transform rotate-15 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-12"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
                 <img 
-                  src={currentPhotos[2] || client8} 
-                  alt="Grupo comemorando em Maragogi" 
+                  src={currentPhotos[5] || saoMiguel} 
+                  alt="São Miguel dos Milagres" 
+                  className="w-full aspect-square object-cover transition-opacity duration-500"
+                />
+              </div>
+            </div>
+
+            {/* Medium photo 7 - Bottom right */}
+            <div 
+              className="absolute right-0 bottom-[12%] w-[38%] md:w-[30%] transform rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-16"
+            >
+              <div className="bg-white p-3 md:p-4 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+                <img 
+                  src={currentPhotos[6] || maragogiBarraGrande} 
+                  alt="Maragogi e Barra Grande" 
+                  className="w-full aspect-[4/5] object-cover transition-opacity duration-500"
+                />
+              </div>
+            </div>
+
+            {/* Small photo 8 - Top center */}
+            <div 
+              className="absolute left-[15%] md:left-[18%] top-[8%] w-[26%] md:w-[18%] transform -rotate-6 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-14"
+            >
+              <div className="bg-white p-2 md:p-3 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+                <img 
+                  src={currentPhotos[7] || recifeOlinda} 
+                  alt="Recife e Olinda" 
                   className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
                 />
               </div>
             </div>
 
-            {/* Photo 4 */}
+            {/* Extra small photo 9 - Right side */}
             <div 
-              className="relative transform rotate-[20deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
-              style={{ marginTop: '20px' }}
+              className="absolute right-[8%] top-[35%] w-[24%] md:w-[16%] transform -rotate-10 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-22"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
                 <img 
-                  src={currentPhotos[3] || client15} 
-                  alt="Grande grupo em Maragogi" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+                  src={currentPhotos[8] || galeriaPorto1} 
+                  alt="Porto de Galinhas" 
+                  className="w-full aspect-square object-cover transition-opacity duration-500"
                 />
               </div>
             </div>
 
-            {/* Photo 5 */}
+            {/* Extra photo 10 - Left bottom */}
             <div 
-              className="relative transform -rotate-[16deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
-              style={{ marginTop: '-15px' }}
+              className="absolute left-[5%] bottom-[35%] w-[30%] md:w-[22%] transform rotate-8 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-13"
             >
-              <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
+              <div className="bg-white p-2 md:p-3 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
                 <img 
-                  src={currentPhotos[4] || client30} 
-                  alt="Grupo feliz em Maragogi" 
-                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+                  src={currentPhotos[9] || galeriaCarneiros1} 
+                  alt="Aventuras nos Carneiros" 
+                  className="w-full aspect-[4/3] object-cover transition-opacity duration-500"
                 />
               </div>
             </div>
 
-            {/* Photo 6 - New */}
+            {/* Extra photo 11 - Bottom far right */}
             <div 
-              className="relative transform rotate-[10deg] hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20"
-              style={{ marginTop: '50px' }}
+              className="absolute right-[2%] bottom-0 w-[32%] md:w-[24%] transform -rotate-4 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-11"
             >
-            <div className="bg-white p-3 md:p-4 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-sm">
-              <img 
-                src={currentPhotos[5] || client1} 
-                alt="Clientes aproveitando o passeio" 
-                className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
-              />
+              <div className="bg-white p-3 md:p-3 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+                <img 
+                  src={currentPhotos[10] || galeriaBuggy1} 
+                  alt="Buggy tours" 
+                  className="w-full aspect-[4/3] object-cover transition-opacity duration-500"
+                />
+              </div>
             </div>
+
+            {/* Extra photo 12 - Center top */}
+            <div 
+              className="absolute left-[38%] md:left-[42%] top-[12%] w-[22%] md:w-[15%] transform rotate-12 hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-30 z-17"
+            >
+              <div className="bg-white p-2 md:p-2 shadow-[0_15px_50px_rgba(0,0,0,0.6)] rounded-sm">
+                <img 
+                  src={currentPhotos[11] || galeriaCityTour1} 
+                  alt="City Tour" 
+                  className="w-full aspect-[3/4] object-cover transition-opacity duration-500"
+                />
+              </div>
             </div>
           </div>
         </div>
