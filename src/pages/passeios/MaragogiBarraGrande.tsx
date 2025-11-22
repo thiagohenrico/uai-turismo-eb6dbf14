@@ -41,7 +41,7 @@ const MaragogiBarraGrande = () => {
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="mb-12">
+              <div className="mb-12 text-center">
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
                   Sobre o Passeio
                 </h2>

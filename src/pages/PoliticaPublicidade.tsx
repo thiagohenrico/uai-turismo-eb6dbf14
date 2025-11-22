@@ -26,7 +26,7 @@ const PoliticaPublicidade = () => {
             Política de <span className="text-primary">Publicidade</span>
           </h1>
 
-          <div className="space-y-6 text-muted-foreground">
+          <div className="space-y-6 text-muted-foreground text-center">
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Transparência na Comunicação</h2>
               <p>
@@ -42,7 +42,7 @@ const PoliticaPublicidade = () => {
                 Todos os passeios, translados e serviços anunciados em nosso site e redes sociais são
                 devidamente autorizados e seguem as regulamentações do setor turístico brasileiro.
               </p>
-              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-1 inline-block text-left">
                 <li>CNPJ: 54.181.357/0001-42</li>
                 <li>Certificação Cadastur - Cadastro de Prestadores de Serviços Turísticos</li>
                 <li>Empresa cadastrada no Ministério do Turismo</li>

@@ -26,14 +26,14 @@ const PoliticaPrivacidade = () => {
             Política de <span className="text-primary">Privacidade</span>
           </h1>
 
-          <div className="space-y-6 text-muted-foreground">
+          <div className="space-y-6 text-muted-foreground text-center">
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Informações que Coletamos</h2>
               <p>
                 A Uai Turismo coleta informações pessoais fornecidas voluntariamente por você ao solicitar
                 orçamentos, fazer reservas ou entrar em contato conosco. Estas informações podem incluir:
               </p>
-              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-1 inline-block text-left">
                 <li>Nome completo</li>
                 <li>Número de telefone (WhatsApp)</li>
                 <li>E-mail</li>
@@ -46,7 +46,7 @@ const PoliticaPrivacidade = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">2. Uso das Informações</h2>
               <p>As informações coletadas são utilizadas para:</p>
-              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-1 inline-block text-left">
                 <li>Processar suas reservas e fornecer os serviços contratados</li>
                 <li>Entrar em contato para confirmações e atualizações sobre seus passeios</li>
                 <li>Melhorar nossos serviços e experiência do cliente</li>
@@ -75,7 +75,7 @@ const PoliticaPrivacidade = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">5. Seus Direitos</h2>
               <p>Você tem o direito de:</p>
-              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-1 inline-block text-left">
                 <li>Solicitar acesso aos seus dados pessoais</li>
                 <li>Corrigir dados incorretos ou incompletos</li>
                 <li>Solicitar a exclusão dos seus dados</li>
