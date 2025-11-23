@@ -45,11 +45,8 @@ const MaragogiPontaMangue = () => {
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
                   Sobre o Passeio
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  A Ponta de Mangue oferece uma experiência única em Maragogi, com cenários paradisíacos, águas em tons de azul-turquesa e temperaturas agradáveis durante todo o ano. Este roteiro explora áreas menos visitadas, proporcionando maior tranquilidade e contato com a natureza.
-                </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  As piscinas naturais da Ponta de Mangue são perfeitas para snorkel, permitindo observar de perto a rica vida marinha da região. O passeio também inclui paradas em praias paradisíacas com infraestrutura completa.
+                  Onde o mar azul-turquesa e os cenários paradisíacos criam uma atmosfera de calma e beleza natural. As águas mornas e as piscinas naturais convidam a momentos únicos de conexão com a natureza. E para tornar tudo ainda mais especial, o passeio de lancha revela pontos ainda mais tranquilos e preservados, garantindo uma experiência leve, exclusiva e inesquecível.
                 </p>
               </div>
 
