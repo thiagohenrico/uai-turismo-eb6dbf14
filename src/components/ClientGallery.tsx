@@ -77,7 +77,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiPontaMangue1,
       alt: "Família nas piscinas naturais de Maragogi",
-      location: "Maragogi - Barra Grande"
+      location: "Maragogi - Ponta de Mangue"
     },
     {
       src: galeriaPortoGalinhas1,
@@ -102,7 +102,7 @@ const ClientGallery = () => {
     {
       src: galeriaMaragogiBarraGrande1,
       alt: "Clientes nas águas cristalinas de Maragogi",
-      location: "Maragogi - Ponta de Mangue"
+      location: "Maragogi - Barra Grande"
     },
     {
       src: galeriaPortoGalinhas2,
