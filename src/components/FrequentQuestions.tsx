@@ -58,6 +58,10 @@ const FrequentQuestions = ({ onReserveClick }: FrequentQuestionsProps) => {
     {
       question: "O que devo levar nos passeios?",
       answer: "Recomendamos: protetor solar, boné ou chapéu, óculos de sol, roupa de banho, toalha, roupa confortável, chinelo, e um pouco de dinheiro para alimentação e compras. Para passeios de buggy, evite roupas claras."
+    },
+    {
+      question: "Qual é a diferença entre os roteiros de Barra Grande e Ponta de Mangue em Maragogi?",
+      answer: "Em Maragogi, os passeios são feitos para um roteiro ou outro, e cada um oferece uma experiência diferente. Barra Grande é o roteiro mais famoso na internet, por isso costuma ser o mais movimentado. A praia tem um visual mais urbano, com restaurantes e pousadas, e os pontos de parada da lancha geralmente ficam mais cheios. É nesse roteiro que está o Caminho de Moisés, o banco de areia que só aparece quando a maré está até 0.2. Acima disso, ele fica coberto pela água. Ponta de Mangue oferece um cenário mais natural e tranquilo. O receptivo é maior, conta com uma piscina ampla, e as paradas de lancha costumam ser mais vazias. Outra vantagem é que esse roteiro permite realizar o passeio com a maré um pouco mais alta, até 0.7."
     }
   ];
 
