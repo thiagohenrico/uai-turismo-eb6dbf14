@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import uaiLogo from "@/assets/uai-logo.png";
@@ -50,10 +50,21 @@ const Header = ({ onReserveClick }: HeaderProps) => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button className="lg:hidden text-foreground" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          {/* Mobile Instagram and Menu */}
+          <div className="lg:hidden flex items-center gap-4">
+            <a 
+              href="https://www.instagram.com/uai_turismo/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram size={24} />
+            </a>
+            <button className="text-foreground" onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
