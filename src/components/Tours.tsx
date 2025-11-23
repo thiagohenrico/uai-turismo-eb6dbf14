@@ -31,7 +31,7 @@ const Tours = () => {
       title: "Praia dos Carneiros",
       image: praiaCarneiros,
       detailsLink: "/passeios/praia-carneiros",
-      description: "Um paraíso de águas cristalinas, coqueiral infinito e uma charmosa igrejinha à beira-mar, perfeito para relaxar e viver momentos inesquecíveis.",
+      description: "Um paraíso de águas cristalinas e coqueiral infinito que transforma qualquer visita em uma experiência encantadora. A charmosa igrejinha à beira-mar completa o cenário, criando um clima único e acolhedor. Aqui, cada momento é um convite para relaxar, sentir a brisa leve e viver instantes que ficam para sempre na memória.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO LANCHA - 2 HORAS:",
       itineraryItems: [
@@ -52,7 +52,7 @@ const Tours = () => {
       title: "São Miguel dos Milagres",
       image: saoMiguel,
       detailsLink: "/passeios/sao-miguel",
-      description: "Um refúgio de tranquilidade, com mar calmo em tons de azul, areia branca e extensos coqueirais que criam um cenário de pura paz.",
+      description: "É um refúgio de tranquilidade, com mar calmo em tons de azul, areia branca e coqueirais que emolduram um cenário de pura paz. Para completar a experiência, o passeio de jangada leva você até piscinas naturais incríveis, onde a beleza do lugar se revela ainda mais de perto.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO JANGADA - 2 HORAS:",
       itineraryItems: [
@@ -72,7 +72,7 @@ const Tours = () => {
       title: "Maragogi - Barra Grande",
       image: maragogiBarraGrande,
       detailsLink: "/passeios/maragogi-barra-grande",
-      description: "O Caribe Brasileiro, onde o mar ganha tons de azul e verde, com piscinas naturais cheias de peixes coloridos para explorar e se apaixonar.",
+      description: "O Caribe Brasileiro, onde o mar ganha tons de azul e verde, com piscinas naturais repletas de peixes coloridos para explorar e se apaixonar. Um cenário que hipnotiza, onde a água morninha convida para mergulhos sem pressa e cada parada revela um novo encantamento.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO LANCHA - 2 HORAS:",
       itineraryItems: [
@@ -92,7 +92,7 @@ const Tours = () => {
       title: "Maragogi - Ponta de Mangue",
       image: maragogiPontaMangue,
       detailsLink: "/passeios/maragogi-ponta-mangue",
-      description: "Mar azul-turquesa, cenários paradisíacos, águas mornas e piscinas naturais que convidam a momentos únicos em contato com a natureza.",
+      description: "Onde o mar azul-turquesa e os cenários paradisíacos criam uma atmosfera de calma e beleza natural. As águas mornas e as piscinas naturais convidam a momentos únicos de conexão com a natureza. E para tornar tudo ainda mais especial, o passeio de lancha revela pontos ainda mais tranquilos e preservados, garantindo uma experiência leve, exclusiva e inesquecível.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO LANCHA - 2 HORAS:",
       itineraryItems: [
@@ -112,7 +112,7 @@ const Tours = () => {
       title: "Cabo de Santo Agostinho - Passeios de Buggy",
       image: caboSantoAgostinho,
       detailsLink: "/passeios/cabo-santo-agostinho",
-      description: "Te levamos até Cabo de Santo Agostinho e lá você conhece pontos históricos, praias e mirantes em um roteiro especial feito de Buggy.",
+      description: "Uma experiência completa, unindo história, natureza, sabores e aventura. Lá, você percorre pontos históricos, praias belíssimas e mirantes incríveis em um roteiro especial feito de buggy, que torna cada parada ainda mais divertida e cheia de emoção. É a combinação perfeita para quem quer explorar a região de um jeito leve, diferente e inesquecível.",
       duration: "Passeio das 07:30 às 17:30",
       itinerary: "ROTEIRO - 3 HORAS",
       itineraryItems: [
