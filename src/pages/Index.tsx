@@ -22,10 +22,10 @@ const Index = () => {
         <HeroCollage onReserveClick={() => setIsBookingOpen(true)} />
         <div className="bg-[hsl(210,35%,10%)]">
           <Tours />
-          <CadasturBadge />
           <ClientGallery />
           <InstagramFeed />
           <FAQ />
+          <CadasturBadge />
           <Reviews />
           <FrequentQuestions onReserveClick={() => setIsBookingOpen(true)} />
         </div>
