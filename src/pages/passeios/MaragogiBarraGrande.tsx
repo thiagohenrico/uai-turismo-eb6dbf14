@@ -45,11 +45,8 @@ const MaragogiBarraGrande = () => {
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
                   Sobre o Passeio
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  Maragogi é conhecido como o "Caribe Brasileiro" e não é por acaso. Suas águas cristalinas em tons de azul e verde turquesa, praias de areias brancas e piscinas naturais repletas de peixes coloridos fazem deste destino um dos mais procurados do nordeste.
-                </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  O passeio pela Barra Grande revela as Galés de Maragogi, formações de corais que criam verdadeiras piscinas naturais em alto mar. É uma experiência única de snorkel e contemplação da vida marinha em um dos lugares mais bonitos do Brasil.
+                  O Caribe Brasileiro, onde o mar ganha tons de azul e verde, com piscinas naturais repletas de peixes coloridos para explorar e se apaixonar. Um cenário que hipnotiza, onde a água morninha convida para mergulhos sem pressa e cada parada revela um novo encantamento.
                 </p>
               </div>
 

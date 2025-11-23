@@ -45,11 +45,8 @@ const CaboSantoAgostinho = () => {
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
                   Sobre o Passeio
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  O passeio de buggy pelo Cabo de Santo Agostinho é uma experiência emocionante que combina história, natureza e aventura. Explore praias paradisíacas, visite mirantes com vistas espetaculares e conheça pontos históricos importantes da região.
-                </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Durante o trajeto, você terá a oportunidade de visitar praias famosas como Calhetas, Enseada dos Corais e Gaibu, além de degustar doces e licores típicos da região. É uma forma divertida e diferente de conhecer as belezas do litoral sul de Pernambuco.
+                  Uma experiência completa, unindo história, natureza, sabores e aventura. Lá, você percorre pontos históricos, praias belíssimas e mirantes incríveis em um roteiro especial feito de buggy, que torna cada parada ainda mais divertida e cheia de emoção. É a combinação perfeita para quem quer explorar a região de um jeito leve, diferente e inesquecível.
                 </p>
               </div>
 

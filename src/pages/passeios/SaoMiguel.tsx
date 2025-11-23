@@ -45,11 +45,8 @@ const SaoMiguel = () => {
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
                   Sobre o Passeio
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  São Miguel dos Milagres é um verdadeiro paraíso escondido no litoral norte de Alagoas. Com praias praticamente desertas, mar calmo em tons de azul turquesa, areia branca fininha e coqueirais intermináveis, este destino oferece paz e tranquilidade em cenários de tirar o fôlego.
-                </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  As piscinas naturais de São Miguel são formadas por recifes de coral e proporcionam um espetáculo único de vida marinha. Durante a maré baixa, você pode caminhar entre os corais e observar peixes coloridos em águas cristalinas.
+                  É um refúgio de tranquilidade, com mar calmo em tons de azul, areia branca e coqueirais que emolduram um cenário de pura paz. Para completar a experiência, o passeio de jangada leva você até piscinas naturais incríveis, onde a beleza do lugar se revela ainda mais de perto.
                 </p>
               </div>
 

@@ -48,11 +48,8 @@ const PraiaCarneiros = () => {
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
                   Sobre o Passeio
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  A Praia dos Carneiros é um dos destinos mais paradisíacos do litoral nordestino. Com suas águas cristalinas em tons de azul e verde, coqueirais infinitos e a famosa Capela de São Benedito à beira-mar, este lugar oferece cenários de tirar o fôlego.
-                </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Durante o passeio, você terá a oportunidade de explorar as belezas naturais da região, relaxar em praias paradisíacas e viver momentos inesquecíveis em um dos lugares mais bonitos de Pernambuco.
+                  Um paraíso de águas cristalinas e coqueiral infinito que transforma qualquer visita em uma experiência encantadora. A charmosa igrejinha à beira-mar completa o cenário, criando um clima único e acolhedor. Aqui, cada momento é um convite para relaxar, sentir a brisa leve e viver instantes que ficam para sempre na memória.
                 </p>
               </div>
 
