@@ -82,9 +82,6 @@ const SobreNos = () => {
                       <p>
                         Nos bastidores, nossa equipe de comunicação está sempre atenta para manter você bem informado, compartilhando dicas, atualizações e tudo o que faz parte do seu roteiro. Já em campo, nossos motoristas e guias conduzem cada passeio com responsabilidade e entusiasmo, enquanto os marinheiros oferecem toda a atenção necessária para que a experiência no mar seja tranquila, divertida e segura.
                       </p>
-                      <p>
-                        Do momento em que você chega até o último instante do passeio, estamos ao seu lado, cuidando para que tudo aconteça de forma leve e organizada. Trabalhamos todos os dias para transformar sua viagem em memórias que emocionam, porque acreditamos que a experiência começa muito antes de você embarcar e continua viva muito depois de voltar pra casa.
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -94,7 +91,10 @@ const SobreNos = () => {
               <div className="bg-card rounded-lg border border-border overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-6 p-6 md:p-8">
                   <div className="flex flex-col justify-center text-center">
-                    <div className="text-muted-foreground text-lg leading-relaxed">
+                    <div className="text-muted-foreground text-lg leading-relaxed space-y-4">
+                      <p>
+                        Do momento em que você chega até o último instante do passeio, estamos ao seu lado, cuidando para que tudo aconteça de forma leve e organizada. Trabalhamos todos os dias para transformar sua viagem em memórias que emocionam, porque acreditamos que a experiência começa muito antes de você embarcar e continua viva muito depois de voltar pra casa.
+                      </p>
                       <p>
                         Com dedicação e amor pelo que fazem, cada membro da nossa equipe contribui para criar experiências autênticas e memoráveis. Do planejamento à execução, trabalhamos unidos para superar expectativas e fazer de cada passeio um momento especial na vida dos nossos clientes.
                       </p>

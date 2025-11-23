@@ -165,45 +165,52 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
           </div>
         </div>
 
-        {/* Title BELOW photos */}
-        <div className="relative z-10 pb-16 text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white tracking-wider px-4 leading-tight drop-shadow-lg">
-            Experiências inesquecíveis no litoral Sul de{" "}
-            <span className="text-primary">Pernambuco</span> e Norte de{" "}
-            <span className="text-primary">Alagoas!</span>
-          </h1>
-        </div>
+        {/* Video and Content Section */}
+        <div className="relative z-10 pb-12">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+              {/* Video - Left */}
+              <div className="order-2 md:order-1">
+                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                    <iframe 
+                      src="https://www.youtube.com/embed/s3oA1Zzh7DE"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute top-0 left-0 w-full h-full"
+                      style={{ border: 'none' }}
+                    />
+                  </div>
+                </div>
+              </div>
 
-        {/* CTA Buttons */}
-        <div className="relative z-10 text-center pb-12">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
-            <Button 
-              onClick={onReserveClick}
-              className="bg-gradient-to-r from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white text-base md:text-lg px-8 md:px-10 py-5 md:py-6 rounded-full shadow-2xl hover:shadow-green-500/50 transition-all transform hover:scale-105 font-bold w-[90%] sm:w-auto"
-            >
-              RESERVE JÁ
-            </Button>
-            <Button 
-              onClick={scrollToTours}
-              variant="outline"
-              className="bg-white/10 border-2 border-white text-white text-base md:text-lg px-8 md:px-10 py-5 md:py-6 rounded-full hover:bg-white hover:text-deep-navy transition-all transform hover:scale-105 font-bold backdrop-blur-sm w-[90%] sm:w-auto"
-            >
-              VER PASSEIOS
-            </Button>
-          </div>
-        </div>
+              {/* Text - Right */}
+              <div className="order-1 md:order-2 text-center md:text-left">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wider leading-tight drop-shadow-lg mb-8">
+                  Experiências inesquecíveis no litoral Sul de{" "}
+                  <span className="text-primary">Pernambuco</span> e Norte de{" "}
+                  <span className="text-primary">Alagoas!</span>
+                </h1>
+              </div>
+            </div>
 
-        {/* Video Section */}
-        <div className="relative z-10 max-w-2xl mx-auto px-4 pb-12">
-          <div className="rounded-2xl overflow-hidden shadow-2xl">
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe 
-                src="https://www.youtube.com/embed/s3oA1Zzh7DE"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-                style={{ border: 'none' }}
-              />
+            {/* CTA Buttons - Centered Below */}
+            <div className="text-center mt-12">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button 
+                  onClick={onReserveClick}
+                  className="bg-gradient-to-r from-[#25D366] to-[#20BA5A] hover:from-[#20BA5A] hover:to-[#1DA851] text-white text-base md:text-lg px-8 md:px-10 py-5 md:py-6 rounded-full shadow-2xl hover:shadow-green-500/50 transition-all transform hover:scale-105 font-bold w-[90%] sm:w-auto"
+                >
+                  RESERVE JÁ
+                </Button>
+                <Button 
+                  onClick={scrollToTours}
+                  variant="outline"
+                  className="bg-white/10 border-2 border-white text-white text-base md:text-lg px-8 md:px-10 py-5 md:py-6 rounded-full hover:bg-white hover:text-deep-navy transition-all transform hover:scale-105 font-bold backdrop-blur-sm w-[90%] sm:w-auto"
+                >
+                  VER PASSEIOS
+                </Button>
+              </div>
             </div>
           </div>
         </div>
