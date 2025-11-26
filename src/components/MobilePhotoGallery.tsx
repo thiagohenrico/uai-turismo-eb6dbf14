@@ -43,42 +43,42 @@ const MobilePhotoGallery = () => {
 
         {/* Mobile: Stacked Polaroid Gallery / Desktop: Carousel */}
         <div className="mb-12">
-          {/* Mobile View - Stacked Polaroids */}
-          <div className="block md:hidden space-y-8">
-            {photos.map((photo, index) => (
-              <div
-                key={index}
-                className="relative mx-auto animate-fade-in"
-                style={{
-                  maxWidth: index % 3 === 0 ? '85%' : index % 3 === 1 ? '90%' : '80%',
-                  animationDelay: `${index * 0.15}s`,
-                }}
-              >
-                <div 
-                  className={`relative bg-white p-3 shadow-2xl transform transition-all duration-700 hover:scale-105 hover:rotate-0 ${
-                    index % 4 === 0 ? "rotate-[-4deg]" : 
-                    index % 4 === 1 ? "rotate-[3deg]" : 
-                    index % 4 === 2 ? "rotate-[-2deg]" : 
-                    "rotate-[4deg]"
-                  }`}
+          {/* Mobile View - Alternating Left/Right Polaroids */}
+          <div className="block md:hidden space-y-6">
+            {photos.map((photo, index) => {
+              const isLeft = index % 2 === 0;
+              return (
+                <div
+                  key={index}
+                  className={`relative animate-fade-in ${isLeft ? 'ml-0 mr-auto' : 'ml-auto mr-0'}`}
                   style={{
-                    boxShadow: '0 20px 60px rgba(0,0,0,0.4), 0 0 20px rgba(0,0,0,0.2)',
+                    width: '85%',
+                    animationDelay: `${index * 0.15}s`,
                   }}
                 >
-                  <div className="aspect-[4/5] overflow-hidden rounded-sm">
-                    <img
-                      src={photo.src}
-                      alt={photo.alt}
-                      className="w-full h-full object-cover"
-                      loading={index < 2 ? "eager" : "lazy"}
-                    />
-                  </div>
-                  <div className="text-center mt-3 font-script text-gray-700 text-base font-medium">
-                    {photo.alt}
+                  <div 
+                    className={`relative bg-white p-3 shadow-2xl transform transition-all duration-700 active:scale-105 active:rotate-0 ${
+                      isLeft ? "rotate-[-3deg]" : "rotate-[3deg]"
+                    }`}
+                    style={{
+                      boxShadow: '0 20px 60px rgba(0,0,0,0.4), 0 0 20px rgba(0,0,0,0.2)',
+                    }}
+                  >
+                    <div className="aspect-[4/5] overflow-hidden rounded-sm">
+                      <img
+                        src={photo.src}
+                        alt={photo.alt}
+                        className="w-full h-full object-cover"
+                        loading={index < 2 ? "eager" : "lazy"}
+                      />
+                    </div>
+                    <div className="text-center mt-3 font-script text-gray-700 text-base font-medium">
+                      {photo.alt}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Desktop View - Carousel */}
