@@ -107,83 +107,87 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
       <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-20">
         {/* Mobile: Photo collage - Polaroid style */}
         <div className="block md:hidden relative z-10 max-w-5xl mx-auto px-2 sm:px-4 pb-8">
-          <div className="relative h-[600px]">
-            {/* Foto 1 - Canto superior esquerdo */}
+          <div className="relative h-[700px] flex items-center justify-center">
+            {/* Foto 1 - Superior esquerda */}
             <div 
               className="absolute transition-all duration-500 hover:scale-105 hover:z-40"
               style={{
-                width: '360px',
-                top: '60px',
+                width: '260px',
+                height: '360px',
+                top: '40px',
                 left: '-10px',
-                transform: 'rotate(-4deg)',
+                transform: 'rotate(3deg)',
                 zIndex: 1
               }}
             >
-              <div className="bg-white p-3 shadow-[0_20px_60px_rgba(0,0,0,0.7)] rounded-sm">
+              <div className="bg-white p-3 shadow-[0_15px_40px_rgba(0,0,0,0.5)] rounded-sm w-full h-full">
                 <img 
                   src={currentPhotos[0] || client2} 
                   alt="Cliente curtindo nas piscinas naturais" 
-                  className="w-full aspect-[3/4] object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
 
-            {/* Foto 2 - Principal central (buggy amarelo) */}
+            {/* Foto 2 - Principal central (maior) */}
             <div 
               className="absolute transition-all duration-500 hover:scale-105 hover:z-40"
               style={{
-                width: '420px',
-                top: '140px',
-                left: '120px',
-                transform: 'rotate(3deg)',
-                zIndex: 4
+                width: '285px',
+                height: '400px',
+                top: '120px',
+                left: '40px',
+                transform: 'rotate(-2deg)',
+                zIndex: 5
               }}
             >
-              <div className="bg-white p-4 shadow-[0_25px_70px_rgba(0,0,0,0.8)] rounded-sm">
+              <div className="bg-white p-3 shadow-[0_20px_50px_rgba(0,0,0,0.6)] rounded-sm w-full h-full">
                 <img 
                   src={currentPhotos[1] || client4} 
                   alt="Amigos nas águas cristalinas de Maragogi" 
-                  className="w-full aspect-[3/4] object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
 
-            {/* Foto 3 - Canto inferior esquerdo */}
+            {/* Foto 3 - Inferior esquerda */}
             <div 
               className="absolute transition-all duration-500 hover:scale-105 hover:z-40"
               style={{
-                width: '350px',
-                top: '330px',
-                left: '20px',
-                transform: 'rotate(-2deg)',
+                width: '260px',
+                height: '360px',
+                top: '350px',
+                left: '10px',
+                transform: 'rotate(-1deg)',
                 zIndex: 3
               }}
             >
-              <div className="bg-white p-3 shadow-[0_20px_60px_rgba(0,0,0,0.7)] rounded-sm">
+              <div className="bg-white p-3 shadow-[0_15px_40px_rgba(0,0,0,0.5)] rounded-sm w-full h-full">
                 <img 
                   src={currentPhotos[2] || client8} 
                   alt="Grupo comemorando em Maragogi" 
-                  className="w-full aspect-[3/4] object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
 
-            {/* Foto 4 - Lado direito, parcialmente visível */}
+            {/* Foto 4 - Direita (parcialmente visível) */}
             <div 
               className="absolute transition-all duration-500 hover:scale-105 hover:z-40"
               style={{
-                width: '320px',
-                top: '240px',
-                right: '-30px',
+                width: '260px',
+                height: '360px',
+                top: '260px',
+                right: '-35px',
                 transform: 'rotate(2deg)',
                 zIndex: 2
               }}
             >
-              <div className="bg-white p-3 shadow-[0_20px_60px_rgba(0,0,0,0.7)] rounded-sm">
+              <div className="bg-white p-3 shadow-[0_15px_40px_rgba(0,0,0,0.5)] rounded-sm w-full h-full">
                 <img 
                   src={currentPhotos[3] || client15} 
                   alt="Grande grupo em Maragogi" 
-                  className="w-full aspect-[3/4] object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
