@@ -41,44 +41,109 @@ const MobilePhotoGallery = () => {
           </h1>
         </div>
 
-        {/* Mobile: Stacked Polaroid Gallery / Desktop: Carousel */}
+        {/* Mobile: Mosaic Gallery / Desktop: Carousel */}
         <div className="mb-12">
-          {/* Mobile View - Alternating Left/Right Polaroids */}
-          <div className="block md:hidden space-y-12">
-            {photos.map((photo, index) => {
-              const isLeft = index % 2 === 0;
-              return (
-                <div
-                  key={index}
-                  className={`relative animate-fade-in ${isLeft ? 'ml-0 mr-auto' : 'ml-auto mr-0'}`}
-                  style={{
-                    width: '85%',
-                    animationDelay: `${index * 0.15}s`,
-                  }}
-                >
-                  <div 
-                    className={`relative bg-white p-3 shadow-2xl transform transition-all duration-700 active:scale-105 active:rotate-0 ${
-                      isLeft ? "rotate-[-3deg]" : "rotate-[3deg]"
-                    }`}
-                    style={{
-                      boxShadow: '0 20px 60px rgba(0,0,0,0.4), 0 0 20px rgba(0,0,0,0.2)',
-                    }}
-                  >
-                    <div className="aspect-[4/5] overflow-hidden rounded-sm">
-                      <img
-                        src={photo.src}
-                        alt={photo.alt}
-                        className="w-full h-full object-cover"
-                        loading={index < 2 ? "eager" : "lazy"}
-                      />
-                    </div>
-                    <div className="text-center mt-3 font-script text-gray-700 text-base font-medium">
-                      {photo.alt}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+          {/* Mobile View - Mosaic Style Gallery */}
+          <div className="block md:hidden relative mx-auto" style={{ height: '720px', maxWidth: '600px' }}>
+            {/* Photo 1 - Quadriciclo (top left) */}
+            <div 
+              className="absolute bg-white shadow-2xl animate-fade-in"
+              style={{
+                width: '290px',
+                height: '360px',
+                top: '40px',
+                left: '20px',
+                padding: '12px',
+                transform: 'rotate(8deg)',
+                zIndex: 2,
+                boxShadow: '0 10px 40px rgba(0,0,0,0.3)',
+                animationDelay: '0s'
+              }}
+            >
+              <div className="w-full h-full overflow-hidden">
+                <img
+                  src={caboSantoAgostinho}
+                  alt="Passeio de Quadriciclo"
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
+              </div>
+            </div>
+
+            {/* Photo 2 - Buggy verde (center, largest) */}
+            <div 
+              className="absolute bg-white shadow-2xl animate-fade-in"
+              style={{
+                width: '360px',
+                height: '430px',
+                top: '100px',
+                left: '160px',
+                padding: '12px',
+                transform: 'rotate(-6deg)',
+                zIndex: 4,
+                boxShadow: '0 15px 50px rgba(0,0,0,0.4)',
+                animationDelay: '0.15s'
+              }}
+            >
+              <div className="w-full h-full overflow-hidden">
+                <img
+                  src={buggyTour}
+                  alt="Buggy em Porto de Galinhas"
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
+              </div>
+            </div>
+
+            {/* Photo 3 - Homem na rede (bottom left) */}
+            <div 
+              className="absolute bg-white shadow-2xl animate-fade-in"
+              style={{
+                width: '300px',
+                height: '350px',
+                top: '320px',
+                left: '0px',
+                padding: '12px',
+                transform: 'rotate(5deg)',
+                zIndex: 3,
+                boxShadow: '0 10px 40px rgba(0,0,0,0.3)',
+                animationDelay: '0.3s'
+              }}
+            >
+              <div className="w-full h-full overflow-hidden">
+                <img
+                  src={saoMiguel}
+                  alt="Relaxando em São Miguel"
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
+              </div>
+            </div>
+
+            {/* Photo 4 - Moça na praia (bottom right, partially visible) */}
+            <div 
+              className="absolute bg-white shadow-2xl animate-fade-in"
+              style={{
+                width: '260px',
+                height: '330px',
+                top: '350px',
+                left: '330px',
+                padding: '12px',
+                transform: 'rotate(-4deg)',
+                zIndex: 1,
+                boxShadow: '0 8px 30px rgba(0,0,0,0.25)',
+                animationDelay: '0.45s'
+              }}
+            >
+              <div className="w-full h-full overflow-hidden">
+                <img
+                  src={praiaCarneiros}
+                  alt="Praia dos Carneiros"
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Desktop View - Carousel */}
