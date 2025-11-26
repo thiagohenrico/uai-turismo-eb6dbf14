@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "@/components/Header";
-import MobilePhotoGallery from "@/components/MobilePhotoGallery";
+import HeroCollage from "@/components/HeroCollage";
 import CadasturBadge from "@/components/CadasturBadge";
 import Tours from "@/components/Tours";
 import FAQ from "@/components/FAQ";
@@ -19,7 +19,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Header onReserveClick={() => setIsBookingOpen(true)} />
       <main>
-        <MobilePhotoGallery />
+        <HeroCollage onReserveClick={() => setIsBookingOpen(true)} />
         <div className="bg-[hsl(210,35%,10%)]">
           <Tours />
           <ClientGallery />
