@@ -191,7 +191,7 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
         </div>
 
         {/* Desktop: Carousel with tour names */}
-        <div className="hidden md:block relative z-10 pb-8">
+        <div className="hidden md:block relative z-10 pb-8 px-16">
           <Carousel
             opts={{
               align: "center",
@@ -202,13 +202,13 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
                 delay: 3000,
               }),
             ]}
-            className="w-full max-w-6xl mx-auto"
+            className="w-full max-w-7xl mx-auto"
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-2 md:-ml-4">
               {photos.map((photo, index) => (
-                <CarouselItem key={index} className="pl-4 basis-1/2 lg:basis-1/4">
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 lg:basis-1/4">
                   <div
-                    className="relative group cursor-pointer h-full"
+                    className="relative group cursor-pointer h-full px-2"
                     style={{
                       animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
                       animationDelay: `${index * 0.2}s`
@@ -241,8 +241,8 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-4" />
-            <CarouselNext className="right-4" />
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
           </Carousel>
         </div>
 
