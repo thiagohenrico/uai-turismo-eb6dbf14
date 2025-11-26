@@ -1,5 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
+// Import tour images
+import buggyTour from "@/assets/buggy-tour.jpg";
+import praiaCarneiros from "@/assets/praia-carneiros.jpg";
+import saoMiguel from "@/assets/sao-miguel.jpg";
+import maragogiBarraGrande from "@/assets/maragogi-barra-grande.jpg";
+import maragogiPontaMangue from "@/assets/maragogi-ponta-mangue.jpg";
+import recifeOlinda from "@/assets/recife-olinda.jpg";
+import ilhaSantoAleixo from "@/assets/ilha-santo-aleixo.jpg";
+import caboSantoAgostinho from "@/assets/cabo-santo-agostinho.jpg";
 
 // Import all client gallery images
 import client1 from "@/assets/client-1.jpg";
@@ -68,6 +86,17 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
     return () => clearInterval(interval);
   }, []);
 
+  const photos = [
+    { src: praiaCarneiros, alt: "Praia dos Carneiros" },
+    { src: saoMiguel, alt: "São Miguel dos Milagres" },
+    { src: maragogiBarraGrande, alt: "Maragogi - Barra Grande" },
+    { src: maragogiPontaMangue, alt: "Maragogi - Ponta de Mangue" },
+    { src: caboSantoAgostinho, alt: "Cabo de Santo Agostinho" },
+    { src: ilhaSantoAleixo, alt: "Ilha de Santo Aleixo" },
+    { src: recifeOlinda, alt: "City Tour Recife e Olinda" },
+    { src: buggyTour, alt: "Porto de Galinhas - Buggy" },
+  ];
+
   const scrollToTours = () => {
     const element = document.getElementById("passeios");
     element?.scrollIntoView({ behavior: "smooth" });
@@ -76,8 +105,8 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
   return (
     <>
       <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-20">
-        {/* Photo collage - Polaroid style ABOVE title - Mobile optimized like reference */}
-        <div className="relative z-10 max-w-5xl mx-auto px-2 sm:px-4 pb-8">
+        {/* Mobile: Photo collage - Polaroid style */}
+        <div className="block md:hidden relative z-10 max-w-5xl mx-auto px-2 sm:px-4 pb-8">
           <div className="relative h-[550px] sm:h-[500px] md:h-[420px]">
             {/* Photo 1 - LARGE (mobile) / Left (desktop) */}
             <div 
@@ -165,6 +194,62 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
           </div>
         </div>
 
+        {/* Desktop: Carousel with tour names */}
+        <div className="hidden md:block relative z-10 pb-8">
+          <Carousel
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+              }),
+            ]}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent className="-ml-4">
+              {photos.map((photo, index) => (
+                <CarouselItem key={index} className="pl-4 basis-1/2 lg:basis-1/4">
+                  <div
+                    className="relative group cursor-pointer h-full"
+                    style={{
+                      animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
+                      animationDelay: `${index * 0.2}s`
+                    }}
+                  >
+                    <div 
+                      className={`relative bg-white p-4 shadow-2xl transform transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-10 ${
+                        index === 0 ? "rotate-[-5deg]" : 
+                        index === 1 ? "rotate-[4deg]" : 
+                        index === 2 ? "rotate-[-3deg]" : 
+                        index === 3 ? "rotate-[5deg]" :
+                        index === 4 ? "rotate-[-4deg]" :
+                        index === 5 ? "rotate-[3deg]" :
+                        index === 6 ? "rotate-[-2deg]" :
+                        "rotate-[2deg]"
+                      }`}
+                    >
+                      <div className="aspect-[3/4] overflow-hidden rounded-sm">
+                        <img
+                          src={photo.src}
+                          alt={photo.alt}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                      </div>
+                      <div className="text-center mt-3 font-script text-gray-700 text-sm">
+                        {photo.alt}
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
+        </div>
+
         {/* Video and Content Section */}
         <div className="relative z-10 pb-12">
           <div className="container mx-auto px-4">
@@ -221,6 +306,17 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
             <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="hsl(var(--background))"/>
           </svg>
         </div>
+
+      <style>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-15px);
+          }
+        }
+      `}</style>
       </section>
     </>
   );
