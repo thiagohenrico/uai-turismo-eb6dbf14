@@ -195,7 +195,7 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
         </div>
 
         {/* Desktop: Carousel with tour names */}
-        <div className="hidden md:block relative z-10 pb-8 pt-24 px-16">
+        <div className="hidden md:block relative z-10 pb-8 px-16">
           <Carousel
             opts={{
               align: "center",
