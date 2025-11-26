@@ -44,7 +44,7 @@ const MobilePhotoGallery = () => {
         {/* Mobile: Stacked Polaroid Gallery / Desktop: Carousel */}
         <div className="mb-12">
           {/* Mobile View - Alternating Left/Right Polaroids */}
-          <div className="block md:hidden space-y-6">
+          <div className="block md:hidden space-y-12">
             {photos.map((photo, index) => {
               const isLeft = index % 2 === 0;
               return (
