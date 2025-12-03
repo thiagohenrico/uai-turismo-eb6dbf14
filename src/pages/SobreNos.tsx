@@ -1,16 +1,19 @@
+import { useState } from "react";
 import { Building2, Phone, Mail, MapPin, Shield, Award, Users } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import BookingDialog from "@/components/BookingDialog";
 import CadasturBadge from "@/components/CadasturBadge";
-import cadasturCertificate from "@/assets/cadastur-certificate.jpg";
 import equipeUai from "@/assets/equipe-uai.jpg";
 import equipeUaiNew from "@/assets/equipe-uai-new.jpg";
 
 const SobreNos = () => {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header onReserveClick={() => setIsBookingOpen(true)} />
       <main className="pt-24">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-b from-deep-navy to-background">
@@ -245,7 +248,8 @@ const SobreNos = () => {
         </section>
       </main>
       <Footer />
-      <WhatsAppButton />
+      <WhatsAppButton onClick={() => setIsBookingOpen(true)} />
+      <BookingDialog isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
     </div>
   );
 };
