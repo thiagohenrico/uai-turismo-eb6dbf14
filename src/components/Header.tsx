@@ -70,19 +70,19 @@ const Header = ({ onReserveClick }: HeaderProps) => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="lg:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-golden-yellow/20 pt-4">
-            <Link to="/" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={handleHomeClick}>
+            <Link to="/" className="text-lg text-white/90 hover:text-golden-yellow transition-colors text-left" onClick={handleHomeClick}>
               Início
             </Link>
-            <Link to="/passeios" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
+            <Link to="/passeios" className="text-lg text-white/90 hover:text-golden-yellow transition-colors text-left" onClick={() => setIsOpen(false)}>
               Passeios
             </Link>
-            <Link to="/galeria" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
+            <Link to="/galeria" className="text-lg text-white/90 hover:text-golden-yellow transition-colors text-left" onClick={() => setIsOpen(false)}>
               Galeria
             </Link>
-            <Link to="/perguntas-frequentes" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
+            <Link to="/perguntas-frequentes" className="text-lg text-white/90 hover:text-golden-yellow transition-colors text-left" onClick={() => setIsOpen(false)}>
               Perguntas Frequentes
             </Link>
-            <Link to="/sobre-nos" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
+            <Link to="/sobre-nos" className="text-lg text-white/90 hover:text-golden-yellow transition-colors text-left" onClick={() => setIsOpen(false)}>
               Sobre Nós
             </Link>
             <Button onClick={() => { onReserveClick?.(); setIsOpen(false); }} size="lg" className="w-full bg-primary hover:bg-primary/90">

@@ -184,8 +184,8 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               <div className="order-1 md:order-2 text-center">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wider leading-tight drop-shadow-lg mb-8">
                   Experiências inesquecíveis no litoral Sul de{" "}
-                  <span className="text-primary">Pernambuco</span> e Norte de{" "}
-                  <span className="text-primary">Alagoas!</span>
+                  <span className="text-golden-yellow">Pernambuco</span> e Norte de{" "}
+                  <span className="text-golden-yellow">Alagoas!</span>
                 </h1>
               </div>
             </div>
