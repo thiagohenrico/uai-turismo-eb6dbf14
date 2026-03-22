@@ -24,7 +24,7 @@ const Header = ({ onReserveClick }: HeaderProps) => {
           <Link to="/" className="flex items-center gap-3">
             <img src={uaiLogo} alt="Uai Turismo" className="h-14 w-14 md:h-16 md:w-16" />
             <div className="flex flex-col">
-              <span className="text-xs uppercase tracking-widest text-muted-foreground">SEU TURISMO NO LUGAR CERTO</span>
+              <span className="text-xs uppercase tracking-widest text-white/60">SEU TURISMO NO LUGAR CERTO</span>
             </div>
           </Link>
 
