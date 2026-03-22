@@ -92,7 +92,7 @@ const Footer = () => {
                 Política de Publicidade
               </a>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-white/50">
               © {currentYear} Uai Turismo. Todos os direitos reservados.
             </p>
           </div>
