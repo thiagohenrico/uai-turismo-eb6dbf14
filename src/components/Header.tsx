@@ -61,7 +61,7 @@ const Header = ({ onReserveClick }: HeaderProps) => {
             >
               <Instagram size={24} />
             </a>
-            <button className="text-foreground" onClick={() => setIsOpen(!isOpen)}>
+            <button className="text-white" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
