@@ -56,7 +56,7 @@ const Header = ({ onReserveClick }: HeaderProps) => {
               href="https://www.instagram.com/uai_turismo/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-white/90 hover:text-golden-yellow transition-colors"
               aria-label="Instagram"
             >
               <Instagram size={24} />
