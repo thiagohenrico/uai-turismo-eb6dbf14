@@ -84,11 +84,11 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="text-center space-y-3">
             <div className="flex items-center justify-center gap-4 text-sm">
-              <a href="/politica-privacidade" className="text-muted-foreground hover:text-primary transition-colors underline">
+              <a href="/politica-privacidade" className="text-white/50 hover:text-golden-yellow transition-colors underline">
                 Política de Privacidade
               </a>
-              <span className="text-muted-foreground">•</span>
-              <a href="/politica-publicidade" className="text-muted-foreground hover:text-primary transition-colors underline">
+              <span className="text-white/30">•</span>
+              <a href="/politica-publicidade" className="text-white/50 hover:text-golden-yellow transition-colors underline">
                 Política de Publicidade
               </a>
             </div>
