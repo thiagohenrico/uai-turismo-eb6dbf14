@@ -12,7 +12,7 @@ const Footer = () => {
               <span className="text-sunset-yellow">Uai</span>
               <span className="text-tropical-green"> Turismo</span>
             </h3>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-white/60 mb-4">
               Passeios privativos e compartilhados, translados e buggy em Pernambuco e Alagoas.
             </p>
             <div className="space-y-2 text-sm text-white/50">
