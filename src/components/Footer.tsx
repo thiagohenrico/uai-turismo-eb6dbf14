@@ -24,19 +24,19 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-golden-yellow">Links Rápidos</h4>
             <div className="space-y-2">
-              <a href="/" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/" className="block text-sm text-white/60 hover:text-golden-yellow transition-colors">
                 Início
               </a>
-              <a href="/passeios" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/passeios" className="block text-sm text-white/60 hover:text-golden-yellow transition-colors">
                 Passeios
               </a>
-              <a href="/galeria" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/galeria" className="block text-sm text-white/60 hover:text-golden-yellow transition-colors">
                 Galeria
               </a>
-              <a href="/perguntas-frequentes" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/perguntas-frequentes" className="block text-sm text-white/60 hover:text-golden-yellow transition-colors">
                 Perguntas Frequentes
               </a>
-              <a href="/sobre-nos" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/sobre-nos" className="block text-sm text-white/60 hover:text-golden-yellow transition-colors">
                 Sobre Nós
               </a>
             </div>
