@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8">
+        <div className="border-t border-white/10 pt-8">
           <div className="text-center space-y-3">
             <div className="flex items-center justify-center gap-4 text-sm">
               <a href="/politica-privacidade" className="text-muted-foreground hover:text-primary transition-colors underline">
