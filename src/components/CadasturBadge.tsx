@@ -5,7 +5,7 @@ import cadasturCertificate from "@/assets/cadastur-certificate.jpg";
 
 const CadasturBadge = () => {
   return (
-    <section className="py-12 bg-card/50 backdrop-blur-sm">
+    <section className="py-20 bg-card/50 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center gap-6 text-center">
           <div className="flex items-center gap-3">

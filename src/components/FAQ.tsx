@@ -42,7 +42,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="duvidas" className="py-20 bg-card">
+    <section id="duvidas" className="py-28 bg-card">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           Informações <span className="text-primary">Importantes</span>

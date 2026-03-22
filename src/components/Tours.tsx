@@ -191,7 +191,7 @@ const Tours = () => {
   ];
 
   return (
-    <section id="passeios" className="py-20 bg-background">
+    <section id="passeios" className="py-28 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 px-2">
           Nossos Principais <span className="text-primary">Destinos</span>
