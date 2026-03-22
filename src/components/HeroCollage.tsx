@@ -104,7 +104,7 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
 
   return (
     <>
-      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-20">
+      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-midnight to-deep-navy overflow-hidden pt-20">
         {/* Carousel with tour names - Mobile and Desktop */}
         <div className="relative z-10 pb-8">
           <Carousel
