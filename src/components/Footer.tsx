@@ -15,7 +15,7 @@ const Footer = () => {
             <p className="text-muted-foreground mb-4">
               Passeios privativos e compartilhados, translados e buggy em Pernambuco e Alagoas.
             </p>
-            <div className="space-y-2 text-sm text-muted-foreground">
+            <div className="space-y-2 text-sm text-white/50">
               <p>CNPJ: 54.181.357/0001-42</p>
               <p className="text-xs">MARCOS VINICIUS SILVA SOUZA</p>
             </div>
