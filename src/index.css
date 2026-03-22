@@ -43,12 +43,12 @@ All colors MUST be HSL.
 
     /* Custom tourism colors */
     --ocean-blue: 199 75% 48%;
-    --vibrant-blue: 210 80% 45%;
+    --vibrant-blue: 195 85% 45%;
     --warm-orange: 25 95% 53%;
     --golden-yellow: 40 95% 52%;
     --sand-beige: 40 35% 90%;
-    --deep-navy: 210 40% 18%;
-    --midnight: 210 35% 12%;
+    --deep-navy: 195 80% 35%;
+    --midnight: 195 85% 28%;
   }
 }
 
