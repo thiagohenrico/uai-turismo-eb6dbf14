@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Links Rápidos</h4>
+            <h4 className="font-semibold mb-4 text-golden-yellow">Links Rápidos</h4>
             <div className="space-y-2">
               <a href="/" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
                 Início
