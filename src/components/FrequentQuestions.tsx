@@ -66,7 +66,7 @@ const FrequentQuestions = ({ onReserveClick }: FrequentQuestionsProps) => {
   ];
 
   return (
-    <section id="perguntas-frequentes" className="py-20 bg-background">
+    <section id="perguntas-frequentes" className="py-28 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           Perguntas <span className="text-primary">Frequentes</span>
