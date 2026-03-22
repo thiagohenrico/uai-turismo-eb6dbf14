@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-golden-yellow" />
-                <span className="text-sm text-muted-foreground">Porto de Galinhas - PE</span>
+                <span className="text-sm text-white/60">Porto de Galinhas - PE</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-golden-yellow" />
