@@ -50,7 +50,7 @@ const Footer = () => {
                 <span className="text-sm text-muted-foreground">Porto de Galinhas - PE</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-primary" />
+                <Phone className="w-4 h-4 text-golden-yellow" />
                 <a href="tel:+5581997484915" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   (81) 99748-4915
                 </a>
