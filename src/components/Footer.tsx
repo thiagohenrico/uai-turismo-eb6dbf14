@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Contato</h4>
+            <h4 className="font-semibold mb-4 text-golden-yellow">Contato</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" />
