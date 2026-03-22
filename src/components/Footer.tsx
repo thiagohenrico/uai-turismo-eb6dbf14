@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Siga no Instagram</h4>
+            <h4 className="font-semibold mb-4 text-golden-yellow">Siga no Instagram</h4>
             <p className="text-sm text-muted-foreground mb-4">
               Veja mais fotos dos nossos passeios e clientes felizes!
             </p>
