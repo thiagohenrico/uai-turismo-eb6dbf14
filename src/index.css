@@ -8,47 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Blue theme matching reference */
-    --background: 210 50% 22%;
-    --foreground: 0 0% 100%;
+    /* Praiano - lighter, warmer palette */
+    --background: 200 20% 93%;
+    --foreground: 220 20% 15%;
 
-    --card: 210 45% 18%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
 
-    --popover: 210 45% 18%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
 
-    /* Orange/Yellow from logo - primary CTA */
-    --primary: 45 93% 58%;
+    /* Golden yellow from logo - primary CTA */
+    --primary: 40 95% 52%;
     --primary-foreground: 0 0% 0%;
 
-    /* Vibrant orange for accents */
-    --secondary: 35 91% 55%;
-    --secondary-foreground: 0 0% 0%;
+    /* Warm orange for accents */
+    --secondary: 25 90% 50%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 28%;
-    --muted-foreground: 210 20% 85%;
+    --muted: 40 20% 90%;
+    --muted-foreground: 220 10% 40%;
 
-    --accent: 45 93% 58%;
+    --accent: 40 95% 52%;
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 35% 30%;
-    --input: 210 35% 30%;
-    --ring: 45 93% 58%;
+    --border: 40 15% 84%;
+    --input: 40 15% 84%;
+    --ring: 40 95% 52%;
 
     --radius: 0.75rem;
 
-    /* Custom tourism colors - warm palette */
-    --ocean-blue: 199 89% 48%;
-    --vibrant-blue: 210 100% 50%;
+    /* Custom tourism colors */
+    --ocean-blue: 199 75% 48%;
+    --vibrant-blue: 210 80% 45%;
     --warm-orange: 25 95% 53%;
-    --golden-yellow: 38 92% 50%;
-    --sand-beige: 43 51% 80%;
-    --deep-navy: 220 26% 14%;
-    --midnight: 220 20% 10%;
+    --golden-yellow: 40 95% 52%;
+    --sand-beige: 40 35% 90%;
+    --deep-navy: 210 40% 18%;
+    --midnight: 210 35% 12%;
   }
 }
 

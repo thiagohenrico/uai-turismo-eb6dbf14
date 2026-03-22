@@ -4,7 +4,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contato" className="bg-midnight py-12 border-t border-border">
+    <footer id="contato" className="bg-midnight py-12 border-t border-midnight text-white">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -12,52 +12,52 @@ const Footer = () => {
               <span className="text-sunset-yellow">Uai</span>
               <span className="text-tropical-green"> Turismo</span>
             </h3>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-white/60 mb-4">
               Passeios privativos e compartilhados, translados e buggy em Pernambuco e Alagoas.
             </p>
-            <div className="space-y-2 text-sm text-muted-foreground">
+            <div className="space-y-2 text-sm text-white/50">
               <p>CNPJ: 54.181.357/0001-42</p>
               <p className="text-xs">MARCOS VINICIUS SILVA SOUZA</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Links Rápidos</h4>
+            <h4 className="font-semibold mb-4 text-golden-yellow">Links Rápidos</h4>
             <div className="space-y-2">
-              <a href="/" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/" className="block text-sm text-white/60 hover:text-golden-yellow transition-colors">
                 Início
               </a>
-              <a href="/passeios" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/passeios" className="block text-sm text-white/60 hover:text-golden-yellow transition-colors">
                 Passeios
               </a>
-              <a href="/galeria" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/galeria" className="block text-sm text-white/60 hover:text-golden-yellow transition-colors">
                 Galeria
               </a>
-              <a href="/perguntas-frequentes" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/perguntas-frequentes" className="block text-sm text-white/60 hover:text-golden-yellow transition-colors">
                 Perguntas Frequentes
               </a>
-              <a href="/sobre-nos" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="/sobre-nos" className="block text-sm text-white/60 hover:text-golden-yellow transition-colors">
                 Sobre Nós
               </a>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Contato</h4>
+            <h4 className="font-semibold mb-4 text-golden-yellow">Contato</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-primary" />
-                <span className="text-sm text-muted-foreground">Porto de Galinhas - PE</span>
+                <MapPin className="w-4 h-4 text-golden-yellow" />
+                <span className="text-sm text-white/60">Porto de Galinhas - PE</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-primary" />
-                <a href="tel:+5581997484915" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Phone className="w-4 h-4 text-golden-yellow" />
+                <a href="tel:+5581997484915" className="text-sm text-white/60 hover:text-golden-yellow transition-colors">
                   (81) 99748-4915
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-primary" />
-                <a href="mailto:contato@uaitur.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="w-4 h-4 text-golden-yellow" />
+                <a href="mailto:contato@uaitur.com" className="text-sm text-white/60 hover:text-golden-yellow transition-colors">
                   contato@uaitur.com
                 </a>
               </div>
@@ -65,15 +65,15 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-primary">Siga no Instagram</h4>
-            <p className="text-sm text-muted-foreground mb-4">
+            <h4 className="font-semibold mb-4 text-golden-yellow">Siga no Instagram</h4>
+            <p className="text-sm text-white/60 mb-4">
               Veja mais fotos dos nossos passeios e clientes felizes!
             </p>
             <a 
               href="https://www.instagram.com/uai_turismo/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 hover:text-primary transition-colors"
+              className="inline-flex items-center gap-2 text-white/60 hover:text-golden-yellow transition-colors"
             >
               <Instagram className="w-5 h-5" />
               <span className="text-sm">@uai_turismo</span>
@@ -81,18 +81,18 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8">
+        <div className="border-t border-white/10 pt-8">
           <div className="text-center space-y-3">
             <div className="flex items-center justify-center gap-4 text-sm">
-              <a href="/politica-privacidade" className="text-muted-foreground hover:text-primary transition-colors underline">
+              <a href="/politica-privacidade" className="text-white/50 hover:text-golden-yellow transition-colors underline">
                 Política de Privacidade
               </a>
-              <span className="text-muted-foreground">•</span>
-              <a href="/politica-publicidade" className="text-muted-foreground hover:text-primary transition-colors underline">
+              <span className="text-white/30">•</span>
+              <a href="/politica-publicidade" className="text-white/50 hover:text-golden-yellow transition-colors underline">
                 Política de Publicidade
               </a>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-white/50">
               © {currentYear} Uai Turismo. Todos os direitos reservados.
             </p>
           </div>

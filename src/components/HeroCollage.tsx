@@ -104,7 +104,7 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
 
   return (
     <>
-      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-[#1a1a1a] to-background overflow-hidden pt-20">
+      <section className="relative min-h-screen bg-gradient-to-b from-deep-navy via-midnight to-deep-navy overflow-hidden pt-20">
         {/* Carousel with tour names - Mobile and Desktop */}
         <div className="relative z-10 pb-8">
           <Carousel
@@ -184,8 +184,8 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
               <div className="order-1 md:order-2 text-center">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wider leading-tight drop-shadow-lg mb-8">
                   Experiências inesquecíveis no litoral Sul de{" "}
-                  <span className="text-primary">Pernambuco</span> e Norte de{" "}
-                  <span className="text-primary">Alagoas!</span>
+                  <span className="text-golden-yellow">Pernambuco</span> e Norte de{" "}
+                  <span className="text-golden-yellow">Alagoas!</span>
                 </h1>
               </div>
             </div>
@@ -214,7 +214,7 @@ const HeroCollage = ({ onReserveClick }: HeroCollageProps) => {
         {/* Decorative wave at bottom */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="hsl(var(--background))"/>
+            <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="hsl(200, 20%, 93%)"/>
           </svg>
         </div>
 

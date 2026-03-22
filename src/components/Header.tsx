@@ -18,31 +18,31 @@ const Header = ({ onReserveClick }: HeaderProps) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-midnight/98 backdrop-blur-md border-b border-primary/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-midnight/98 backdrop-blur-md border-b border-golden-yellow/20">
       <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <img src={uaiLogo} alt="Uai Turismo" className="h-14 w-14 md:h-16 md:w-16" />
             <div className="flex flex-col">
-              <span className="text-xs uppercase tracking-widest text-muted-foreground">SEU TURISMO NO LUGAR CERTO</span>
+              <span className="text-xs uppercase tracking-widest text-white/60">SEU TURISMO NO LUGAR CERTO</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
-            <Link to="/" className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/" className="text-lg text-white/90 hover:text-golden-yellow transition-colors">
               Início
             </Link>
-            <Link to="/passeios" className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/passeios" className="text-lg text-white/90 hover:text-golden-yellow transition-colors">
               Passeios
             </Link>
-            <Link to="/galeria" className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/galeria" className="text-lg text-white/90 hover:text-golden-yellow transition-colors">
               Galeria
             </Link>
-            <Link to="/perguntas-frequentes" className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/perguntas-frequentes" className="text-lg text-white/90 hover:text-golden-yellow transition-colors">
               Perguntas Frequentes
             </Link>
-            <Link to="/sobre-nos" className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/sobre-nos" className="text-lg text-white/90 hover:text-golden-yellow transition-colors">
               Sobre Nós
             </Link>
             <Button onClick={onReserveClick} size="lg" className="bg-primary hover:bg-primary/90">
@@ -56,12 +56,12 @@ const Header = ({ onReserveClick }: HeaderProps) => {
               href="https://www.instagram.com/uai_turismo/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-white/90 hover:text-golden-yellow transition-colors"
               aria-label="Instagram"
             >
               <Instagram size={24} />
             </a>
-            <button className="text-foreground" onClick={() => setIsOpen(!isOpen)}>
+            <button className="text-white" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
@@ -69,20 +69,20 @@ const Header = ({ onReserveClick }: HeaderProps) => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-primary/20 pt-4">
-            <Link to="/" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={handleHomeClick}>
+          <div className="lg:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-golden-yellow/20 pt-4">
+            <Link to="/" className="text-lg text-white/90 hover:text-golden-yellow transition-colors text-left" onClick={handleHomeClick}>
               Início
             </Link>
-            <Link to="/passeios" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
+            <Link to="/passeios" className="text-lg text-white/90 hover:text-golden-yellow transition-colors text-left" onClick={() => setIsOpen(false)}>
               Passeios
             </Link>
-            <Link to="/galeria" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
+            <Link to="/galeria" className="text-lg text-white/90 hover:text-golden-yellow transition-colors text-left" onClick={() => setIsOpen(false)}>
               Galeria
             </Link>
-            <Link to="/perguntas-frequentes" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
+            <Link to="/perguntas-frequentes" className="text-lg text-white/90 hover:text-golden-yellow transition-colors text-left" onClick={() => setIsOpen(false)}>
               Perguntas Frequentes
             </Link>
-            <Link to="/sobre-nos" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={() => setIsOpen(false)}>
+            <Link to="/sobre-nos" className="text-lg text-white/90 hover:text-golden-yellow transition-colors text-left" onClick={() => setIsOpen(false)}>
               Sobre Nós
             </Link>
             <Button onClick={() => { onReserveClick?.(); setIsOpen(false); }} size="lg" className="w-full bg-primary hover:bg-primary/90">
