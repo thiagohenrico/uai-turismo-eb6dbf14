@@ -73,7 +73,7 @@ const Footer = () => {
               href="https://www.instagram.com/uai_turismo/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 hover:text-primary transition-colors"
+              className="inline-flex items-center gap-2 text-white/60 hover:text-golden-yellow transition-colors"
             >
               <Instagram className="w-5 h-5" />
               <span className="text-sm">@uai_turismo</span>
