@@ -30,19 +30,19 @@ const Header = ({ onReserveClick }: HeaderProps) => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
-            <Link to="/" className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/" className="text-lg text-white/90 hover:text-golden-yellow transition-colors">
               Início
             </Link>
-            <Link to="/passeios" className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/passeios" className="text-lg text-white/90 hover:text-golden-yellow transition-colors">
               Passeios
             </Link>
-            <Link to="/galeria" className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/galeria" className="text-lg text-white/90 hover:text-golden-yellow transition-colors">
               Galeria
             </Link>
-            <Link to="/perguntas-frequentes" className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/perguntas-frequentes" className="text-lg text-white/90 hover:text-golden-yellow transition-colors">
               Perguntas Frequentes
             </Link>
-            <Link to="/sobre-nos" className="text-lg text-foreground hover:text-primary transition-colors">
+            <Link to="/sobre-nos" className="text-lg text-white/90 hover:text-golden-yellow transition-colors">
               Sobre Nós
             </Link>
             <Button onClick={onReserveClick} size="lg" className="bg-primary hover:bg-primary/90">
