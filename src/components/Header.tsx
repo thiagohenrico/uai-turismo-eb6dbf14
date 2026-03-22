@@ -69,7 +69,7 @@ const Header = ({ onReserveClick }: HeaderProps) => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-primary/20 pt-4">
+          <div className="lg:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-golden-yellow/20 pt-4">
             <Link to="/" className="text-lg text-foreground hover:text-primary transition-colors text-left" onClick={handleHomeClick}>
               Início
             </Link>
